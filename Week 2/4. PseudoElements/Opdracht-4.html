@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button {
+            width: 950px;
+            height: 70px;
+            background-color: rgb(34, 194, 186);
+            border: 10px solid rgb(255, 115, 0);
+            font-size: 40px;
+            color: white
+        }
+
+        /* .box1 {
+            width: 870px;
+            height: 10px;
+            background-color: rgb(34, 194, 186);
+            position: relative;
+            left: 10px;
+            bottom: 10px;
+
+        }
+
+        .box2 {
+            width: 870px;
+            height: 10px;
+            background-color: rgb(34, 194, 186);
+            position: relative;
+            left: 70px;
+            bottom: 80px;
+
+        } */
+
+        button::after {
+            content: " ";
+            width: 870px;
+            height: 10px;
+            background-color: rgb(34, 194, 186);
+            position: absolute;
+            left: 18px;
+            bottom: 476px;
+        }
+
+        button::before {
+            content: " ";
+            width: 870px;
+            height: 10px;
+            background-color: rgb(34, 194, 186);
+            position: absolute;
+            left: 78px;
+            bottom: 536px;
+        }
+    </style>
+</head>
+
+<body>
+    <h3>4. Hieronder vind je een voorbeeld van het gebruik van een pseudo-element. Kun jij dit namaken?
+    </h3>
+
+    <img src="./IMG/Afbeelding4.png" alt="">
+
+    <h4>Resultaat</h4>
+
+    <button>Button</button>
+
+</body>
+
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .figuur {
+            width: 128px;
+            height: 128px;
+            background-color: red;
+            position: relative;
+            margin: 50px;
+            transform: rotate(20deg);
+        }
+
+        .figuur::before {
+            content: "";
+            background-color: red;
+            position: absolute;
+            width: 128px;
+            height: 128px;
+            top: 1px;
+            transform: rotate(60deg);
+
+        }
+
+        .figuur::after {
+            content: "";
+            background-color: red;
+            position: absolute;
+            width: 128px;
+            height: 128px;
+            top: 1px;
+            transform: rotate(25deg);
+
+        }
+    </style>
+</head>
+
+<body>
+    <h3>Opdracht 7</h3>
+
+    <div class="figuur"></div>
+</body>
+
+</html>

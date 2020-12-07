@@ -7,100 +7,134 @@
     <title>Document</title>
     <style>
         .container {
-
-            border: solid 0.5px;
-            width: 800px;
+            border: solid 1px;
+            width: 700px;
             background-color: rgba(255, 192, 203, 0.37);
-
         }
+
+        /* .item-all:hover {
+            transform: translate(40px);
+            transition-timing-function: ease-in-out;
+            transition-duration: 2s;
+            transition-property: all;
+        
+        } */
 
         .item1 {
             /* transition: width 2s; */
-
             /* transition-duration: .3s;
             transition-timing-function: ease-out; */
-
-            width: 80px;
-            height: 80px;
-            border: solid 0.5px;
+            width: 50px;
+            height: 50px;
+            border: solid 1px;
             margin: 5px;
-            font-size: 50px;
             text-align: center;
-            transition-timing-function: ease-out;
-
-
-
+            /* transition-timing-function: ease-out; */
+            /* transform: translate(100px);
+            transition-timing-function: ease-out; */
 
         }
 
         .item1:hover {
-            border: solid 0.5px;
-            border-radius: 10%;
+            border: solid 1px;
+            border-radius: 50%;
             position: relative;
-            left: 700px;
+            /* left: 300px; */
             background-color: rgb(221, 67, 93);
-
+            transform: translate(640px);
+            transition-timing-function: ease-in;
+            transition-duration: 2s;
 
 
         }
 
         .item2 {
-
-            width: 80px;
-            height: 80px;
-            border: solid 0.5px;
-            font-size: 50px;
+            width: 50px;
+            height: 50px;
+            border: solid 1px;
             margin: 5px;
             text-align: center;
-            transition-timing-function: ease-out;
 
+        }
+
+        .item2:hover {
+            border: solid 1px;
+            border-radius: 30%;
+            position: relative;
+            background-color: rgb(221, 67, 93);
+            transform: translate(640px);
+            transition-timing-function: ease-out;
+            transition-duration: 4s;
+            transition-delay: 1.2s;
         }
 
         .item3 {
             /* background-color: rgb(225, 226, 150); */
-            width: 80px;
-            height: 80px;
-            border: solid 0.5px;
-            font-size: 50px;
+            width: 50px;
+            height: 50px;
+            border: solid 1px;
             margin: 5px;
             text-align: center;
-            transition-timing-function: ease-out;
 
+
+        }
+
+        .item3:hover {
+            border: solid 1px;
+            position: relative;
+            background-color: rgb(221, 67, 93);
+            transform: translate(640px);
+            transition-timing-function: ease-out;
+            transition-duration: 3s;
         }
 
         .item4 {
-            transition: background-color 0.5s ease;
-            width: 80px;
-            height: 80px;
+            width: 50px;
+            height: 50px;
             margin: 5px;
-            border: solid 0.5px;
-            font-size: 50px;
+            border: solid 1px;
             text-align: center;
+
+        }
+
+        .item4:hover {
+            border: solid 1px;
+            position: relative;
+            background-color: rgb(221, 67, 93);
+            transform: translate(640px);
             transition-timing-function: ease-out;
+            transition-duration: 3s;
         }
 
         .item5 {
-            transition: background-color 0.5s ease;
-            width: 80px;
-            height: 80px;
-            border: solid 0.5px;
-            font-size: 50px;
+            width: 50px;
+            height: 50px;
+            border: solid 1px;
             margin: 5px;
             text-align: center;
-            transition-timing-function: ease-out;
 
+        }
+
+        .item5:hover {
+            border: solid 1px;
+            position: relative;
+            background-color: rgb(221, 67, 93);
+            transform: translate(640px);
+            transition-timing-function: ease-out;
+            transition-duration: 3s;
         }
     </style>
 </head>
 
 <body>
     <div class="container">
-
-        <div class="item1">1</div>
-        <div class="item2">2</div>
-        <div class="item3">3</div>
-        <div class="item4">4</div>
-        <div class="item5">5</div>
+        <div class="item-all">
+            <div class="item1">1</div>
+            <div class="item2">2</div>
+            <div class="item3">3</div>
+            <div class="item4">4</div>
+            <div class="item5">5</div>
+        </div>
     </div>
 
 </body>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 50px;
+        }
+
+        .container {
+            border: solid black 1px;
+            width: 700px;
+            height: 400px;
+            background-color: rgba(85, 172, 169, 0.37);
+
+        }
+
+        .box {
+            width: 50px;
+            height: 50px;
+            background-color: rgba(85, 172, 169, 0.37);
+            margin: 5px;
+            border: solid black 1px;
+            text-align: center;
+            transition: all 2s ease-in-out, left 4s ease-in-out 2s, left 3s ease-in-out 1s;
+            position: relative;
+            left: 300px;
+            top: 100px;
+
+        }
+
+        .container #box1 {
+            
+        }
+
+        #box1 {
+            position: relative;
+            top: 158px;
+        }
+
+        #box3 {
+            position: relative;
+            top: 45px;
+        }
+
+        .container:hover #box1{
+            transform: translatey(-120px);
+            left: -2px;
+        }
+
+        .container:hover #box2{
+            transform: translatey(-120px);
+           left: 640px;
+        }
+
+        .container:hover #box3{
+            left: -10px;
+            transform: translatey(200px);
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="box" id=box1>1</div>
+        <div class="box" id=box2>2</div>
+        <div class="box" id=box3>3</div>
+
+    </div>
+
+</body>
+
+</html>

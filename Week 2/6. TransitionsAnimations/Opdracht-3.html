@@ -6,135 +6,69 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        body {
+            margin: 50px;
+        }
+
         .container {
-            border: solid 1px;
+            border: solid black 1px;
             width: 700px;
             background-color: rgba(255, 192, 203, 0.37);
         }
 
-        /* .item-all:hover {
-            transform: translate(40px);
-            transition-timing-function: ease-in-out;
-            transition-duration: 2s;
-            transition-property: all;
-        
-        } */
-
-        .item1 {
-            /* transition: width 2s; */
-            /* transition-duration: .3s;
-            transition-timing-function: ease-out; */
+        .box {
             width: 50px;
             height: 50px;
-            border: solid 1px;
+            background-color: rgba(255, 192, 203, 0.37);
             margin: 5px;
+            border: solid black 1px;
             text-align: center;
-            /* transition-timing-function: ease-out; */
-            /* transform: translate(100px);
-            transition-timing-function: ease-out; */
+            transition: all 2s ease-in-out;
 
         }
 
-        .item1:hover {
-            border: solid 1px;
-            border-radius: 50%;
-            position: relative;
-            /* left: 300px; */
-            background-color: rgb(221, 67, 93);
-            transform: translate(640px);
-            transition-timing-function: ease-in;
-            transition-duration: 2s;
-
-
+        .container:hover #box1 {
+            transform: translatex(640px);
+            border-radius: 50px;
+            background-color: rgb(238, 90, 114);
         }
 
-        .item2 {
-            width: 50px;
-            height: 50px;
-            border: solid 1px;
-            margin: 5px;
-            text-align: center;
-
-        }
-
-        .item2:hover {
-            border: solid 1px;
+        .container:hover #box2 {
+            transform: translatex(640px);
             border-radius: 30%;
-            position: relative;
-            background-color: rgb(221, 67, 93);
-            transform: translate(640px);
-            transition-timing-function: ease-out;
-            transition-duration: 4s;
-            transition-delay: 1.2s;
+            background-color: rgb(238, 90, 114);
         }
 
-        .item3 {
-            /* background-color: rgb(225, 226, 150); */
-            width: 50px;
-            height: 50px;
-            border: solid 1px;
-            margin: 5px;
-            text-align: center;
-
-
+        .container:hover #box3 {
+            transform: translatex(640px);
+            transition-delay: 1s;
+            background-color: rgb(238, 90, 114);
+           
         }
 
-        .item3:hover {
-            border: solid 1px;
-            position: relative;
-            background-color: rgb(221, 67, 93);
-            transform: translate(640px);
-            transition-timing-function: ease-out;
-            transition-duration: 3s;
+        .container:hover #box4 {
+            background-color: rgb(238, 90, 114);
+            transform: translatex(640px);
+            transition-duration: 5s;
         }
 
-        .item4 {
-            width: 50px;
-            height: 50px;
-            margin: 5px;
-            border: solid 1px;
-            text-align: center;
-
-        }
-
-        .item4:hover {
-            border: solid 1px;
-            position: relative;
-            background-color: rgb(221, 67, 93);
-            transform: translate(640px);
-            transition-timing-function: ease-out;
-            transition-duration: 3s;
-        }
-
-        .item5 {
-            width: 50px;
-            height: 50px;
-            border: solid 1px;
-            margin: 5px;
-            text-align: center;
-
-        }
-
-        .item5:hover {
-            border: solid 1px;
-            position: relative;
-            background-color: rgb(221, 67, 93);
-            transform: translate(640px);
-            transition-timing-function: ease-out;
-            transition-duration: 3s;
+        .container:hover #box5 {
+            background-color: rgb(238, 90, 114);
+            transform: translatex(640px);
+            transition-duration: 3s, 5s, 2s, 1s;
         }
     </style>
 </head>
 
 <body>
     <div class="container">
-        <div class="item-all">
-            <div class="item1">1</div>
-            <div class="item2">2</div>
-            <div class="item3">3</div>
-            <div class="item4">4</div>
-            <div class="item5">5</div>
-        </div>
+
+        <div class="box" id=box1>1</div>
+        <div class="box" id=box2>2</div>
+        <div class="box" id=box3>3</div>
+        <div class="box" id=box4>4</div>
+        <div class="box" id=box5>5</div>
+
     </div>
 
 </body>

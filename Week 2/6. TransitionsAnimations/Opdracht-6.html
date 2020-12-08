@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .body {
+            margin: 50px;
+        }
+
+        .card {
+            background-color: grey;
+            width: 150px;
+            padding: 50px;
+            text-align: left;
+            border: solid black 1px;
+            border-radius: 20px;
+            color: white;
+            display: inline-block;
+            transition: margin-left 0.3s linear;
+        }
+
+        .card~.card {
+            margin-left: -150px;
+        }
+
+        .card:hover~.card {
+            margin-left: -1px;
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="card">
+        <p>Article Dec 8, 2020</p>
+        <h1 class="card__title">My Techground Journey</h1>
+        <p>Author: Vanessa Braumuller</p>
+    </div>
+    <div class="card">
+        <p>Article Dec 8, 2020</p>
+        <h1 class="card__title">My Techground Journey</h1>
+        <p>Author: Vanessa Braumuller</p>
+    </div>
+    <div class="card">
+        <p>Article Dec 8, 2020</p>
+        <h1 class="card__title">My Techground Journey</h1>
+        <p>Author: Vanessa Braumuller</p>
+    </div>
+    <div class="card">
+        <p>Article Dec 8, 2020</p>
+        <h1 class="card__title">My Techground Journey</h1>
+        <p>Author: Vanessa Braumuller</p>
+    </div>
+
+    <!-- <div class="container">
+
+        <div class="box box1">
+            <p>Article Dec 8, 2020</p>
+            <h1>My Techgrounds Journey</h1>
+            <p>Author: Vanessa Braumuller</p>
+        </div>
+        <div class="box box2">
+            <p>Article Dec 8, 2020</p>
+            <h1>My Techgrounds Journey</h1>
+            <p>Author: Vanessa Braumuller</p>
+        </div>
+        <div class="box box3">
+            <p>Article Dec 8, 2020</p>
+            <h1>My Techgrounds Journey</h1>
+            <p>Author: Vanessa Braumuller</p>
+        </div>
+        <div class="box box4">
+            <p>Article Dec 8, 2020</p>
+            <h1>My Techgrounds Journey</h1>
+            <p>Author: Vanessa Braumuller</p>
+        </div>
+    </div> -->
+
+
+</body>
+
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 50px;
+        }
+
+        .box {
+            width: 100px;
+            height: 100px;
+            transition: all 2s ease-in-out;
+        }
+
+        .container {
+            border: solid black 2px;
+            width: 300px;
+            height: 250px;
+            background-color: rgb(85, 129, 94);
+
+        }
+
+        .box1 {
+            width: 108px;
+            height: 108px;
+            background-color: rgb(85, 129, 94);
+            margin: 5px;
+            border: solid black 8px;
+
+        }
+
+        .box2 {
+            width: 115px;
+            height: 115px;
+            background-color: rgb(85, 129, 94);
+            margin: 5px;
+            border: solid black 0.5px;
+            position: relative;
+            top: -125px;
+            left: 5px;
+            z-index: 1;
+
+        }
+
+        .box2:hover {
+            transform: translate(100px, 100px) rotate(50deg);
+            /* transform: skewY(20deg) */
+            /* transform: rotate(20deg) */
+        }
+
+        .foto {
+            width: 111px;
+            height: 110px;
+            position: relative;
+            top: -240px;
+            left: 12px;
+
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="box box1"></div>
+        <div class="box box2"></div>
+    </div>
+
+    <img class="foto" src="./IMG/Opdracht5gif.gif" alt="">
+
+</body>
+
+</html>

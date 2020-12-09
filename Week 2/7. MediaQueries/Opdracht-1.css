@@ -101,7 +101,7 @@ nav a {
 @media (min-width: 320px) and (max-width: 480px) and (orientation: portrait) {.gallery-item.thumbnail {width: 95%;}}
 
 /* Opdracht 3 */
-@media (min-resolution: 150dpi) {.logo {background-image: url("./IMG/spaceship.png");}}
+@media (min-resolution: 11dpi) {.logo {background-image: url("./IMG/spaceship2.png");}}
 
 /* Opdracht 4 */
 @media (max-resolution: 150dpi) and (max-width: 480px) {.page-description {font-size: 20px;}}

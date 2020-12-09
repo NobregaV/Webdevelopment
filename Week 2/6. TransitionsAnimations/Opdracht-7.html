@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            width: 80px;
+            padding: 150px;
+            background-color: black;
+            margin: 30px;
+        }
+
+        .box1 {
+            width: 20px;
+            padding: 60px;
+            background-color: rgb(206, 113, 113);
+            border-radius: 50px;
+            animation-name: example;
+            animation-duration: 2s;
+
+        }
+
+        @keyframes example {
+
+            0% {background-color: rgb(206, 113, 113); border-radius: 50px;}
+
+            25% {background-color: rgb(206, 113, 113); border-radius: 50px 20px;}
+
+            50% {background-color: rgb(206, 113, 113); border-radius: 50% 20% 10% 40%;}
+
+            75% {background-color: rgb(206, 113, 113); border-radius: 80% 20% 10% 20%;}
+
+            100% {background-color: rgb(206, 113, 113); border-radius: 10px 100px 120px;}
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="box1"></div>
+
+    </div>
+</body>
+
+</html>

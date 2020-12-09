@@ -19,15 +19,20 @@
             border-radius: 20px;
             color: white;
             display: inline-block;
-            transition: margin-left 0.3s linear;
+            transition: margin-left 0.3s linear, background-color 0.2s linear, margin-right 0.3s linear;
+
         }
 
         .card~.card {
-            margin-left: -150px;
+            margin-left: -120px;
+            margin-right: -50px;
         }
 
         .card:hover~.card {
-            margin-left: -1px;
+            margin-left: 0px;
+            background-color: rgb(157, 163, 79);
+            color: red;
+            transform: translatey(20px);
 
         }
     </style>
@@ -37,49 +42,24 @@
 
     <div class="card">
         <p>Article Dec 8, 2020</p>
-        <h1 class="card__title">My Techground Journey</h1>
+        <h1 class="card__title">My Transitions Journey</h1>
         <p>Author: Vanessa Braumuller</p>
     </div>
     <div class="card">
         <p>Article Dec 8, 2020</p>
-        <h1 class="card__title">My Techground Journey</h1>
+        <h1 class="card__title">My Transitions Journey</h1>
         <p>Author: Vanessa Braumuller</p>
     </div>
     <div class="card">
         <p>Article Dec 8, 2020</p>
-        <h1 class="card__title">My Techground Journey</h1>
+        <h1 class="card__title">My Transitions Journey</h1>
         <p>Author: Vanessa Braumuller</p>
     </div>
     <div class="card">
         <p>Article Dec 8, 2020</p>
-        <h1 class="card__title">My Techground Journey</h1>
+        <h1 class="card__title">My Transitions Journey</h1>
         <p>Author: Vanessa Braumuller</p>
     </div>
-
-    <!-- <div class="container">
-
-        <div class="box box1">
-            <p>Article Dec 8, 2020</p>
-            <h1>My Techgrounds Journey</h1>
-            <p>Author: Vanessa Braumuller</p>
-        </div>
-        <div class="box box2">
-            <p>Article Dec 8, 2020</p>
-            <h1>My Techgrounds Journey</h1>
-            <p>Author: Vanessa Braumuller</p>
-        </div>
-        <div class="box box3">
-            <p>Article Dec 8, 2020</p>
-            <h1>My Techgrounds Journey</h1>
-            <p>Author: Vanessa Braumuller</p>
-        </div>
-        <div class="box box4">
-            <p>Article Dec 8, 2020</p>
-            <h1>My Techgrounds Journey</h1>
-            <p>Author: Vanessa Braumuller</p>
-        </div>
-    </div> -->
-
 
 </body>
 

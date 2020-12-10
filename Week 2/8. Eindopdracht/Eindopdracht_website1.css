@@ -1,12 +1,100 @@
 .navigation {
     display: flex;
     justify-content: flex-end;
+    list-style-type: none;
+    margin: 10px;
+    padding: 5px;
+    
 
 }
 
+header {
+    height: 450px;
+}
 
+img {
+    height: 400px;
+    width: 1600px;
+    opacity: 0.5;
+    
+}
+
+
+.titel-banner {
+    position: relative;
+    top: -350px;
+    left: 700px;
+    color: rgb(53, 153, 235);
+    font-size: 40px;
+}
+
+.tekst-banner {
+    position: relative;
+    top: -350px;
+    left: 700px;
+    font-size: 10px;
+    color: rgb(53, 153, 235);
+}
+
+.dish {
+    width: 150px;
+    height: 150px;
+  
+}
+
+.buy {
+    position: relative;
+    top: -350px;
+    left: 700px;
+    background-color: rgb(29, 26, 26);
+    background-color:rgb(29, 26, 26);
+    opacity: 0.5;
+    color: rgb(91, 228, 91);
+    
+}
+
+.show {
+    position: relative;
+    top: -350px;
+    left: 700px;
+    background-color:rgb(29, 26, 26);
+    opacity: 0.5;
+    color: rgb(91, 228, 91);
+}
 
 body {
-    background-color: rgb(128, 179, 128);
+    background-color: #766c6c;
     font-family: 'lobster', cursive;
+    
+   
+}
+
+h2 {
+    text-align: center;
+
+}
+.menu_populair {
+    display: flex;
+    /* width: 900px;
+    padding: 20px;
+    margin: 10px; */
+
+}
+
+.populair1 {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;  
+}
+
+.populair2 {
+    flex-direction: column;
+    margin: 20px;
+  
+}
+
+.populair3 {
+    flex-direction: column;
+    margin: 20px;
+  
 }

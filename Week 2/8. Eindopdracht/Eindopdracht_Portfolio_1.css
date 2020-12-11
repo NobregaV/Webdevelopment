@@ -70,10 +70,10 @@
 }
 
 .personalinfo {
-    display: flex;
     position: relative;
     left: 800px;
     top: -1060px;
+   
 }
 
 

@@ -10,4 +10,8 @@
 	"settings": {
 		"liveServer.settings.multiRootWorkspaceName": "Webdevelopment"
 	}
+	,
+
+"LiveServer.settings.CustomBrowser": "chrome":
+
 }

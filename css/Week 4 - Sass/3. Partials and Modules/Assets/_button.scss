@@ -1,0 +1,11 @@
+@import
+url ("_colors.scss")
+
+.button {
+    background-color: $button-color;
+    &:hover $button-hover-color;
+}
+
+
+    
+

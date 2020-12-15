@@ -1,7 +1,4 @@
-
 @import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
-
-
 h1 {
   font-family: Roboto, sans-serif;
   text-align: center;
@@ -10,7 +7,7 @@ h1 {
 .banner {
   font-family: "Pacifico", cursive;
   height: 400px;
-  background-image: url("../IMG/Lemon.jpg");
+  background-image: url("./Lemon.jpg");
 }
 
 .banner .slogan {

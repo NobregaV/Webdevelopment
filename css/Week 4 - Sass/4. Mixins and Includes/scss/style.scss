@@ -1,0 +1,27 @@
+@mixin button {
+    background-color: $primary-color;
+    color: $secondary-color;
+}
+
+.button {
+    @include button;
+    &:hover {
+        background-color: $button-hover-color;
+        color: rgb(128, 128, 243);
+    }
+}
+
+@mixin colorChangingSquare {
+    background-color: rgb(134, 134, 230);
+    width: 100px;
+    height: 100px;
+    border: solid 1px black;
+}
+
+.colorChangingSquare {
+    @include colorChangingSquare;
+    &:hover {
+        background-color: $button-hover-color;
+        transition-duration: 3s;
+    }
+}

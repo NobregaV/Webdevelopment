@@ -1,0 +1,221 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.navigation {
+    display: flex;
+    justify-content: flex-end;
+    list-style-type: none;
+    margin: 10px;
+    padding: 5px;
+
+}
+
+header a {
+    color: black;
+}
+
+header {
+    height: 450px;
+}
+
+img {
+    height: 400px;
+    width: 1600px;
+    opacity: 0.5;
+    
+}
+
+.titel-banner {
+    position: relative;
+    top: -350px;
+    left: 700px;
+    color: rgb(53, 153, 235);
+    font-size: 40px;
+}
+
+.tekst-banner {
+    position: relative;
+    top: -350px;
+    left: 700px;
+    font-size: 12px;
+    color: rgb(53, 153, 235);
+}
+
+.dish {
+    width: 150px;
+    height: 150px;
+    opacity: 1;
+    position: relative;
+    left: 120px;
+    top: -10px;
+
+  
+}
+
+.buy {
+    position: relative;
+    top: -350px;
+    left: 700px;
+    background-color: rgb(29, 26, 26);
+    opacity: 0.5;
+    color: rgb(91, 228, 91);
+    width: 100px;
+    height: 20px;
+    border-style: groove;
+    border-color: rgb(91, 228, 91);
+    
+   
+    
+}
+
+.show {
+    position: relative;
+    top: -350px;
+    left: 700px;
+    background-color:rgb(29, 26, 26);
+    opacity: 0.5;
+    color: rgb(91, 228, 91);
+    border-style: groove;
+    border-color: rgb(91, 228, 91);
+    width: 100px;
+    height: 20px;
+}
+
+body {
+    background-color: #766c6c;
+    font-family: 'lobster', cursive;
+ 
+}
+
+h2 {
+    text-align: center;
+    font-size: 40px;
+
+}
+.menu_populair {
+    display: flex;
+    justify-content: center;
+    margin: 50px;
+    /* width: 900px;
+    padding: 20px;
+    margin: 10px; */
+
+}
+
+.populair1 {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;  
+}
+
+.populair2 {
+    flex-direction: column;
+    margin: 20px;
+  
+}
+
+.populair3 {
+    flex-direction: column;
+    margin: 20px;
+  
+}
+
+.menu_alles {
+    display: flex;
+    align-items: flex-end;
+    width: 100%;
+ margin: 50px;
+
+}
+
+.footer {
+   background-color: rgb(128, 179, 128);
+   color: rgb(53, 153, 235);
+   height: 100px;
+   display: flex;
+   justify-content: space-between;
+   list-style-type: none;
+  
+    
+}
+
+.foto_chef {
+    width: 300px;
+    opacity: 1;
+    position: relative;
+    top: 49px;
+}
+
+a {
+    color: rgb(53, 153, 235);
+    text-decoration-line: none;
+    margin: 20px;
+}
+
+.menu .menu_naam, .menu .menu_prijs, .menu .menu_content {
+    margin: 10px;
+   
+}
+
+
+.menu .menu_prijs {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.menu .menu_naam {
+    display: flex;
+    justify-content: flex-start;
+    position: relative;
+    top: 30px;
+}
+
+.populair1 .populair_prijs {
+    display: flex;
+    justify-content: flex-end;
+   
+}
+
+.populair1 .populair_naam {
+    display: flex;
+    justify-content: flex-start;
+    position: relative;
+    top: 20px;
+}
+
+.populair2 .populair_prijs {
+    display: flex;
+    justify-content: flex-end;
+   
+}
+
+.populair2 .populair_naam {
+    display: flex;
+    justify-content: flex-start;
+    position: relative;
+    top: 20px;
+}
+
+.populair3 .populair_prijs {
+    display: flex;
+    justify-content: flex-end;
+   
+}
+
+.populair3 .populair_naam {
+    display: flex;
+    justify-content: flex-start;
+    position: relative;
+    top: 20px;
+}
+
+.menu {
+  width: 80%;
+
+}
+
+
+
+

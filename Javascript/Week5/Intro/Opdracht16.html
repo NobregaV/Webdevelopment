@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let string1 = "dit is string 1";
+        let string2 = "en dit is string 2";
+        console.log(string1.charAt());
+        console.log(string1.concat(string2));
+        console.log(string2.slice(2, 5));
+        console.log(string1.split(" "))
+        console.log(string2.substr(1, 7));
+
+    </script>
+
+    <h5>Maak een eigen voorbeeld van de volgende functies en licht toe wat de functie doet in het blok:</h5>
+    <ol>
+        <li>charAt()</li>
+        <em>let string1 = "dit is string 1";
+            let string2 = "dit is string 2";
+            console.log (string1.charAt());</em>
+        <p>CharAt pakt de eerste letter (d) van de string1.</p>
+        <li>concat()</li>
+        <em>let string1 = "dit is string 1";
+            let string2 = "dit is string 2";
+            console.log (string1.concat(string2));
+        </em>
+        <p>Concat pakt de gehele eerste string1 en string2 naast elkaar</p>
+        <li>slice()</li>
+        <em>console.log (string2.slice(2, 5));</em>
+        <p>Slice splits je het. In dit geval hakt hij een stuk eruit ussen letter 2 en letter 5. Dus hij laat dan alleen
+            de letters zien tussen letter 2 en letter 5 (di)</p>
+        <li>split()</li>
+        <em>console.log(string1.split(" "))</em>
+        <p>Hierbij heb ik aangegeven om alles wat een spatie heeft te splitsen.</p>
+        <p>output is: <em>["dit", "is", "string", "1"]</em></p>
+        <li>substr()</li>
+        <em>console.log(string2.substr(1, 7));</em>
+        <p>Bij Substr pakt hij de letters tussen 1 en 7 dus in dit geval de 2e letter t/m de 6e letter</p>
+        <p>output is: n dit i</p>
+    </ol>
+
+
+</body>
+
+</html>

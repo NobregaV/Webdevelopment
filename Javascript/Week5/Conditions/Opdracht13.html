@@ -8,28 +8,76 @@
 </head>
 
 <body>
+    <h5>Onderstaande applicatie moet het volgende kunnen doen:</h5>
+    <p>Het vertalen van getallen naar maanden. Bijvoorbeeld, als je het getal 1 invoert dan toon je op het scherm
+        “Januari”.</p>
+    <p>Bijvoorbeeld</p>
+    <p>1 => January</p>
+    <p>2 => February enzovoorts</p>
 
     <h1>Translate Months</h1>
     <input type="number" name="number" id="number">
-    <button>
-        <onclick="translateMonth()">Translate
-    </button>
-    <div id="translatedMonth" </div>
+    <button id="btn" onclick="translateMonth()">Translate</button>
+    <div><span id="translatedMonth" </span></div>
 
-        <h5>Bovenstaande applicatie moet het volgende kunnen doen:</h5>
-        <p>Het vertalen van getallen naar maanden. Bijvoorbeeld, als je het getal 1 invoert dan toon je op het scherm
-            “Januari”.</p>
-        <p>Bijvoorbeeld</p>
-        <p>1 => January</p>
-        <p>2 => February enzovoorts</p>
+    <script>
+        function translateMonth() {
 
-        <script>
-            function translatedMonth() {
-            let number 
+            const number = document.getElementById("number");
+            const translatedMonth = document.getElementById("translatedMonth");
+
+            if (number.value == 1) {
+                translatedMonth.innerHTML = "<h4>Januari</h4>";
             }
-        </script>
+
+            if (number.value == 2) {
+                translatedMonth.innerHTML = "<h4>Februari</h4>";
+            }
+
+            if (number.value == 3) {
+                translatedMonth.innerHTML = "<h4>Maart</h4>";
+            }
+
+            if (number.value == 4) {
+                translatedMonth.innerHTML = "<h4>April</h4>";
+            }
+
+            if (number.value == 5) {
+                translatedMonth.innerHTML = "<h4>Mei</h4>";
+            }
+
+            if (number.value == 6) {
+                translatedMonth.innerHTML = "<h4>Juni</h4>";
+            }
+
+            if (number.value == 7) {
+                translatedMonth.innerHTML = "<h4>Juli</h4>";
+            }
+
+            if (number.value == 8) {
+                translatedMonth.innerHTML = "<h4>Augustus</h4>";
+            }
+
+            if (number.value == 9) {
+                translatedMonth.innerHTML = "<h4>September</h4>";
+            }
+
+            if (number.value == 10) {
+                translatedMonth.innerHTML = "<h4>Oktober</h4>";
+            }
+
+            if (number.value == 11) {
+                translatedMonth.innerHTML = "<h4>November</h4>";
+            }
+
+            if (number.value == 12) {
+                translatedMonth.innerHTML = "<h4>December</h4>";
+            }
+        }
+    </script>
 
 
 </body>
+
 
 </html>

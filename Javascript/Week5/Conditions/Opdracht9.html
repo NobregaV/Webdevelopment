@@ -13,34 +13,27 @@
     <div><span id="label" </span></div>  ​
      ​
     <br><br>
-    <em>​<​input​ ​type​=​"number"​ ​name​=​"number"​ ​id​=​"number"​> 
-             ​<​button​ ​id​=​"btn"​ ​onclick​=​"​checkNumber​()"​>​Button​</​button​> 
-             ​<​div​> 
-                 ​<​span​ ​id​=​"label"​></​span​> 
-                 ​</​div​> </em>
-    <p>Hierboven zie je een input field, een button en een label.</p>
-    <ul>
-        <li>Het input field kun je een getal mee invoeren.</li>
-        <li>De button roept de checkNumber functie aan.</li>
-        <li>De label wordt gebruikt om een tekst te tonen aan de hand van een logica die jij gaat programmeren.</li>
-    </ul>
-    <h5>
+
+    <h5>Maak een nieuwe html bestand aan en copy de volgende code in jouw bestand. Dit is hetzelfde als het begin
+        bestand van opdracht 1.</h5>
+    <h5>Programmeer de volgende logica in de checkNumber functie:</h5>
+    <p>Als het ingevoerde getal is groter dan 5 en is kleiner dan 10, dan toon je op het label: “Het ingevoerde getal is
+        tussen 5 en 10”.</p>
+
+    <script>
+        function checkNumber() {
+            const number = document.getElementById("number");
+            const label = document.getElementById("label");
 
 
-        <script>
-            function checkNumber() {
-                let number = document.getElementById("number").value;
-                let label = document.getElementById("label");
-                // console.log (number) 
+            if (number.value > 5 && number.value < 10) {
+                label.innerHTML = "Het ingevoerde getal is tussen 5 en 10";
 
-                if (number > 5 && number < 10) {
-                    label.innerHTML = "Het ingevoerde getal is tussen 5 en 10";
-
-                }
             }
-        </script>
+        }
+    </script>
 
-         
+     
 
 </body>
 

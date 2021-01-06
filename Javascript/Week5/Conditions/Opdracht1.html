@@ -31,10 +31,10 @@
 
     <script>
         function checkNumber() {
-            let number = document.getElementById("number").value;
-            let label = document.getElementById("label");
+            const number = document.getElementById("number");
+            const label = document.getElementById("label");
             // console.log (number) 
-            if (number == 3) {
+            if (number.value == 3) {
                 label.innerHTML = "Het ingevoerde getal is gelijk aan 3";
             }
         }

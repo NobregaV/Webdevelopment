@@ -12,35 +12,26 @@
     <button id="btn" onclick="checkNumber()">Button</button>
     <div><span id="label" </span></div>  ​
      ​
-    <br><br>
-    <em>​<​input​ ​type​=​"number"​ ​name​=​"number"​ ​id​=​"number"​> 
-             ​<​button​ ​id​=​"btn"​ ​onclick​=​"​checkNumber​()"​>​Button​</​button​> 
-             ​<​div​> 
-                 ​<​span​ ​id​=​"label"​></​span​> 
-                 ​</​div​> </em>
-    <p>Hierboven zie je een input field, een button en een label.</p>
-    <ul>
-        <li>Het input field kun je een getal mee invoeren.</li>
-        <li>De button roept de checkNumber functie aan.</li>
-        <li>De label wordt gebruikt om een tekst te tonen aan de hand van een logica die jij gaat programmeren.</li>
-    </ul>
-    <h5>
+    <br>
 
+    <h5>Deze opdracht is een uitbreiding van opdracht 7. Programmeer de volgende logica in de checkNumber functie:</h5>
+    <p>Als het ingevoerde getal is gelijk aan 13 of is groter dan 13 en het ingevoerde getal is gelijk aan 20 of kleiner
+        dan 20, dan toon je op het label: “Het ingevoerde getal is gelijk aan 11 of groter dan 11 en is gelijk aan 20 of
+        kleiner dan 20.</p>
+    <script>
+        function checkNumber() {
+            const number = document.getElementById("number");
+            const label = document.getElementById("label");
+            // console.log (number) 
 
-        <script>
-            function checkNumber() {
-                let number = document.getElementById("number").value;
-                let label = document.getElementById("label");
-                // console.log (number) 
+            if (number.value >= 13 && number.value <= 20) {
+                label.innerHTML = "Het ingevoerde getal is gelijk aan 13 of groter dan 13 en gelijk aan 20 of kleiner dan 20";
 
-                if (number >= 13 && number <= 20) {
-                    label.innerHTML = "Het ingevoerde getal is gelijk aan 13 of groter dan 13 en gelijk aan 20 of kleiner dan 20";
-
-                }
             }
-        </script>
+        }
+    </script>
 
-         
+     
 
 </body>
 

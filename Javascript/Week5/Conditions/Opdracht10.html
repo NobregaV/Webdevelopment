@@ -24,35 +24,23 @@
         <li>De button roept de checkNumber functie aan.</li>
         <li>De label wordt gebruikt om een tekst te tonen aan de hand van een logica die jij gaat programmeren.</li>
     </ul>
-    <h5>Programmeer de volgende logica in de checkNumber functie.</h5>
-    <p>Als het ingevoerde getal is gelijk aan 3, dan toon je op het label: “Het ingevoerde getal is gelijk aan 3”.
-    </p>
+    <h5>
 
 
-    <script>
-        function checkNumber() {
-            let number = document.getElementById("number").value;
-            let label = document.getElementById("label");
-            // console.log (number) 
-            if (number === 3) {
-                label.innerHTML = "Het ingevoerde getal is gelijk aan 3";
+        <script>
+            function checkNumber() {
+                let number = document.getElementById("number").value;
+                let label = document.getElementById("label");
+                // console.log (number) 
+
+                if (number >= 13 && number <= 20) {
+                    label.innerHTML = "Het ingevoerde getal is gelijk aan 13 of groter dan 13 en gelijk aan 20 of kleiner dan 20";
+
+                }
             }
+        </script>
 
-            else if (number >= 11) {
-                label.innerHTML = "Het ingevoerde getal is gelijk aan 11 of groter dan 11";
-            
-            }
-            
-            else if (number > 4) {
-                label.innerHTML = "Het ingevoerde getal is groter dan 4";
-            }
-
-           
-           
-        }
-    </script>
-
-     
+         
 
 </body>
 

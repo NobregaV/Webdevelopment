@@ -34,21 +34,29 @@
             let number = document.getElementById("number").value;
             let label = document.getElementById("label");
             // console.log (number) 
+
+
             if (number === 3) {
                 label.innerHTML = "Het ingevoerde getal is gelijk aan 3";
             }
 
+            // else if (number < 3) {
+            //     label.innerHTML = "Het ingevoerde getal is kleiner dan 3"
+            // }
+
             else if (number >= 11) {
                 label.innerHTML = "Het ingevoerde getal is gelijk aan 11 of groter dan 11";
-            
+
             }
-            
+
             else if (number > 4) {
                 label.innerHTML = "Het ingevoerde getal is groter dan 4";
             }
 
-           
-           
+            else {
+                label.innerHTML = "Het ingevoerde getal is kleiner dan 3"
+            }
+
         }
     </script>
 

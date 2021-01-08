@@ -116,28 +116,57 @@
     </div>
 
     <script>
-        const words = ["Together", "Teamwork", "Scrum", "Individual", "Moments", "Like", "Dislike",
-            "Money", "Important"];
+        const words = [
+            "Together",
+            "Teamwork",
+            "Scrum",
+            "Individual",
+            "Moments",
+            "Like",
+            "Dislike",
+            "Money",
+            "Important"
+        ];
+
         const guessingWord = words[Math.round(Math.random() * 8)];
         console.log(guessingWord);
 
-        // VARIABELE
+        // VARIABELEN
         let count = document.getElementById("count").innerHTML;
+        // console.log(count);
+
         const levens = 3;
         const gewonnen = "You have guessed the correct word!";
+        const verkeerd = "You have guessed the wrong word";
         const verloren = "Game Over!";
-        
+
+        // console.log(gewonnen);
+        // console.log(verloren);
+
         function guess(obj) {
-            let word = obj.querySelector('span').innerText;
-           
-            if (count == levens) {
-                alert(verloren)
-                location.reload();
+        let words = obj.querySelector('span').innerHTML;
+
+            if
+                (words == guessingWord) {
+                alert(gewonnen);
+            }
+
+            else {
+                count++
+                document.getElementById("count").innerHTML = count;
+                alert(verkeerd);
+
+                if (count == levens) {
+                    alert(verloren);
+                    location.reload();
+                }
             }
 
         }
 
-         // Variabelen vasstellen
+
+
+            // Variabelen vasstellen
             // value geven aan variabele
             // variable aanmaken count: met 3 keer klikken
             // condition geven

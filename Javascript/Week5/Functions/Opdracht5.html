@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1>Check Name</h1>
+    <input type="text" name="naam" id="naam">
+    <button id="btn" onclick="checkname()">Check Name</button>
+    <div><span id="checkedName" </span></div>
+
+    <script>
+        const namen = [
+            "John",
+            "Olly",
+            "Mo",
+            "Hendrik",
+            "Tony",
+        ];
+
+        function checkname() {
+            const inputNaam = document.getElementById("naam");
+            const checkedName = document.getElementById("checkedName");
+
+            if (namen == inputNaam) {
+                checkedName.innerHTML = "<h5>Dit is een bekende van ons.</h5>";
+            }
+
+            else  {
+                checkedName.innerHTML ="<h5>Onbekend in ons systeem!</h5>";
+            }
+           
+        }
+
+
+
+    </script>
+</body>
+
+</html>

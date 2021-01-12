@@ -11,6 +11,9 @@
     th,
     td {
         border: 1px solid black;
+        
+    
+        
     }
 </style>
 
@@ -193,32 +196,32 @@
         </tr>
         <tr>
             <td>Jan</td>
-            <td id="gemiddeldeBetaJan[1]">0</td>
-            <td id="gemiddeldeTalenJan[2]">0</td>
+            <td id="gemiddeldeBetaJan">0</td>
+            <td id="gemiddeldeTalenJan">0</td>
             <td id="volgendeKlasJan">over</td>
         </tr>
         <tr>
             <td>Kim Sing</td>
-            <td id="gemiddeldeBetaKimSing[1]">0</td>
-            <td id="gemiddeldeTalenKimSing[2]">0</td>
+            <td id="gemiddeldeBetaKimSing">0</td>
+            <td id="gemiddeldeTalenKimSing">0</td>
             <td id="volgendeKlasKimSing">over</td>
         </tr>
         <tr>
             <td>Samantha</td>
-            <td id="gemiddeldeBetaSamantha[1]">0</td>
-            <td id="gemiddeldeTalenSamantha[2]">0</td>
+            <td id="gemiddeldeBetaSamantha">0</td>
+            <td id="gemiddeldeTalenSamantha">0</td>
             <td id="volgendeKlasSamantha">over</td>
         </tr>
         <tr>
             <td>Joyce</td>
-            <td id="gemiddeldeBetaJoyce[1]">0</td>
-            <td id="gemiddeldeTalenJoyce[2]">0</td>
+            <td id="gemiddeldeBetaJoyce">0</td>
+            <td id="gemiddeldeTalenJoyce">0</td>
             <td id="volgendeKlasJoyce">over</td>
         </tr>
         <tr>
             <td>Gareth</td>
-            <td id="gemiddeldeBetaGareth[1]">0</td>
-            <td id="gemiddeldeTalenGareth[2]">0</td>
+            <td id="gemiddeldeBetaGareth">0</td>
+            <td id="gemiddeldeTalenGareth">0</td>
             <td id="volgendeKlasGareth">over</td>
         </tr>
     </table>
@@ -231,13 +234,23 @@
             let cijferNederlandsWillem = document.getElementById("nederlands[1]").innerHTML;
             let cijferEngelsWillem = document.getElementById("engels[1]").innerHTML;
 
-            console.log(parseInt(cijferWiskundeWillem));
-            console.log(parseInt(cijferNatuurkundeWillem));
-            console.log(parseInt(cijferNederlandsWillem));
-            console.log(parseInt(cijferEngelsWillem));
+            // console.log(parseInt(cijferWiskundeWillem));
+            // console.log(parseInt(cijferNatuurkundeWillem));
+            // console.log(parseInt(cijferNederlandsWillem));
+            // console.log(parseInt(cijferEngelsWillem));
+
+            let totaalBetaWillem = parseInt(cijferWiskundeWillem) + parseInt(cijferNatuurkundeWillem);
+            let gemiddeldeBetaWillem = totaalBetaWillem / 2;
+            console.log(parseInt(gemiddeldeBetaWillem));
+
+            let totaalTalenWillem = parseInt(cijferNederlandsWillem) + parseInt(cijferEngelsWillem);
+            let gemiddeldeTalenWillem = totaalTalenWillem / 2;
+            console.log(parseInt(gemiddeldeTalenWillem));
 
         }
+
         cijfersWillem();
+
 
         // Cijfers Jan
 
@@ -246,6 +259,19 @@
             let cijferNatuurkundeJan = document.getElementById("natuurkunde[2]").innerHTML;
             let cijferNederlandsJan = document.getElementById("nederlands[2]").innerHTML;
             let cijferEngelsJan = document.getElementById("engels[2]").innerHTML;
+
+            // console.log(parseInt(cijferWiskundeJan));
+            // console.log(parseInt(cijferNatuurkundeJan));
+            // console.log(parseInt(cijferNederlandsJan));
+            // console.log(parseInt(cijferEngelsJan);
+
+            let totaalBetaJan = parseInt(cijferWiskundeJan) + parseInt(cijferNatuurkundeJan);
+            let gemiddeldeBetaJan = totaalBetaJan / 2;
+            console.log(parseInt(gemiddeldeBetaJan));
+
+            let totaalTalenJan = parseInt(cijferNederlandsJan) + parseInt(cijferEngelsJan);
+            let gemiddeldeTalenJan = totaalTalenJan / 2;
+            console.log(parseInt(gemiddeldeTalenJan));
 
 
         }
@@ -258,6 +284,20 @@
             let cijferNatuurkundeKimSing = document.getElementById("natuurkunde[3]").innerHTML;
             let cijferNederlandsKimSing = document.getElementById("nederlands[3]").innerHTML;
             let cijferEngelsKimSing = document.getElementById("engels[3]").innerHTML;
+
+            // console.log(parseInt(cijferWiskundeKimSing));
+            // console.log(parseInt(cijferNatuurkundeKimSing));
+            // console.log(parseInt(cijferNederlandsKimSing));
+            // console.log(parseInt(cijferEngelsKimSing);
+
+            let totaalBetaKimSing = parseInt(cijferWiskundeKimSing) + parseInt(cijferNatuurkundeKimSing);
+            let gemiddeldeBetaKimSing = totaalBetaKimSing / 2;
+            console.log(parseInt(gemiddeldeBetaKimSing));
+
+            let totaalTalenKimSing = parseInt(cijferNederlandsKimSing) + parseInt(cijferEngelsKimSing);
+            let gemiddeldeTalenKimSing = totaalTalenKimSing / 2;
+            console.log(parseInt(gemiddeldeTalenKimSing));
+
         }
         cijfersKimSing();
 
@@ -270,6 +310,19 @@
             let cijferNederlandsSamantha = document.getElementById("nederlands[4]").innerHTML;
             let cijferEngelsSamantha = document.getElementById("engels[4]").innerHTML;
 
+            // console.log(parseInt(cijferWiskundeSamantha));
+            // console.log(parseInt(cijferNatuurkundeSamantha));
+            // console.log(parseInt(cijferNederlandsSamantha));
+            // console.log(parseInt(cijferEngelsSamantha);
+
+            let totaalBetaSamantha = parseInt(cijferWiskundeSamantha) + parseInt(cijferNatuurkundeSamantha);
+            let gemiddeldeBetaSamantha = totaalBetaSamantha / 2;
+            console.log(parseInt(gemiddeldeBetaSamantha));
+
+            let totaalTalenSamantha = parseInt(cijferNederlandsSamantha) + parseInt(cijferEngelsSamantha);
+            let gemiddeldeTalenSamantha = totaalTalenSamantha / 2;
+            console.log(parseInt(gemiddeldeTalenSamantha));
+
         }
         cijfersSamantha();
 
@@ -279,6 +332,19 @@
             let cijferNatuurkundeJoyce = document.getElementById("natuurkunde[5]").innerHTML;
             let cijferNederlandsJoyce = document.getElementById("nederlands[5]").innerHTML;
             let cijferEngelsJoyce = document.getElementById("engels[5]").innerHTML;
+
+            // console.log(parseInt(cijferWiskundeJoyce));
+            // console.log(parseInt(cijferNatuurkundeJoyce));
+            // console.log(parseInt(cijferNederlandsJoyce));
+            // console.log(parseInt(cijferEngelsJoyce);
+
+            let totaalBetaJoyce = parseInt(cijferWiskundeJoyce) + parseInt(cijferNatuurkundeJoyce);
+            let gemiddeldeBetaJoyce = totaalBetaJoyce / 2;
+            console.log(parseInt(gemiddeldeBetaJoyce));
+
+            let totaalTalenJoyce = parseInt(cijferNederlandsJoyce) + parseInt(cijferEngelsJoyce);
+            let gemiddeldeTalenJoyce = totaalTalenJoyce / 2;
+            console.log(parseInt(gemiddeldeTalenJoyce));
 
         }
         cijfersJoyce();
@@ -291,17 +357,38 @@
             let cijferNederlandsGareth = document.getElementById("nederlands[6]").innerHTML;
             let cijferEngelsGareth = document.getElementById("engels[6]").innerHTML;
 
+            // console.log(parseInt(cijferWiskundeGareth));
+            // console.log(parseInt(cijferNatuurkundeGareth));
+            // console.log(parseInt(cijferNederlandsGareth));
+            // console.log(parseInt(cijferEngelsGareth);
+
+            let totaalBetaGareth = parseInt(cijferWiskundeGareth) + parseInt(cijferNatuurkundeGareth);
+            let gemiddeldeBetaGareth = totaalBetaGareth / 2;
+            console.log(parseInt(gemiddeldeBetaGareth));
+
+            let totaalTalenGareth = parseInt(cijferNederlandsGareth) + parseInt(cijferEngelsGareth);
+            let gemiddeldeTalenGareth = totaalTalenGareth / 2;
+            console.log(parseInt(gemiddeldeTalenGareth));
+
         }
         cijfersGareth();
 
 
+        // Resultaat gemiddelde kolom
 
-        function resultaatGemiddelde() {
-            let gemiddeldeBetaWilem = document.getElementById("gemiddeldeBetaWillem").innerHTML;
+        // function resultaatGemiddelde() {
 
-        }
+        //     let talenWillem = document.getElementById("gemiddeldeBetaWillem").innerHTML;
+        //     console.log(talenWillem);
 
-        resultaatGemiddelde();
+
+
+        // }
+
+        // resultaatGemiddelde();
+
+
+
 
     </script>
 </body>

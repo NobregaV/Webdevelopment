@@ -14,38 +14,23 @@
     <button id="btn" onclick="checkName()">Check Name</button>
     <div><span id="checkedName" </span></div>
 
-    <h1>Random Name</h1>
-    <button id="rbtn" onclick="randomName()">Random Name</button>
-
     <script>
 
 
+
         const checkedName = document.getElementById("checkedName");
-        const randomName = () => {
-            const namen = [
-                "John",
-                "Olly",
-                "Mo",
-                "Hendrik",
-                "Tony",
-                "Irus",
-                "Jan",
-                "Peter",
-            ];
 
-            const randomNaam = namen[Math.round(Math.random() * 8)];
-            console.log(randomNaam);
-
-            checkedName.innerHTML = "Dit is " + randomNaam + " en " +randomNaam + " is een bekende van ons";
-
-
-
-        }
 
         // console.log(namen);
 
-        function checkName() {
-            const inputNaam = document.getElementById("naam").value;
+        // function checkName() {
+           
+            
+        
+        // }
+       
+const checkName = (test) => {
+    const inputNaam = document.getElementById("naam").value;
             // console.log(inputNaam);
             const namen = [
                 "John",
@@ -58,9 +43,9 @@
                 "Peter",
             ];
 
-            const randomNaam = namen[Math.round(Math.random() * 8)];
-            console.log(randomNaam);
-
+            // console.log(namen[1]);
+            const randomNaam = namen[Math.round ( Math.random() * 8 ) ];
+        
 
             if (namen.includes(inputNaam)) {
                 checkedName.innerHTML = "<h5>Dit is een bekende van ons.</h5>";
@@ -70,10 +55,7 @@
                 checkedName.innerHTML = "<h5>Onbekend in ons systeem!</h5>";
 
             }
-
-        }
-
-
+}
 
     </script>
 </body>

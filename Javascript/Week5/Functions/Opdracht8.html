@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    table,
+    th,
+    td {
+        border: 1px solid black;
+    }
+</style>
+
+<body>
+    <!-- 
+        STap 1 Alvast 1 tabel maken voor Wiskunde
+        Stap 2 Functie toevoegen aan tabel
+        Functies: de waarde uit het tabel halen
+
+        Stap 3 Nog een tabel aanmaken voor Natuurkunde
+        Kopieren en plakken van tabel 1
+        Stap 4 Functie toevoegen => waarde uit het tabel halen
+
+        Stap 5 Nog een tabel aanmaken voor het gemiddelde van betavakken
+        Stap 6 Functie toevoegen: gemiddelde van tabel wiskunde en natuurkunde
+        Functie moet waarde van wiskunde optellen met waarde van natuurkunde en dat delen door (in dit geval) 2.
+        functie Waarde in dit tabel toevoegen en laten zien.
+-->
+    <!-- Tabel Wiskunde -->
+    <h1>Wiskunde</h1>
+
+    <table>
+
+        <tr>
+            <th>Naam</th>
+
+            <th>Cijfer</th>
+        </tr>
+        <tr>
+            <td>Willem</td>
+            <td id="wiskunde[1]">6</td>
+        </tr>
+        <tr>
+            <td>Jan</td>
+            <td id="wiskunde[2]">5</td>
+        </tr>
+        <tr>
+            <td>Kim Sing</td>
+            <td id="wiskunde[3]">7</td>
+        </tr>
+        <tr>
+            <td>Samantha</td>
+            <td id="wiskunde[4]">8</td>
+        </tr>
+        <tr>
+            <td>Joyce</td>
+            <td id="wiskunde[5]">10</td>
+        </tr>
+        <tr>
+            <td>Gareth</td>
+            <td id="wiskunde[6]">2</td>
+        </tr>
+    </table>
+
+    <!-- Tabel Natuurkunde -->
+
+    <h1>Natuurkunde</h1>
+
+    <table>
+
+        <tr>
+            <th>Naam</th>
+
+            <th>Cijfer</th>
+        </tr>
+        <tr>
+            <td>Willem</td>
+            <td id="natuurkunde[1]">4</td>
+        </tr>
+        <tr>
+            <td>Jan</td>
+            <td id="natuurkunde[2]">8</td>
+        </tr>
+        <tr>
+            <td>Kim Sing</td>
+            <td id="natuurkunde[3]">9</td>
+        </tr>
+        <tr>
+            <td>Samantha</td>
+            <td id="natuurkunde[4]">5</td>
+        </tr>
+        <tr>
+            <td>Joyce</td>
+            <td id="natuurkunde[5]">6</td>
+        </tr>
+        <tr>
+            <td>Gareth</td>
+            <td id="natuurkunde[6]">8</td>
+        </tr>
+    </table>
+
+    <!-- Tabel Nederlands -->
+
+    <h1>Nederlands</h1>
+    <table>
+        <tr>
+            <th>Naam</th>
+
+            <th>Cijfer</th>
+        </tr>
+        <tr>
+            <td>Willem</td>
+            <td id="nederlands[1]">5</td>
+        </tr>
+        <tr>
+            <td>Jan</td>
+            <td id="nederlands[2]">10</td>
+        </tr>
+        <tr>
+            <td>Kim Sing</td>
+            <td id="nederlands[3]">5</td>
+        </tr>
+        <tr>
+            <td>Samantha</td>
+            <td id="nederlands[4]">6</td>
+        </tr>
+        <tr>
+            <td>Joyce</td>
+            <td id="nederlands[5]">3</td>
+        </tr>
+        <tr>
+            <td>Gareth</td>
+            <td id="nederlands[6]">7</td>
+        </tr>
+    </table>
+
+    <!-- Tabel Engels -->
+
+    <h1>Engels</h1>
+    <table>
+        <tr>
+            <th>Naam</th>
+
+            <th>Cijfer</th>
+        </tr>
+        <tr>
+            <td>Willem</td>
+            <td id="engels[1]">8</td>
+        </tr>
+        <tr>
+            <td>Jan</td>
+            <td id="engels[2]">9</td>
+        </tr>
+        <tr>
+            <td>Kim Sing</td>
+            <td id="engels[3]">7</td>
+        </tr>
+        <tr>
+            <td>Samantha</td>
+            <td id="engels[4]">6</td>
+        </tr>
+        <tr>
+            <td>Joyce</td>
+            <td id="engels[5]">5</td>
+        </tr>
+        <tr>
+            <td>Gareth</td>
+            <td id="engels[6]">9</td>
+        </tr>
+    </table>
+
+    <!-- Tabel gemiddelde resultaat -->
+
+    <h1>Resultaat gemiddelde</h1>
+
+    <table>
+
+        <tr>
+            <th>Naam</th>
+            <th>Talen</th>
+            <th>Betavakken</th>
+            <th>Volgende klas? >6.5</th>
+        </tr>
+        <tr>
+            <td>Willem</td>
+            <td id="gemiddeldeBetaWillem">0</td>
+            <td id="gemiddeldeTalenWillem">0</td>
+            <td id="volgendeKlasWillem">over</td>
+
+        </tr>
+        <tr>
+            <td>Jan</td>
+            <td id="gemiddeldeBetaJan[1]">0</td>
+            <td id="gemiddeldeTalenJan[2]">0</td>
+            <td id="volgendeKlasJan">over</td>
+        </tr>
+        <tr>
+            <td>Kim Sing</td>
+            <td id="gemiddeldeBetaKimSing[1]">0</td>
+            <td id="gemiddeldeTalenKimSing[2]">0</td>
+            <td id="volgendeKlasKimSing">over</td>
+        </tr>
+        <tr>
+            <td>Samantha</td>
+            <td id="gemiddeldeBetaSamantha[1]">0</td>
+            <td id="gemiddeldeTalenSamantha[2]">0</td>
+            <td id="volgendeKlasSamantha">over</td>
+        </tr>
+        <tr>
+            <td>Joyce</td>
+            <td id="gemiddeldeBetaJoyce[1]">0</td>
+            <td id="gemiddeldeTalenJoyce[2]">0</td>
+            <td id="volgendeKlasJoyce">over</td>
+        </tr>
+        <tr>
+            <td>Gareth</td>
+            <td id="gemiddeldeBetaGareth[1]">0</td>
+            <td id="gemiddeldeTalenGareth[2]">0</td>
+            <td id="volgendeKlasGareth">over</td>
+        </tr>
+    </table>
+
+    <script>
+        // Cijfers Willem
+        function cijfersWillem() {
+            let cijferWiskundeWillem = document.getElementById("wiskunde[1]").innerHTML;
+            let cijferNatuurkundeWillem = document.getElementById("natuurkunde[1]").innerHTML;
+            let cijferNederlandsWillem = document.getElementById("nederlands[1]").innerHTML;
+            let cijferEngelsWillem = document.getElementById("engels[1]").innerHTML;
+
+            console.log(parseInt(cijferWiskundeWillem));
+            console.log(parseInt(cijferNatuurkundeWillem));
+            console.log(parseInt(cijferNederlandsWillem));
+            console.log(parseInt(cijferEngelsWillem));
+
+        }
+        cijfersWillem();
+
+        // Cijfers Jan
+
+        function cijfersJan() {
+            let cijferWiskundeJan = document.getElementById("wiskunde[2]").innerHTML;
+            let cijferNatuurkundeJan = document.getElementById("natuurkunde[2]").innerHTML;
+            let cijferNederlandsJan = document.getElementById("nederlands[2]").innerHTML;
+            let cijferEngelsJan = document.getElementById("engels[2]").innerHTML;
+
+
+        }
+        cijfersJan();
+
+        // Cijfers Kim Sing
+
+        function cijfersKimSing() {
+            let cijferWiskundeKimSing = document.getElementById("wiskunde[3]").innerHTML;
+            let cijferNatuurkundeKimSing = document.getElementById("natuurkunde[3]").innerHTML;
+            let cijferNederlandsKimSing = document.getElementById("nederlands[3]").innerHTML;
+            let cijferEngelsKimSing = document.getElementById("engels[3]").innerHTML;
+        }
+        cijfersKimSing();
+
+
+        // Cijfers Samantha
+
+        function cijfersSamantha() {
+            let cijferWiskundeSamantha = document.getElementById("wiskunde[4]").innerHTML;
+            let cijferNatuurkundeSamantha = document.getElementById("natuurkunde[4]").innerHTML;
+            let cijferNederlandsSamantha = document.getElementById("nederlands[4]").innerHTML;
+            let cijferEngelsSamantha = document.getElementById("engels[4]").innerHTML;
+
+        }
+        cijfersSamantha();
+
+        // Cijfers Joyce
+        function cijfersJoyce() {
+            let cijferWiskundeJoyce = document.getElementById("wiskunde[5]").innerHTML;
+            let cijferNatuurkundeJoyce = document.getElementById("natuurkunde[5]").innerHTML;
+            let cijferNederlandsJoyce = document.getElementById("nederlands[5]").innerHTML;
+            let cijferEngelsJoyce = document.getElementById("engels[5]").innerHTML;
+
+        }
+        cijfersJoyce();
+
+
+        // Cijfers Gareth
+        function cijfersGareth() {
+            let cijferWiskundeGareth = document.getElementById("wiskunde[6]").innerHTML;
+            let cijferNatuurkundeGareth = document.getElementById("natuurkunde[6]").innerHTML;
+            let cijferNederlandsGareth = document.getElementById("nederlands[6]").innerHTML;
+            let cijferEngelsGareth = document.getElementById("engels[6]").innerHTML;
+
+        }
+        cijfersGareth();
+
+
+
+        function resultaatGemiddelde() {
+            let gemiddeldeBetaWilem = document.getElementById("gemiddeldeBetaWillem").innerHTML;
+
+        }
+
+        resultaatGemiddelde();
+
+    </script>
+</body>
+
+</html>

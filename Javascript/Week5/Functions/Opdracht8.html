@@ -11,8 +11,19 @@
     th,
     td {
         border: 1px solid black;
+        border-collapse: collapse;
+        width: 20%;
+        padding: 5px;
+    }
 
+    section {
+        display: flex;
+        justify-content: space-around;
+    }
 
+    .resultaat {
+        display: flex;
+        justify-content: flex-end;
     }
 </style>
 
@@ -32,198 +43,217 @@
         functie Waarde in dit tabel toevoegen en laten zien.
 -->
     <!-- Tabel Wiskunde -->
-    <h1>Wiskunde</h1>
+    <section>
 
-    <table>
+        <div class="wiskunde">
+            <h1>Wiskunde</h1>
+            <table>
 
-        <tr>
-            <th>Naam</th>
-            <th>Cijfer</th>
-        </tr>
-        <tr>
-            <td>Willem</td>
-            <td id="wiskunde[1]">7</td>
-        </tr>
-        <tr>
-            <td>Jan</td>
-            <td id="wiskunde[2]">5</td>
-        </tr>
-        <tr>
-            <td>Kim Sing</td>
-            <td id="wiskunde[3]">7</td>
-        </tr>
-        <tr>
-            <td>Samantha</td>
-            <td id="wiskunde[4]">8</td>
-        </tr>
-        <tr>
-            <td>Joyce</td>
-            <td id="wiskunde[5]">10</td>
-        </tr>
-        <tr>
-            <td>Gareth</td>
-            <td id="wiskunde[6]">2</td>
-        </tr>
-    </table>
+                <tr>
+                    <th>Naam</th>
+                    <th>Cijfer</th>
+                </tr>
+                <tr>
+                    <td>Willem</td>
+                    <td onclick="test(t1)" id="wiskunde[1]">7</td>
 
-    <!-- Tabel Natuurkunde -->
+                </tr>
+                <tr>
+                    <td>Jan</td>
+                    <td id="wiskunde[2]">5</td>
+                </tr>
+                <tr>
+                    <td>Kim Sing</td>
+                    <td id="wiskunde[3]">7</td>
+                </tr>
+                <tr>
+                    <td>Samantha</td>
+                    <td id="wiskunde[4]">8</td>
+                </tr>
+                <tr>
+                    <td>Joyce</td>
+                    <td id="wiskunde[5]">10</td>
+                </tr>
+                <tr>
+                    <td>Gareth</td>
+                    <td id="wiskunde[6]">2</td>
+                </tr>
+            </table>
+        </div>
+        <!-- Einde wiskunde -->
 
-    <h1>Natuurkunde</h1>
+        <!-- Tabel Natuurkunde -->
 
-    <table>
+        <div class="natuurkunde">
+            <h1>Natuurkunde</h1>
 
-        <tr>
-            <th>Naam</th>
+            <table>
 
-            <th>Cijfer</th>
-        </tr>
-        <tr>
-            <td>Willem</td>
-            <td id="natuurkunde[1]">4</td>
-        </tr>
-        <tr>
-            <td>Jan</td>
-            <td id="natuurkunde[2]">8</td>
-        </tr>
-        <tr>
-            <td>Kim Sing</td>
-            <td id="natuurkunde[3]">9</td>
-        </tr>
-        <tr>
-            <td>Samantha</td>
-            <td id="natuurkunde[4]">5</td>
-        </tr>
-        <tr>
-            <td>Joyce</td>
-            <td id="natuurkunde[5]">6</td>
-        </tr>
-        <tr>
-            <td>Gareth</td>
-            <td id="natuurkunde[6]">8</td>
-        </tr>
-    </table>
+                <tr>
+                    <th>Naam</th>
 
-    <!-- Tabel Nederlands -->
+                    <th>Cijfer</th>
+                </tr>
+                <tr>
+                    <td>Willem</td>
+                    <td id="natuurkunde[1]">4</td>
+                </tr>
+                <tr>
+                    <td>Jan</td>
+                    <td id="natuurkunde[2]">8</td>
+                </tr>
+                <tr>
+                    <td>Kim Sing</td>
+                    <td id="natuurkunde[3]">9</td>
+                </tr>
+                <tr>
+                    <td>Samantha</td>
+                    <td id="natuurkunde[4]">5</td>
+                </tr>
+                <tr>
+                    <td>Joyce</td>
+                    <td id="natuurkunde[5]">6</td>
+                </tr>
+                <tr>
+                    <td>Gareth</td>
+                    <td id="natuurkunde[6]">8</td>
+                </tr>
+            </table>
 
-    <h1>Nederlands</h1>
-    <table>
-        <tr>
-            <th>Naam</th>
+        </div>
+        <!-- Einde natuurkunde -->
 
-            <th>Cijfer</th>
-        </tr>
-        <tr>
-            <td>Willem</td>
-            <td id="nederlands[1]">5</td>
-        </tr>
-        <tr>
-            <td>Jan</td>
-            <td id="nederlands[2]">10</td>
-        </tr>
-        <tr>
-            <td>Kim Sing</td>
-            <td id="nederlands[3]">5</td>
-        </tr>
-        <tr>
-            <td>Samantha</td>
-            <td id="nederlands[4]">6</td>
-        </tr>
-        <tr>
-            <td>Joyce</td>
-            <td id="nederlands[5]">3</td>
-        </tr>
-        <tr>
-            <td>Gareth</td>
-            <td id="nederlands[6]">7</td>
-        </tr>
-    </table>
+        <!-- Tabel Nederlands -->
 
-    <!-- Tabel Engels -->
+        <div class="nederlands">
+            <h1>Nederlands</h1>
+            <table>
+                <tr>
+                    <th>Naam</th>
 
-    <h1>Engels</h1>
-    <table>
-        <tr>
-            <th>Naam</th>
+                    <th>Cijfer</th>
+                </tr>
+                <tr>
+                    <td>Willem</td>
+                    <td id="nederlands[1]">5</td>
+                </tr>
+                <tr>
+                    <td>Jan</td>
+                    <td id="nederlands[2]">10</td>
+                </tr>
+                <tr>
+                    <td>Kim Sing</td>
+                    <td id="nederlands[3]">5</td>
+                </tr>
+                <tr>
+                    <td>Samantha</td>
+                    <td id="nederlands[4]">6</td>
+                </tr>
+                <tr>
+                    <td>Joyce</td>
+                    <td id="nederlands[5]">3</td>
+                </tr>
+                <tr>
+                    <td>Gareth</td>
+                    <td id="nederlands[6]">7</td>
+                </tr>
+            </table>
 
-            <th>Cijfer</th>
-        </tr>
-        <tr>
-            <td>Willem</td>
-            <td id="engels[1]">8</td>
-        </tr>
-        <tr>
-            <td>Jan</td>
-            <td id="engels[2]">9</td>
-        </tr>
-        <tr>
-            <td>Kim Sing</td>
-            <td id="engels[3]">7</td>
-        </tr>
-        <tr>
-            <td>Samantha</td>
-            <td id="engels[4]">6</td>
-        </tr>
-        <tr>
-            <td>Joyce</td>
-            <td id="engels[5]">5</td>
-        </tr>
-        <tr>
-            <td>Gareth</td>
-            <td id="engels[6]">9</td>
-        </tr>
-    </table>
+        </div>
+        <!-- Einde nederlands -->
+
+        <!-- Tabel Engels -->
+
+        <div class="engels">
+            <h1>Engels</h1>
+            <table>
+                <tr>
+                    <th>Naam</th>
+
+                    <th>Cijfer</th>
+                </tr>
+                <tr>
+                    <td>Willem</td>
+                    <td id="engels[1]">8</td>
+                </tr>
+                <tr>
+                    <td>Jan</td>
+                    <td id="engels[2]">9</td>
+                </tr>
+                <tr>
+                    <td>Kim Sing</td>
+                    <td id="engels[3]">7</td>
+                </tr>
+                <tr>
+                    <td>Samantha</td>
+                    <td id="engels[4]">6</td>
+                </tr>
+                <tr>
+                    <td>Joyce</td>
+                    <td id="engels[5]">5</td>
+                </tr>
+                <tr>
+                    <td>Gareth</td>
+                    <td id="engels[6]">9</td>
+                </tr>
+            </table>
+        </div>
+    </section>
+    <br>
+    <!-- Einde Engels -->
 
     <!-- Tabel gemiddelde resultaat -->
 
-    <h1>Resultaat gemiddelde</h1>
+    <div class"resultaat">
+        <h1>Resultaat gemiddelde</h1>
+        <table>
 
-    <table>
+            <tr>
+                <th>Naam</th>
+                <th>Talen</th>
+                <th>Betavakken</th>
+                <th>Volgende klas? >6.5</th>
+            </tr>
+            <tr>
+                <td>Willem</td>
+                <td id="gemiddeldeTalenWillem">0</td>
+                <td id="gemiddeldeBetaWillem">0</td>
+                <td id="volgendeKlasWillem">over</td>
 
-        <tr>
-            <th>Naam</th>
-            <th>Talen</th>
-            <th>Betavakken</th>
-            <th>Volgende klas? >6.5</th>
-        </tr>
-        <tr>
-            <td>Willem</td>
-            <td id="gemiddeldeTalenWillem">0</td>
-            <td id="gemiddeldeBetaWillem">0</td>
-            <td id="volgendeKlasWillem">over</td>
+            </tr>
+            <tr>
+                <td>Jan</td>
+                <td id="gemiddeldeTalenJan">0</td>
+                <td id="gemiddeldeBetaJan">0</td>
+                <td id="volgendeKlasJan">over</td>
+            </tr>
+            <tr>
+                <td>Kim Sing</td>
+                <td id="gemiddeldeTalenKimSing">0</td>
+                <td id="gemiddeldeBetaKimSing">0</td>
+                <td id="volgendeKlasKimSing">over</td>
+            </tr>
+            <tr>
+                <td>Samantha</td>
+                <td id="gemiddeldeTalenSamantha">0</td>
+                <td id="gemiddeldeBetaSamantha">0</td>
+                <td id="volgendeKlasSamantha">over</td>
+            </tr>
+            <tr>
+                <td>Joyce</td>
+                <td id="gemiddeldeTalenJoyce">0</td>
+                <td id="gemiddeldeBetaJoyce">0</td>
+                <td id="volgendeKlasJoyce">over</td>
+            </tr>
+            <tr>
+                <td>Gareth</td>
+                <td id="gemiddeldeTalenGareth">0</td>
+                <td id="gemiddeldeBetaGareth">0</td>
+                <td id="volgendeKlasGareth">over</td>
+            </tr>
+        </table>
 
-        </tr>
-        <tr>
-            <td>Jan</td>
-            <td id="gemiddeldeTalenJan">0</td>
-            <td id="gemiddeldeBetaJan">0</td>
-            <td id="volgendeKlasJan">over</td>
-        </tr>
-        <tr>
-            <td>Kim Sing</td>
-            <td id="gemiddeldeTalenKimSing">0</td>
-            <td id="gemiddeldeBetaKimSing">0</td>
-            <td id="volgendeKlasKimSing">over</td>
-        </tr>
-        <tr>
-            <td>Samantha</td>
-            <td id="gemiddeldeTalenSamantha">0</td>
-            <td id="gemiddeldeBetaSamantha">0</td>
-            <td id="volgendeKlasSamantha">over</td>
-        </tr>
-        <tr>
-            <td>Joyce</td>
-            <td id="gemiddeldeTalenJoyce">0</td>
-            <td id="gemiddeldeBetaJoyce">0</td>
-            <td id="volgendeKlasJoyce">over</td>
-        </tr>
-        <tr>
-            <td>Gareth</td>
-            <td id="gemiddeldeTalenGareth">0</td>
-            <td id="gemiddeldeBetaGareth">0</td>
-            <td id="volgendeKlasGareth">over</td>
-        </tr>
-    </table>
-
+    </div>
     <script>
         // Cijfers Willem
         function cijfersWillem() {
@@ -250,6 +280,10 @@
 
             const resultaatBetaWillem = document.getElementById("gemiddeldeBetaWillem");
             resultaatBetaWillem.innerHTML = gemiddeldeBetaWillem;
+
+            const totaalResultaatWillem = parseInt(gemiddeldeTalenWillem) + parseInt(gemiddeldeBetaWillem);
+            const welNietOverWillem = totaalResultaatWillem / 2;
+
 
 
             if (cijferWiskundeWillem < 5.5) {
@@ -320,9 +354,18 @@
                 document.getElementById("gemiddeldeBetaWillem").style.backgroundColor = "red";
             }
 
-            // if (volgendeKlasWillem = )
+            if (welNietOverWillem >= 6.5) {
+                document.getElementById("volgendeKlasWillem").style.backgroundColor = "green";
+                volgendeKlasWillem.innerHTML = "Ja";
 
+            }
+
+            else if (welNietOverWillem < 6.5) {
+                document.getElementById("volgendeKlasWillem").style.backgroundColor = "red";
+                volgendeKlasWillem.innerHTML = "Nee";
+            }
         }
+
 
         cijfersWillem();
 
@@ -348,6 +391,9 @@
 
             const resultaatBetaJan = document.getElementById("gemiddeldeBetaJan");
             resultaatBetaJan.innerHTML = gemiddeldeBetaJan;
+
+            const totaalResultaatJan = parseInt(gemiddeldeTalenJan) + parseInt(gemiddeldeBetaJan);
+            const welNietOverJan = totaalResultaatJan / 2;
 
             if (cijferWiskundeJan < 5.5) {
                 document.getElementById("wiskunde[2]").style.backgroundColor = "red";
@@ -417,6 +463,17 @@
                 document.getElementById("gemiddeldeBetaJan").style.backgroundColor = "red";
             }
 
+            if (welNietOverJan >= 6.5) {
+                document.getElementById("volgendeKlasJan").style.backgroundColor = "green";
+                volgendeKlasJan.innerHTML = "Ja";
+
+            }
+
+            else if (welNietOverJan < 6.5) {
+                document.getElementById("volgendeKlasJan").style.backgroundColor = "red";
+                volgendeKlasJan.innerHTML = "Nee";
+            }
+
 
         }
         cijfersJan();
@@ -442,6 +499,9 @@
 
             const resultaatBetaKimSing = document.getElementById("gemiddeldeBetaKimSing");
             resultaatBetaKimSing.innerHTML = gemiddeldeBetaKimSing;
+
+            const totaalResultaatKimSing = parseInt(gemiddeldeTalenKimSing) + parseInt(gemiddeldeBetaKimSing);
+            const welNietOverKimSing = totaalResultaatKimSing / 2;
 
             if (cijferWiskundeKimSing < 5.5) {
                 document.getElementById("wiskunde[3]").style.backgroundColor = "red";
@@ -511,10 +571,20 @@
                 document.getElementById("gemiddeldeBetaKimSing").style.backgroundColor = "red";
             }
 
+            if (welNietOverKimSing >= 6.5) {
+                document.getElementById("volgendeKlasKimSing").style.backgroundColor = "green";
+                volgendeKlasKimSing.innerHTML = "Ja";
+
+            }
+
+            else if (welNietOverKimSing < 6.5) {
+                document.getElementById("volgendeKlasKimSing").style.backgroundColor = "red";
+                volgendeKlasKimSing.innerHTML = "Nee";
+            }
+
 
         }
         cijfersKimSing();
-
 
         // Cijfers Samantha
 
@@ -537,6 +607,9 @@
 
             const resultaatBetaSamantha = document.getElementById("gemiddeldeBetaSamantha");
             resultaatBetaSamantha.innerHTML = gemiddeldeBetaSamantha;
+
+            const totaalResultaatSamantha = parseInt(gemiddeldeTalenSamantha) + parseInt(gemiddeldeBetaSamantha);
+            const welNietOverSamantha = totaalResultaatSamantha / 2;
 
             if (cijferWiskundeSamantha < 5.5) {
                 document.getElementById("wiskunde[4]").style.backgroundColor = "red";
@@ -604,6 +677,17 @@
                 document.getElementById("gemiddeldeBetaSamantha").style.backgroundColor = "red";
             }
 
+            if (welNietOverSamantha >= 6.5) {
+                document.getElementById("volgendeKlasSamantha").style.backgroundColor = "green";
+                volgendeKlasSamantha.innerHTML = "Ja";
+
+            }
+
+            else if (welNietOverSamantha < 6.5) {
+                document.getElementById("volgendeKlasSamantha").style.backgroundColor = "red";
+                volgendeKlasSamantha.innerHTML = "Nee";
+            }
+
         }
         cijfersSamantha();
 
@@ -627,6 +711,9 @@
 
             const resultaatBetaJoyce = document.getElementById("gemiddeldeBetaJoyce");
             resultaatBetaJoyce.innerHTML = gemiddeldeBetaJoyce;
+
+            const totaalResultaatJoyce = parseInt(gemiddeldeTalenJoyce) + parseInt(gemiddeldeBetaJoyce);
+            const welNietOverJoyce = totaalResultaatJoyce / 2;
 
             if (cijferWiskundeJoyce < 5.5) {
                 document.getElementById("wiskunde[5]").style.backgroundColor = "red";
@@ -694,6 +781,17 @@
                 document.getElementById("gemiddeldeBetaJoyce").style.backgroundColor = "red";
             }
 
+            if (welNietOverJoyce >= 6.5) {
+                document.getElementById("volgendeKlasJoyce").style.backgroundColor = "green";
+                volgendeKlasJoyce.innerHTML = "Ja";
+
+            }
+
+            else if (welNietOverJoyce < 6.5) {
+                document.getElementById("volgendeKlasJoyce").style.backgroundColor = "red";
+                volgendeKlasJoyce.innerHTML = "Nee";
+            }
+
         }
         cijfersJoyce();
 
@@ -718,6 +816,9 @@
 
             const resultaatBetaGareth = document.getElementById("gemiddeldeBetaGareth");
             resultaatBetaGareth.innerHTML = gemiddeldeBetaGareth;
+
+            const totaalResultaatGareth = parseInt(gemiddeldeTalenGareth) + parseInt(gemiddeldeBetaGareth);
+            const welNietOverGareth = totaalResultaatGareth / 2;
 
             if (cijferWiskundeGareth < 5.5) {
                 document.getElementById("wiskunde[6]").style.backgroundColor = "red";
@@ -787,22 +888,19 @@
                 document.getElementById("gemiddeldeBetaGareth").style.backgroundColor = "red";
             }
 
+            if (welNietOverGareth >= 6.5) {
+                document.getElementById("volgendeKlasGareth").style.backgroundColor = "green";
+                volgendeKlasGareth.innerHTML = "Ja";
+
+            }
+
+            else if (welNietOverGareth < 6.5) {
+                document.getElementById("volgendeKlasGareth").style.backgroundColor = "red";
+                volgendeKlasGareth.innerHTML = "Nee";
+            }
+
         }
         cijfersGareth();
-
-        // function ResultaatGemiddeld() {
-
-
-
-        // if (resultaatTalenWillem > 6.5) {
-        //         document.getElementById("gemiddeldeTalenWillem").style.backgroundColor = "lightgreen";
-
-        //     }
-
-
-
-        // }
-
 
     </script>
 </body>

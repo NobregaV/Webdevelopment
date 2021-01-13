@@ -11,9 +11,8 @@
     th,
     td {
         border: 1px solid black;
-        
-    
-        
+
+
     }
 </style>
 
@@ -39,12 +38,11 @@
 
         <tr>
             <th>Naam</th>
-
             <th>Cijfer</th>
         </tr>
         <tr>
             <td>Willem</td>
-            <td id="wiskunde[1]">6</td>
+            <td id="wiskunde[1]">7</td>
         </tr>
         <tr>
             <td>Jan</td>
@@ -189,39 +187,39 @@
         </tr>
         <tr>
             <td>Willem</td>
-            <td id="gemiddeldeBetaWillem">0</td>
             <td id="gemiddeldeTalenWillem">0</td>
+            <td id="gemiddeldeBetaWillem">0</td>
             <td id="volgendeKlasWillem">over</td>
 
         </tr>
         <tr>
             <td>Jan</td>
-            <td id="gemiddeldeBetaJan">0</td>
             <td id="gemiddeldeTalenJan">0</td>
+            <td id="gemiddeldeBetaJan">0</td>
             <td id="volgendeKlasJan">over</td>
         </tr>
         <tr>
             <td>Kim Sing</td>
-            <td id="gemiddeldeBetaKimSing">0</td>
             <td id="gemiddeldeTalenKimSing">0</td>
+            <td id="gemiddeldeBetaKimSing">0</td>
             <td id="volgendeKlasKimSing">over</td>
         </tr>
         <tr>
             <td>Samantha</td>
-            <td id="gemiddeldeBetaSamantha">0</td>
             <td id="gemiddeldeTalenSamantha">0</td>
+            <td id="gemiddeldeBetaSamantha">0</td>
             <td id="volgendeKlasSamantha">over</td>
         </tr>
         <tr>
             <td>Joyce</td>
-            <td id="gemiddeldeBetaJoyce">0</td>
             <td id="gemiddeldeTalenJoyce">0</td>
+            <td id="gemiddeldeBetaJoyce">0</td>
             <td id="volgendeKlasJoyce">over</td>
         </tr>
         <tr>
             <td>Gareth</td>
-            <td id="gemiddeldeBetaGareth">0</td>
             <td id="gemiddeldeTalenGareth">0</td>
+            <td id="gemiddeldeBetaGareth">0</td>
             <td id="volgendeKlasGareth">over</td>
         </tr>
     </table>
@@ -247,6 +245,83 @@
             let gemiddeldeTalenWillem = totaalTalenWillem / 2;
             console.log(parseInt(gemiddeldeTalenWillem));
 
+            const resultaatTalenWillem = document.getElementById("gemiddeldeTalenWillem");
+            resultaatTalenWillem.innerHTML = gemiddeldeTalenWillem;
+
+            const resultaatBetaWillem = document.getElementById("gemiddeldeBetaWillem");
+            resultaatBetaWillem.innerHTML = gemiddeldeBetaWillem;
+
+
+            if (cijferWiskundeWillem < 5.5) {
+                document.getElementById("wiskunde[1]").style.backgroundColor = "red";
+            }
+
+            if (cijferWiskundeWillem >= 5.5) {
+                document.getElementById("wiskunde[1]").style.backgroundColor = "lightgreen";
+
+            }
+            if (cijferWiskundeWillem >= 7.5) {
+                document.getElementById("wiskunde[1]").style.backgroundColor = "green";
+
+            }
+
+            if (cijferNatuurkundeWillem < 5.5) {
+                document.getElementById("natuurkunde[1]").style.backgroundColor = "red";
+            }
+
+            if (cijferNatuurkundeWillem >= 5.5) {
+                document.getElementById("natuurkunde[1]").style.backgroundColor = "lightgreen";
+
+            }
+            if (cijferNatuurkundeWillem >= 7.5) {
+                document.getElementById("natuurkunde[1]").style.backgroundColor = "green";
+
+            }
+
+            if (cijferNederlandsWillem < 5.5) {
+                document.getElementById("nederlands[1]").style.backgroundColor = "red";
+            }
+
+            if (cijferNederlandsWillem >= 5.5) {
+                document.getElementById("nederlands[1]").style.backgroundColor = "lightgreen";
+
+            }
+            if (cijferNederlandsWillem >= 7.5) {
+                document.getElementById("nederlands[1]").style.backgroundColor = "green";
+
+            }
+
+            if (cijferEngelsWillem < 5.5) {
+                document.getElementById("engels[1]").style.backgroundColor = "red";
+            }
+
+            if (cijferEngelsWillem >= 5.5) {
+                document.getElementById("engels[1]").style.backgroundColor = "lightgreen";
+
+            }
+            if (cijferEngelsWillem >= 7.5) {
+                document.getElementById("engels[1]").style.backgroundColor = "green";
+
+            }
+
+            if (gemiddeldeTalenWillem >= 6.5) {
+                document.getElementById("gemiddeldeTalenWillem").style.backgroundColor = "green";
+            }
+
+            else if (gemiddeldeTalenWillem < 6.5) {
+                document.getElementById("gemiddeldeTalenWillem").style.backgroundColor = "red";
+            }
+
+            if (gemiddeldeBetaWillem >= 6.5) {
+                document.getElementById("gemiddeldeBetaWillem").style.backgroundColor = "green";
+            }
+
+            else if (gemiddeldeBetaWillem < 6.5) {
+                document.getElementById("gemiddeldeBetaWillem").style.backgroundColor = "red";
+            }
+
+            // if (volgendeKlasWillem = )
+
         }
 
         cijfersWillem();
@@ -260,11 +335,6 @@
             let cijferNederlandsJan = document.getElementById("nederlands[2]").innerHTML;
             let cijferEngelsJan = document.getElementById("engels[2]").innerHTML;
 
-            // console.log(parseInt(cijferWiskundeJan));
-            // console.log(parseInt(cijferNatuurkundeJan));
-            // console.log(parseInt(cijferNederlandsJan));
-            // console.log(parseInt(cijferEngelsJan);
-
             let totaalBetaJan = parseInt(cijferWiskundeJan) + parseInt(cijferNatuurkundeJan);
             let gemiddeldeBetaJan = totaalBetaJan / 2;
             console.log(parseInt(gemiddeldeBetaJan));
@@ -272,6 +342,80 @@
             let totaalTalenJan = parseInt(cijferNederlandsJan) + parseInt(cijferEngelsJan);
             let gemiddeldeTalenJan = totaalTalenJan / 2;
             console.log(parseInt(gemiddeldeTalenJan));
+
+            const resultaatTalenJan = document.getElementById("gemiddeldeTalenJan");
+            resultaatTalenJan.innerHTML = gemiddeldeTalenJan;
+
+            const resultaatBetaJan = document.getElementById("gemiddeldeBetaJan");
+            resultaatBetaJan.innerHTML = gemiddeldeBetaJan;
+
+            if (cijferWiskundeJan < 5.5) {
+                document.getElementById("wiskunde[2]").style.backgroundColor = "red";
+            }
+
+            if (cijferWiskundeJan >= 5.5) {
+                document.getElementById("wiskunde[2]").style.backgroundColor = "lightgreen";
+
+            }
+            if (cijferWiskundeJan >= 7.5) {
+                document.getElementById("wiskunde[2]").style.backgroundColor = "green";
+
+            }
+
+            if (cijferNatuurkundeJan < 5.5) {
+                document.getElementById("natuurkunde[2]").style.backgroundColor = "red";
+            }
+
+            if (cijferNatuurkundeJan >= 5.5) {
+                document.getElementById("natuurkunde[2]").style.backgroundColor = "lightgreen";
+
+            }
+            if (cijferNatuurkundeJan >= 7.5) {
+                document.getElementById("natuurkunde[2]").style.backgroundColor = "green";
+
+            }
+
+            if (cijferNederlandsJan < 5.5) {
+                document.getElementById("nederlands[2]").style.backgroundColor = "red";
+            }
+
+            if (cijferNederlandsJan >= 5.5) {
+                document.getElementById("nederlands[2]").style.backgroundColor = "lightgreen";
+
+            }
+            if (cijferNederlandsJan >= 7.5) {
+                document.getElementById("nederlands[2]").style.backgroundColor = "green";
+
+            }
+
+            if (cijferEngelsJan < 5.5) {
+                document.getElementById("engels[2]").style.backgroundColor = "red";
+            }
+
+            if (cijferEngelsJan >= 5.5) {
+                document.getElementById("engels[2]").style.backgroundColor = "lightgreen";
+
+            }
+            if (cijferEngelsJan >= 7.5) {
+                document.getElementById("engels[2]").style.backgroundColor = "green";
+
+            }
+
+            if (gemiddeldeTalenJan >= 6.5) {
+                document.getElementById("gemiddeldeTalenJan").style.backgroundColor = "green";
+            }
+
+            else if (gemiddeldeTalenJan < 6.5) {
+                document.getElementById("gemiddeldeTalenJan").style.backgroundColor = "red";
+            }
+
+            if (gemiddeldeBetaJan >= 6.5) {
+                document.getElementById("gemiddeldeBetaJan").style.backgroundColor = "green";
+            }
+
+            else if (gemiddeldeBetaJan < 6.5) {
+                document.getElementById("gemiddeldeBetaJan").style.backgroundColor = "red";
+            }
 
 
         }
@@ -285,11 +429,6 @@
             let cijferNederlandsKimSing = document.getElementById("nederlands[3]").innerHTML;
             let cijferEngelsKimSing = document.getElementById("engels[3]").innerHTML;
 
-            // console.log(parseInt(cijferWiskundeKimSing));
-            // console.log(parseInt(cijferNatuurkundeKimSing));
-            // console.log(parseInt(cijferNederlandsKimSing));
-            // console.log(parseInt(cijferEngelsKimSing);
-
             let totaalBetaKimSing = parseInt(cijferWiskundeKimSing) + parseInt(cijferNatuurkundeKimSing);
             let gemiddeldeBetaKimSing = totaalBetaKimSing / 2;
             console.log(parseInt(gemiddeldeBetaKimSing));
@@ -297,6 +436,81 @@
             let totaalTalenKimSing = parseInt(cijferNederlandsKimSing) + parseInt(cijferEngelsKimSing);
             let gemiddeldeTalenKimSing = totaalTalenKimSing / 2;
             console.log(parseInt(gemiddeldeTalenKimSing));
+
+            const resultaatTalenKimSing = document.getElementById("gemiddeldeTalenKimSing");
+            resultaatTalenKimSing.innerHTML = gemiddeldeTalenKimSing;
+
+            const resultaatBetaKimSing = document.getElementById("gemiddeldeBetaKimSing");
+            resultaatBetaKimSing.innerHTML = gemiddeldeBetaKimSing;
+
+            if (cijferWiskundeKimSing < 5.5) {
+                document.getElementById("wiskunde[3]").style.backgroundColor = "red";
+            }
+
+            if (cijferWiskundeKimSing >= 5.5) {
+                document.getElementById("wiskunde[3]").style.backgroundColor = "lightgreen";
+
+            }
+            if (cijferWiskundeKimSing >= 7.5) {
+                document.getElementById("wiskunde[3]").style.backgroundColor = "green";
+
+            }
+
+            if (cijferNatuurkundeKimSing < 5.5) {
+                document.getElementById("natuurkunde[3]").style.backgroundColor = "red";
+            }
+
+            if (cijferNatuurkundeKimSing >= 5.5) {
+                document.getElementById("natuurkunde[3]").style.backgroundColor = "lightgreen";
+
+            }
+            if (cijferNatuurkundeKimSing >= 7.5) {
+                document.getElementById("natuurkunde[3]").style.backgroundColor = "green";
+
+            }
+
+            if (cijferNederlandsKimSing < 5.5) {
+                document.getElementById("nederlands[3]").style.backgroundColor = "red";
+            }
+
+            if (cijferNederlandsKimSing >= 5.5) {
+                document.getElementById("nederlands[3]").style.backgroundColor = "lightgreen";
+
+            }
+            if (cijferNederlandsKimSing >= 7.5) {
+                document.getElementById("nederlands[3]").style.backgroundColor = "green";
+
+            }
+
+            if (cijferEngelsKimSing < 5.5) {
+                document.getElementById("engels[3]").style.backgroundColor = "red";
+            }
+
+            if (cijferEngelsKimSing >= 5.5) {
+                document.getElementById("engels[3]").style.backgroundColor = "lightgreen";
+
+            }
+            if (cijferEngelsKimSing >= 7.5) {
+                document.getElementById("engels[3]").style.backgroundColor = "green";
+
+            }
+
+            if (gemiddeldeTalenKimSing >= 6.5) {
+                document.getElementById("gemiddeldeTalenKimSing").style.backgroundColor = "green";
+            }
+
+            else if (gemiddeldeTalenKimSing < 6.5) {
+                document.getElementById("gemiddeldeTalenKimSing").style.backgroundColor = "red";
+            }
+
+            if (gemiddeldeBetaKimSing >= 6.5) {
+                document.getElementById("gemiddeldeBetaKimSing").style.backgroundColor = "green";
+            }
+
+            else if (gemiddeldeBetaKimSing < 6.5) {
+                document.getElementById("gemiddeldeBetaKimSing").style.backgroundColor = "red";
+            }
+
 
         }
         cijfersKimSing();
@@ -310,11 +524,6 @@
             let cijferNederlandsSamantha = document.getElementById("nederlands[4]").innerHTML;
             let cijferEngelsSamantha = document.getElementById("engels[4]").innerHTML;
 
-            // console.log(parseInt(cijferWiskundeSamantha));
-            // console.log(parseInt(cijferNatuurkundeSamantha));
-            // console.log(parseInt(cijferNederlandsSamantha));
-            // console.log(parseInt(cijferEngelsSamantha);
-
             let totaalBetaSamantha = parseInt(cijferWiskundeSamantha) + parseInt(cijferNatuurkundeSamantha);
             let gemiddeldeBetaSamantha = totaalBetaSamantha / 2;
             console.log(parseInt(gemiddeldeBetaSamantha));
@@ -322,6 +531,78 @@
             let totaalTalenSamantha = parseInt(cijferNederlandsSamantha) + parseInt(cijferEngelsSamantha);
             let gemiddeldeTalenSamantha = totaalTalenSamantha / 2;
             console.log(parseInt(gemiddeldeTalenSamantha));
+
+            const resultaatTalenSamantha = document.getElementById("gemiddeldeTalenSamantha");
+            resultaatTalenSamantha.innerHTML = gemiddeldeTalenSamantha;
+
+            const resultaatBetaSamantha = document.getElementById("gemiddeldeBetaSamantha");
+            resultaatBetaSamantha.innerHTML = gemiddeldeBetaSamantha;
+
+            if (cijferWiskundeSamantha < 5.5) {
+                document.getElementById("wiskunde[4]").style.backgroundColor = "red";
+            }
+
+            if (cijferWiskundeSamantha >= 5.5) {
+                document.getElementById("wiskunde[4]").style.backgroundColor = "lightgreen";
+
+            }
+            if (cijferWiskundeSamantha >= 7.5) {
+                document.getElementById("wiskunde[4]").style.backgroundColor = "green";
+
+            }
+
+            if (cijferNatuurkundeSamantha < 5.5) {
+                document.getElementById("natuurkunde[4]").style.backgroundColor = "red";
+            }
+
+            if (cijferNatuurkundeSamantha >= 5.5) {
+                document.getElementById("natuurkunde[4]").style.backgroundColor = "lightgreen";
+
+            }
+            if (cijferNatuurkundeSamantha >= 7.5) {
+                document.getElementById("natuurkunde[4]").style.backgroundColor = "green";
+
+            }
+
+            if (cijferNederlandsSamantha < 5.5) {
+                document.getElementById("nederlands[4]").style.backgroundColor = "red";
+            }
+
+            if (cijferNederlandsSamantha >= 5.5) {
+                document.getElementById("nederlands[4]").style.backgroundColor = "lightgreen";
+
+            }
+            if (cijferNederlandsSamantha >= 7.5) {
+                document.getElementById("nederlands[4]").style.backgroundColor = "green";
+
+            }
+
+            if (cijferEngelsSamantha < 5.5) {
+                document.getElementById("engels[4]").style.backgroundColor = "red";
+            }
+
+            if (cijferEngelsSamantha >= 5.5) {
+                document.getElementById("engels[4]").style.backgroundColor = "lightgreen";
+
+            }
+            if (cijferEngelsSamantha >= 7.5) {
+                document.getElementById("engels[4]").style.backgroundColor = "green";
+
+            }
+
+            if (gemiddeldeTalenSamantha >= 6.5) {
+                document.getElementById("gemiddeldeTalenSamantha").style.backgroundColor = "green";
+            }
+            else if (gemiddeldeTalenSamantha < 6.5) {
+                document.getElementById("gemiddeldeTalenSamantha").style.backgroundColor = "red";
+            }
+
+            if (gemiddeldeBetaSamantha >= 6.5) {
+                document.getElementById("gemiddeldeBetaSamantha").style.backgroundColor = "green";
+            }
+            else if (gemiddeldeBetaSamantha < 6.5) {
+                document.getElementById("gemiddeldeBetaSamantha").style.backgroundColor = "red";
+            }
 
         }
         cijfersSamantha();
@@ -333,11 +614,6 @@
             let cijferNederlandsJoyce = document.getElementById("nederlands[5]").innerHTML;
             let cijferEngelsJoyce = document.getElementById("engels[5]").innerHTML;
 
-            // console.log(parseInt(cijferWiskundeJoyce));
-            // console.log(parseInt(cijferNatuurkundeJoyce));
-            // console.log(parseInt(cijferNederlandsJoyce));
-            // console.log(parseInt(cijferEngelsJoyce);
-
             let totaalBetaJoyce = parseInt(cijferWiskundeJoyce) + parseInt(cijferNatuurkundeJoyce);
             let gemiddeldeBetaJoyce = totaalBetaJoyce / 2;
             console.log(parseInt(gemiddeldeBetaJoyce));
@@ -345,6 +621,78 @@
             let totaalTalenJoyce = parseInt(cijferNederlandsJoyce) + parseInt(cijferEngelsJoyce);
             let gemiddeldeTalenJoyce = totaalTalenJoyce / 2;
             console.log(parseInt(gemiddeldeTalenJoyce));
+
+            const resultaatTalenJoyce = document.getElementById("gemiddeldeTalenJoyce");
+            resultaatTalenJoyce.innerHTML = gemiddeldeTalenJoyce;
+
+            const resultaatBetaJoyce = document.getElementById("gemiddeldeBetaJoyce");
+            resultaatBetaJoyce.innerHTML = gemiddeldeBetaJoyce;
+
+            if (cijferWiskundeJoyce < 5.5) {
+                document.getElementById("wiskunde[5]").style.backgroundColor = "red";
+            }
+
+            if (cijferWiskundeJoyce >= 5.5) {
+                document.getElementById("wiskunde[5]").style.backgroundColor = "lightgreen";
+
+            }
+            if (cijferWiskundeJoyce >= 7.5) {
+                document.getElementById("wiskunde[5]").style.backgroundColor = "green";
+
+            }
+
+            if (cijferNatuurkundeJoyce < 5.5) {
+                document.getElementById("natuurkunde[5]").style.backgroundColor = "red";
+            }
+
+            if (cijferNatuurkundeJoyce >= 5.5) {
+                document.getElementById("natuurkunde[5]").style.backgroundColor = "lightgreen";
+
+            }
+            if (cijferNatuurkundeJoyce >= 7.5) {
+                document.getElementById("natuurkunde[5]").style.backgroundColor = "green";
+
+            }
+
+            if (cijferNederlandsJoyce < 5.5) {
+                document.getElementById("nederlands[5]").style.backgroundColor = "red";
+            }
+
+            if (cijferNederlandsJoyce >= 5.5) {
+                document.getElementById("nederlands[5]").style.backgroundColor = "lightgreen";
+
+            }
+            if (cijferNederlandsJoyce >= 7.5) {
+                document.getElementById("nederlands[5]").style.backgroundColor = "green";
+
+            }
+
+            if (cijferEngelsJoyce < 5.5) {
+                document.getElementById("engels[5]").style.backgroundColor = "red";
+            }
+
+            if (cijferEngelsJoyce >= 5.5) {
+                document.getElementById("engels[5]").style.backgroundColor = "lightgreen";
+
+            }
+            if (cijferEngelsJoyce >= 7.5) {
+                document.getElementById("engels[5]").style.backgroundColor = "green";
+
+            }
+
+            if (gemiddeldeTalenJoyce >= 6.5) {
+                document.getElementById("gemiddeldeTalenJoyce").style.backgroundColor = "green";
+            }
+            else if (gemiddeldeTalenJoyce < 6.5) {
+                document.getElementById("gemiddeldeTalenJoyce").style.backgroundColor = "red";
+            }
+
+            if (gemiddeldeBetaJoyce >= 6.5) {
+                document.getElementById("gemiddeldeBetaJoyce").style.backgroundColor = "green";
+            }
+            else if (gemiddeldeBetaJoyce < 6.5) {
+                document.getElementById("gemiddeldeBetaJoyce").style.backgroundColor = "red";
+            }
 
         }
         cijfersJoyce();
@@ -357,11 +705,6 @@
             let cijferNederlandsGareth = document.getElementById("nederlands[6]").innerHTML;
             let cijferEngelsGareth = document.getElementById("engels[6]").innerHTML;
 
-            // console.log(parseInt(cijferWiskundeGareth));
-            // console.log(parseInt(cijferNatuurkundeGareth));
-            // console.log(parseInt(cijferNederlandsGareth));
-            // console.log(parseInt(cijferEngelsGareth);
-
             let totaalBetaGareth = parseInt(cijferWiskundeGareth) + parseInt(cijferNatuurkundeGareth);
             let gemiddeldeBetaGareth = totaalBetaGareth / 2;
             console.log(parseInt(gemiddeldeBetaGareth));
@@ -370,24 +713,95 @@
             let gemiddeldeTalenGareth = totaalTalenGareth / 2;
             console.log(parseInt(gemiddeldeTalenGareth));
 
+            const resultaatTalenGareth = document.getElementById("gemiddeldeTalenGareth");
+            resultaatTalenGareth.innerHTML = gemiddeldeTalenGareth;
+
+            const resultaatBetaGareth = document.getElementById("gemiddeldeBetaGareth");
+            resultaatBetaGareth.innerHTML = gemiddeldeBetaGareth;
+
+            if (cijferWiskundeGareth < 5.5) {
+                document.getElementById("wiskunde[6]").style.backgroundColor = "red";
+            }
+
+            if (cijferWiskundeGareth >= 5.5) {
+                document.getElementById("wiskunde[6]").style.backgroundColor = "lightgreen";
+
+            }
+            if (cijferWiskundeGareth >= 7.5) {
+                document.getElementById("wiskunde[6]").style.backgroundColor = "green";
+
+            }
+
+            if (cijferNatuurkundeGareth < 5.5) {
+                document.getElementById("natuurkunde[6]").style.backgroundColor = "red";
+            }
+
+            if (cijferNatuurkundeGareth >= 5.5) {
+                document.getElementById("natuurkunde[6]").style.backgroundColor = "lightgreen";
+
+            }
+            if (cijferNatuurkundeGareth >= 7.5) {
+                document.getElementById("natuurkunde[6]").style.backgroundColor = "green";
+
+            }
+
+            if (cijferNederlandsGareth < 5.5) {
+                document.getElementById("nederlands[6]").style.backgroundColor = "red";
+            }
+
+            if (cijferNederlandsGareth >= 5.5) {
+                document.getElementById("nederlands[6]").style.backgroundColor = "lightgreen";
+
+            }
+            if (cijferNederlandsGareth >= 7.5) {
+                document.getElementById("nederlands[6]").style.backgroundColor = "green";
+
+            }
+
+            if (cijferEngelsGareth < 5.5) {
+                document.getElementById("engels[6]").style.backgroundColor = "red";
+            }
+
+            if (cijferEngelsGareth >= 5.5) {
+                document.getElementById("engels[6]").style.backgroundColor = "lightgreen";
+
+            }
+            if (cijferEngelsGareth >= 7.5) {
+                document.getElementById("engels[6]").style.backgroundColor = "green";
+
+            }
+
+            if (gemiddeldeTalenGareth >= 6.5) {
+                document.getElementById("gemiddeldeTalenGareth").style.backgroundColor = "green";
+            }
+
+            else if (gemiddeldeTalenGareth < 6.5) {
+                document.getElementById("gemiddeldeTalenGareth").style.backgroundColor = "red";
+            }
+
+            if (gemiddeldeBetaGareth >= 6.5) {
+                document.getElementById("gemiddeldeBetaGareth").style.backgroundColor = "green";
+            }
+
+            else if (gemiddeldeBetaGareth < 6.5) {
+                document.getElementById("gemiddeldeBetaGareth").style.backgroundColor = "red";
+            }
+
         }
         cijfersGareth();
 
+        // function ResultaatGemiddeld() {
 
-        // Resultaat gemiddelde kolom
 
-        // function resultaatGemiddelde() {
 
-        //     let talenWillem = document.getElementById("gemiddeldeBetaWillem").innerHTML;
-        //     console.log(talenWillem);
+        // if (resultaatTalenWillem > 6.5) {
+        //         document.getElementById("gemiddeldeTalenWillem").style.backgroundColor = "lightgreen";
+
+        //     }
 
 
 
         // }
-
-        // resultaatGemiddelde();
-
-
 
 
     </script>

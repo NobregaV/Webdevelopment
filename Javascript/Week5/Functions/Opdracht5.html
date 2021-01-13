@@ -35,7 +35,6 @@
 
             const randomNaam = namen[Math.round(Math.random() * 8)];
             console.log(randomNaam);
-
             checkedName.innerHTML = "Dit is " + randomNaam + " en " +randomNaam + " is een bekende van ons";
 
 
@@ -46,7 +45,7 @@
 
         function checkName() {
             const inputNaam = document.getElementById("naam").value;
-            // console.log(inputNaam);
+            console.log(inputNaam);
             const namen = [
                 "John",
                 "Olly",
@@ -58,9 +57,7 @@
                 "Peter",
             ];
 
-            const randomNaam = namen[Math.round(Math.random() * 8)];
-            console.log(randomNaam);
-
+            
 
             if (namen.includes(inputNaam)) {
                 checkedName.innerHTML = "<h5>Dit is een bekende van ons.</h5>";

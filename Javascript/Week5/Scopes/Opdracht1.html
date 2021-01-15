@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <p>Scopes geeft de context aan waar de variables gedeclareerd worden. Dit geeft de toegankelijkheid van de variables
+        aan. Afhankelijk van de scope kan je dus toegang krijgen tot de waarde van de variable.
+        Leerdoelen</p>
+    <ul>
+        <li>Global scopes</li>
+        <li>Block scopes</li>
+    </ul>
+
+    <h4>Kijkend naar de volgende code:</h4> <br><br>
+    function printCar() { <br>
+    const carBrand = "Volvo"; <br>
+    } <br>
+    console.log(carBrand);<br>
+
+    <h4>Wat wordt er in de console gelogt? Wat voor scoping heb je hier te maken?
+    </h4>
+
+    <p>De console geeft niks aan. Dit betreft een block scope, want</p>
+
+    <script>
+
+        function printCar() {
+            const carBrand = "Volvo";
+
+        }
+        console.log(carBrand);
+
+
+
+    </script>
+</body>
+
+</html>

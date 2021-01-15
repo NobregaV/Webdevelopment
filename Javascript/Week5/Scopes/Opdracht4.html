@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h4>Kijkend naar de volgende code:</h4> <br> <br>
+
+    function printCar() { <br>
+    carBrand = "Volvo"; <br>
+    return function(type) { <br>
+    console.log(carBrand + " " + type); <br>
+    } <br>
+    } <br>
+    const car = printCar(); <br>
+    car("v40"); <br>
+
+
+
+    <h4>Wat wordt er in de console gelogt? Hoe is dit anders voorgaande opdrachten?</h4>
+
+    <p>Er wordt volvo V40 gelogd.</p>
+
+    <script>
+
+        function printCar() {
+            carBrand = "Volvo";
+            return function (type) {
+                console.log(carBrand + " " + type);
+            }
+        }
+        const car = printCar();
+        car("v40");
+
+
+
+    </script>
+</body>
+
+</html>

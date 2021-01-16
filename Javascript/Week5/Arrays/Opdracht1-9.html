@@ -53,6 +53,106 @@ console.log(fruit[3]); <br>
 
 
 
+<h5>Opdracht 6: Je hebt nu geleerd hoe je arrays kunt aanmaken en de waarde kunt benaderen. Arrays hebben ook functies
+    die je kunt gebruiken. Zoek uit wat push(), pop(), shift(), slice(), splice(), sort(). Maak gebruik van de fruits
+    array en maak voor elke functie een voorbeeld en geef in commentaar wat het doet.</h5>
+<h5>(push)</h5>
+<p>De push methode voegt waardes toe aan een array.</p>
+<h5>Code in js ziet er zo uit:</h5>
+
+let fruit = ["Appel", "Banaan", "Kiwi", "Manderijn", "Watermeloen"];<br>
+let groenten = fruit.push("brocolli", "spitskool");<br>
+console.log(groenten);<br>
+
+<h5>(pop)</h5>
+<p>The pop() haalt het laatste element van een array weg en geeft het element terug als resultaat. De lengte van de
+    array veandert dan ook.</p>
+
+<h5>Code in js ziet er zo uit:</h5>
+
+let fruit = ["Appel", "Banaan", "Kiwi", "Manderijn", "Watermeloen"]; <br>
+let laatsteElement = fruit.pop(); <br>
+console.log(laatsteElement); <br>
+
+<h5>(shift)</h5>
+<p>De shift() methode verwijdert het eerste element van de array en geeft het element terug als resultaat. Deze methode
+    wijzigt de lengte van de array.</p>
+<h5>Code in js ziet er zo uit:</h5>
+
+let fruit = ["Appel", "Banaan", "Kiwi", "Manderijn", "Watermeloen"]; <br>
+let eersteElement = fruit.pop(); <br>
+console.log(eersteElement); <br>
+
+<h5>(slice)</h5>
+<p>De slice() method geeft een oppervlakkige kopie van een gedeelte van een array terug in een nieuwe array.</p>
+
+<h5>Code in js ziet er zo uit:</h5>
+let fruit = ["Appel", "Banaan", "Kiwi", "Manderijn", "Watermeloen"]; <br>
+let citrus = fruit.slice(2, 4); <br>
+console.log(citrus); <br> <br>
+
+output = ["Kiwi", Manderijn"]
+
+
+<h5>(spice)</h5>
+<p>De splice()-methode past de inhoud van een array aan door bestaande elementen te verwijderen en/of nieuwe elementen
+    toe te voegen.</p>
+<h5>Code in js ziet er zo uit:</h5>
+Moet ik nog maken.
+<h5>(sort)</h5>
+
+<p>De sort() methode sorteert de elementen uit een array en geeft een gesorteerde resultaat terug.</p>
+<h5>Code in js ziet er zo uit:</h5>
+let fruit = ["Appel", "Banaan", "Kiwi", "Manderijn", "Watermeloen"]; <br>
+fruit.sort(); <br>
+console.log(fruit); <br><br>
+output = ["Appel", "Banaan", "Kiwi", "Manderijn", "Watermeloen"] <br>
+
+<h5>Opdracht 7: Naast de functies die je van de array kunt gebruiken heb je ook nog de “length” property die je kunt
+    gebruiken. Hiermee kan je de grootte van de array opvragen. Gebruik de length property en print in de console uit
+    hoe groot de fruits array is.
+</h5>
+
+
+<h5>Code in js ziet er zo uit:</h5>
+let fruit = ["Appel", "Banaan", "Kiwi", "Manderijn", "Watermeloen"]; <br>
+let lengte = fruit.length; <br>
+console.log(fruit); <br> <br>
+
+Output is: (5) ["Appel", "Banaan", "Kiwi", "Manderijn", "Watermeloen"]
+
+<h5>Opdracht 8: De bestaande values van de array kan je ook aanpassen. Zoek uit hoe je op een specifieke index de waarde
+    kan aanpassen. Pas de value “Kiwi” naar “Aardbeien”.
+</h5>
+
+<h5>Code in js ziet er zo uit:</h5>
+et fruit = ["Appel", "Banaan", "Kiwi", "Manderijn", "Watermeloen"]; <br>
+console.log(fruit); <br>
+fruit[2] = "Aardbeien"; <br>
+console.log(fruit); <br><br>
+
+Out put is: (5) ["Appel", "Banaan", "Kiwi", "Manderijn", "Watermeloen"]
+(5) ["Appel", "Banaan", "Aardbeien", "Manderijn", "Watermeloen"]
+
+<h5>Opdracht 9: Kijkend naar de fruits array. Hoe draai je de values “Aardbei” en “Manderijn” om in de array door gebruik te maken van indices (index).</h5>
+<p>Moet ik nog maken</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

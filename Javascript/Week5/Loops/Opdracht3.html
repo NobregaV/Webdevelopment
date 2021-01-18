@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h5>Maak gebruik van een loop en itereer door de sports array heen. Itereer de loop met even getallen en print de
+        waarde in jouw console uit.</h5>
+
+    <p>scriptcode in JS is:</p>
+
+    const sports = ["voetbal", "basketbal", "volleybal", "hockey", "honkbal", "zwemmen", "korfbal"]; <br>
+    const sportsLength = sports.length; <br> <br>
+
+    for (let i = 0; i <= sports.length; i++) { <br>
+        if (i % 2 == 1) continue; <br>
+        console.log(sports[i], i); <br>
+
+        } <br> <br>
+
+        Output is: <br>
+
+        voetbal 0 <br>
+        volleybal 2 <br>
+        honkbal 4 <br>
+        korfbal 6 <br>
+
+        <script>
+            const sports = ["voetbal", "basketbal", "volleybal", "hockey", "honkbal", "zwemmen", "korfbal"];
+            const sportsLength = sports.length;
+
+
+            // let i is index 
+            // i <= sport.length geeft aan const sport moet de lengte aangeven (=gelijk aan en kleiner dan sport lengte).
+            // if geef ik aan dat het even getallen moeten zijn
+            // console geef ik aan dat hij variabel sports moet uitprinten maar dan de tekst ervan [i] en de cijfers ernaast i. 
+            // Dus print het uit: alle even arrays met bijbehorende even nummer erbij.
+
+            for (let i = 0; i <= sports.length; i++) {
+                if (i % 2 == 1) continue;
+                console.log(sports[i], i);
+
+            }
+
+
+
+
+
+
+        </script>
+</body>
+
+</html>

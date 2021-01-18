@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h5>Maak een for-loop die alleen even getallen van 0 t/m 20 in je console uitprint.</h5>
+
+    <p>Script in JS ziet er zo uit:</p>
+
+    for (let i= 0; i<=20; i++) { <br>
+        if (i % 2 == 1) continue; <br>
+        console.log(i); <br> <br>
+        }
+
+        Output is: <br>
+
+        0 <br>
+        2 <br>
+        4 <br>
+        6 <br>
+        8 <br>
+        10 <br>
+        12 <br>
+        14 <br>
+        16 <br>
+        18 <br>
+        20 <br>
+
+
+
+        <script>
+
+            // Maak een for-loop die alleen even getallen van 0 t/m 20 in je console uitprint.
+
+            // for loop bestaat uit 3 statements: 
+            // - initialExpression, hier word een initialised variable gedeclareerd.
+            // - Condition, bij 1 < 5, zolang het klopt, gaat de loop door.
+            // - IncrementExpression, increment operator  bijv i++ (++ = incremented by 1).
+
+            // Operators:
+            // % = Modulos (division remainder).
+            // !== not equal value or not equal type.
+            // != not equal.
+
+            for (let i = 0; i <= 20; i++) {
+                if (i % 2 == 1) continue;
+                console.log(i);
+            }
+
+            // zo kan het ook 
+        // const getallen = [0, 2, 4, 6, 8, 10, 12, 14, 16, 18, 20];
+        // for (getal of getallen) {
+        //     console.log(getal);
+        // }
+
+
+
+
+        </script>
+</body>
+
+</html>

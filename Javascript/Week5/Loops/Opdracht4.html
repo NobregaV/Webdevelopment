@@ -8,13 +8,39 @@
 </head>
 
 <body>
-    for (let i = 0; i <= sports.length; i++) { if (i % 2==1) continue; console.log(sports[i], i); } <h5>Maak opdracht 1,
-        maar maak nu gebruik van een while loop.</h5>
+
+    <h5>Maak opdracht 1, maar maak nu gebruik van een while loop.</h5>
+
+    <p>Script code is:</p>
+
+    const sports = ["voetbal", "basketbal", "volleybal", "hockey", "honkbal", "zwemmen", "kortbal"]; <br>
+    sport = 0; <br>
+    while(sport <= sports.length) { <br>
+        console.log(sports[sport]); <br>
+        sport++; <br>
+        if(sport >6) { <br>
+        break; <br>
+        } <br>
+        } <br> <br>
+
+        Output is: <br>
+        voetbal <br>
+        basketbal <br>
+        volleybal <br>
+        hockey <br>
+        honkbal <br>
+        zwemmen <br>
+        kortbal <br>
+
         <script>
             const sports = ["voetbal", "basketbal", "volleybal", "hockey", "honkbal", "zwemmen", "kortbal"];
-
-            while (sports) {
-                
+            sport = 0;
+            while (sport <= sports.length) {
+                console.log(sports[sport]);
+                sport++;
+                if (sport > 6) {
+                    break;
+                }
             }
 
         </script>

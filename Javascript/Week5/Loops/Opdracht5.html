@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h5>Maak opdracht 1, maar maak nu gebruik van een for...in loop.</h5>
+
+    <p>Script code is:</p>
+
+    const sports = { a: "voetbal", b: "basketbal", c: "volleybal", d: "hockey", e: "honkbal", f: "zwemmen", g: "kortbal"
+    }; <br>
+
+    for (const key in sports) { <br>
+    if (sports.hasOwnProperty.call(sports, key)) { <br>
+    const element = sports[key]; <br>
+    console.log(sports[key]); <br>
+    } <br>
+    } <br> <br>
+
+    Output is: <br>
+    voetbal <br>
+    basketbal <br>
+    volleybal <br>
+    hockey <br>
+    honkbal <br>
+    zwemmen <br>
+    kortbal <br>
+
+    <script>
+        // sports = object.
+        const sports = { a: "voetbal", b: "basketbal", c: "volleybal", d: "hockey", e: "honkbal", f: "zwemmen", g: "kortbal" };
+
+
+        for (const key in sports) {
+            if (sports.hasOwnProperty.call(sports, key)) {
+                const element = sports[key];
+                console.log(sports[key]);
+            }
+        }
+
+
+
+
+    </script>
+</body>
+
+</html>

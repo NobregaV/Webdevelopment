@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h5>Opdracht 9: Stel je hebt het volgende array met random getallen: [2,7,5,10,4,9,3,1,8,6]
+        Bubble sort is een hele bekende sorterings algoritme. Hiermee kun je de array met random getallen sorteren van
+        klein naar groot. Je mag bij deze oefening geen gebruik maken van de sort() functie. Lees je in hoe Bubble sort
+        werkt: https://en.wikipedia.org/wiki/Bubble_sort en codeer de sorterings algoritme uit.
+    </h5>
+    <script>
+
+        let cijfers = [2, 7, 5, 10, 4, 9, 3, 1, 8, 6];
+
+        let swapped;
+
+        function Bubble_sort(cijfers) {
+            let end = cijfers.length - 1;
+            for (let i = 0; i < end; i++) {
+                if (cijfers[i] > cijfers[i + 1]) {
+                    swapped = true;
+                    let temp = cijfers[i];
+                    cijfers[i] = cijfers[i + 1];
+                    cijfers[i + 1] = temp;
+                }
+            }
+            end--;
+        }
+        do {
+            Bubble_sort(cijfers);
+        } while (swapped);
+
+        console.log(cijfers);
+
+
+
+    </script>
+</body>
+
+</html>

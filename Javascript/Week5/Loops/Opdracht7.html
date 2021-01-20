@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h5>Opdracht 7:
+        <ul>
+            <li>Maak een while loop die 3x itereert</li>
+            <li>Binnen de while loop maak je een for-loop die 10x itereert</li>
+            <li> Bij de eerste while iteratie wil ik dat de getallen 1,2,3,4,5,6,7,8,9,10 in je console uitgeprint wordt
+            </li>
+            <li> Bij de tweede while iteratie wil ik dat de getallen 2,4,6,8,10,12,14,16,18,20 in je console uitgeprint
+                wordt</li>
+            <li> Bij de derde while iteratie wil ik dat de getallen 3,6,9,12,15,18,21,24,27,30 in je console uitgeprint
+                wordt</li>
+        </ul>
+    </h5>
+
+    <p>Script code is:</p>
+
+    let i = 0;
+    while (i < 3) { 
+        (++ increment plus 1) 
+        i++;
+        for (let x = 1; x <= 10; x++) { 
+            console.log(i * x);  
+            
+        }
+        console.log("break");
+    }
+                    <p>Output is:</p> <br>
+                    <p>eerste iteration</p> <br>
+                    1
+                    2
+                    3
+                    4
+                    5
+                    6
+                    7
+                    8
+                    9
+                    10 <br>
+                    <p>tweede iteration</p> <br>
+                    2
+                    4
+                    6
+                    8
+                    10
+                    2
+                    14
+                    16
+                    18
+                    20 <br>
+                    <p>derde iteration</p> <br>
+                    3
+                    6
+                    9
+                    12
+                    15
+                    18
+                    21
+                    24
+                    27
+                    30 <br>
+
+
+
+
+                    <script>
+                        // console.log("Opdracht 7")
+
+                        // let i = 0;
+                        // while (i < 1) {
+                        //     i++;
+
+
+                        //     for (let i = 1; i <= 10; i++) {
+                        //         console.log(i);
+
+                        //     }
+
+                        //     console.log("break");
+
+                        //     for (let i = 2; i <= 20; i++) {
+                        //         if (i % 2 == 1) continue;
+                        //         console.log(i);
+                        //     }
+                        //     console.log("break");
+
+                        //     for (let i = 3; i <= 30; i++) {
+                        //         if (i % 3) continue;
+                        //         console.log(i);
+                        //     }
+                        //     console.log("break");
+
+                        // }
+
+
+                        let i = 0;
+                        while (i < 3) { // eerste ronde start op 0, 2e ronde (++ increment plus 1) start op 1 en ronde derde ronde start op 2.
+                            // console.log(i);
+                            i++;
+                            for (let x = 1; x <= 10; x++) { // variable aangemaakt met value 1, 
+                                console.log(i * x);
+                                
+                                // Test om het verschil te zien wat elke while loop doet (i en x)
+                                // console.log(i, x, x, i); 
+                            }
+                            console.log("break");
+                        }
+
+
+
+
+
+
+
+
+
+                    </script>
+</body>
+
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h5>Opdracht 1: Maak een Object die club informatie bijhoudt:
+        <ul>
+            <li>Naam van de club</li>
+            <li>Type sport</li>
+            <li>Aantal leden</li>
+        </ul>
+    </h5>
+
+    <h5>Opdracht 2: Maak een Object van contactgegevens en voeg dat ook toe aan de club object:
+        <ul>
+            <li>Contactgegevens</li>
+            <li>Adres</li>
+            <li>Telefoonnr</li>
+            <li>Contactpersoon</li>
+        </ul>
+    </h5>
+
+    <h5>Opdracht 3: Het is heel gebruikelijk dat dezelfde objecten in een lijst staan. Maak een lijst aan en voeg 4 Club objecten toe aan de lijst. Itereer over de lijst heen en print de verschillende clubnamen uit op jouw pagina.</h5>
+
+
+    <script>
+
+        const Clubinfo = function (naam, type, leden) {
+            this.naam = naam;
+            this.type = type;
+            this.leden = leden;
+
+        }
+
+        const Clubinfo1 = new Clubinfo("Tempo 34", "Hockey", "150");
+        // const Clubinfo2 = new Clubinfo("RdamZuid", "Voetbal", "90");
+        // const Clubinfo3 = new Clubinfo("ZPB", "Waterpolo", "320");
+        // const Clubinfo4 = new Clubinfo("Bestrong", "Kickboksen", "50");
+        // const Clubinfo5 = new Clubinfo("Just Dance", "Streetdance", "70");
+
+
+
+        console.log(Clubinfo1);
+
+        const Contactgegevens = function (adres, telefoonnummer, contactpersoon) {
+            this.adres = adres;
+            this.telefoonnummer = telefoonnummer;
+            this.contactpersoon = contactpersoon;
+        }
+        
+        const Contactgegevens1 = new Contactgegevens("Sint Janshaven 19", "06-24298763", "Vanessa Braumuller");
+        const NieuweClub = [{NieuweClub0: "RdamZuid" }, {NieuweClub1: "ZPB" }, {NieuweClub2: "Bestrong" }, {NieuwClub3: "Just Dance"}];
+       
+        for (let i = 0; i < NieuweClub.length; i++) {
+            const element = NieuweClub[i];
+            
+        }
+
+        console.log(NieuweClub);
+        // console.log(Contactgegevens1);
+
+        
+       
+
+
+
+        // const sports = ["voetbal", "basketbal", "volleybal", "hockey", "honkbal", "zwemmen", "kortbal"];
+        // let text = sports;
+        // for (const iterator of sports) {
+        //     console.log(iterator);
+        // }
+
+    </script>
+</body>
+
+</html>

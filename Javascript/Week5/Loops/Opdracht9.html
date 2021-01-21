@@ -16,29 +16,26 @@
     </h5>
     <script>
 
-        let cijfers = [2, 7, 5, 10, 4, 9, 3, 1, 8, 6];
+        //Bubble sort
+        let bubbleSort = (arr) => {
+            //Length of the array
 
-        let swapped;
+            let n = arr.length;
 
-        function Bubble_sort(cijfers) {
-            let end = cijfers.length - 1;
-            for (let i = 0; i < end; i++) {
-                if (cijfers[i] > cijfers[i + 1]) {
-                    swapped = true;
-                    let temp = cijfers[i];
-                    cijfers[i] = cijfers[i + 1];
-                    cijfers[i + 1] = temp;
+
+            for (let i = 0; i < n - 1; i++) {
+                for (let j = 0; j <= n - i - 1; j++) {
+                    //Swap the numbers
+                    if (arr[j] > arr[j + 1]) {
+                        [arr[j], arr[j + 1]] = [arr[j + 1], arr[j]];
+                    }
                 }
             }
-            end--;
+
+            return arr;
         }
-        do {
-            Bubble_sort(cijfers);
-        } while (swapped);
 
-        console.log(cijfers);
-
-
+        console.log(bubbleSort([2, 7, 5, 10, 4, 9, 3, 1, 8, 6]));
 
     </script>
 </body>

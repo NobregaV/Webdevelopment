@@ -55,28 +55,28 @@
                 </tr>
                 <tr>
                     <td>Willem</td>
-                    <td onclick="cijfersInvloerenWillem()" id="wiskunde[1]">7</td>
+                    <td onclick="cijferInvoerenWillemWi()" id="wiskunde[1]">7</td>
 
                 </tr>
                 <tr>
                     <td>Jan</td>
-                    <td onclick="cijferInvoerenJan()" id="wiskunde[2]">5</td>
+                    <td onclick="cijferInvoerenJanWi()" id="wiskunde[2]">5</td>
                 </tr>
                 <tr>
                     <td>Kim Sing</td>
-                    <td onclick="cijferInvoerenKimSing()" id="wiskunde[3]">7</td>
+                    <td onclick="cijferInvoerenKimSingWi()" id="wiskunde[3]">7</td>
                 </tr>
                 <tr>
                     <td>Samantha</td>
-                    <td onclick="cijferInvoerenSamantha()" id="wiskunde[4]">8</td>
+                    <td onclick="cijferInvoerenSamanthaWi()" id="wiskunde[4]">8</td>
                 </tr>
                 <tr>
                     <td>Joyce</td>
-                    <td onclick="cijferInvoerenJoyce()" id="wiskunde[5]">10</td>
+                    <td onclick="cijferInvoerenJoyceWi()" id="wiskunde[5]">10</td>
                 </tr>
                 <tr>
                     <td>Gareth</td>
-                    <td onclick="cijferInvoerenGareth()" id="wiskunde[6]">2</td>
+                    <td onclick="cijferInvoerenGarethWi()" id="wiskunde[6]">2</td>
                 </tr>
             </table>
         </div>
@@ -280,7 +280,7 @@
             const totaalResultaatWillem = parseInt(gemiddeldeTalenWillem) + parseInt(gemiddeldeBetaWillem);
             const welNietOverWillem = totaalResultaatWillem / 2;
 
-            
+
             if (cijferWiskundeWillem < 5.5) {
                 document.getElementById("wiskunde[1]").style.backgroundColor = "red";
             }
@@ -360,20 +360,39 @@
                 volgendeKlasWillem.innerHTML = "Nee";
             }
 
+        }
 
+
+        function cijferInvoerenWillemWi() {
+            // let totaalBetaWillem = parseInt(cijferWiskundeWillem) + parseInt(cijferNatuurkundeWillem);
+            // let gemiddeldeBetaWillem = totaalBetaWillem / 2;
+            // console.log(parseInt(gemiddeldeBetaWillem));
+
+            let cijferWiskundeWillem = document.getElementById("wiskunde[1]").innerHTML;
+            let cijferWi1 = prompt("Voer het nieuwe cijfer in");
+
+            if (cijferWiskundeWillem != null) {
+                cijferWi1;
+                document.getElementById("wiskunde[1]").innerHTML = cijferWi1;
+
+            }
+
+           if (cijferWi1 < 5.5) {
+                document.getElementById("wiskunde[1]").style.backgroundColor = "red";
+            }
+
+            if (cijferWi1 >= 5.5) {
+                document.getElementById("wiskunde[1]").style.backgroundColor = "lightgreen";
+
+            }
+           if (cijferWi1 >= 7.5) {
+                document.getElementById("wiskunde[1]").style.backgroundColor = "green";
+
+            }
 
         }
 
-        // function cijferInvoerenWiskunde() {
-        //     let cijferWiskundeWillem = document.getElementById("wiskunde[1]").innerHTML;
-        //     let cijferWi = prompt("Voer het nieuwe cijfer in");
-
-        //     if (cijferWiskundeWillem != null) {
-        //         cijferWi;
-        //         document.getElementById("wiskunde[1]").innerHTML = cijferWi;
-        //     }
-        // }
-
+        
 
         cijfersWillem();
 
@@ -484,7 +503,9 @@
 
         }
 
-        function cijferInvoerenJan() {
+        function cijferInvoerenJanWi() {
+           
+
             let cijferWiskundeJan = document.getElementById("wiskunde[2]").innerHTML;
             let cijferWi2 = prompt("Voer het nieuwe cijfer in");
 
@@ -493,18 +514,23 @@
                 document.getElementById("wiskunde[2]").innerHTML = cijferWi2;
 
             }
-            console.log("ik word opgeroepen vanuit cijfer invoeren Jan");
+
+           if (cijferWi2 < 5.5) {
+                document.getElementById("wiskunde[2]").style.backgroundColor = "red";
+            }
+
+            if (cijferWi2 >= 5.5) {
+                document.getElementById("wiskunde[2]").style.backgroundColor = "lightgreen";
+
+            }
+           if (cijferWi2 >= 7.5) {
+                document.getElementById("wiskunde[2]").style.backgroundColor = "green";
+
+            }
+
         }
 
-        // function cijferInvoerenWiskunde() {
-        //     let cijferWiskundeWillem = document.getElementById("wiskunde[1]").innerHTML;
-        //     let cijferWi = prompt("Voer het nieuwe cijfer in");
-
-        //     if (cijferWiskundeWillem != null) {
-        //         cijferWi;
-        //         document.getElementById("wiskunde[1]").innerHTML = cijferWi;
-        //     }
-
+       
         cijfersJan();
 
         // Cijfers Kim Sing
@@ -612,18 +638,32 @@
             }
 
         }
+        function cijferInvoerenKimSingWi() {
+           
 
-        function cijferInvoerenKimSing() {
-            let cijferWiskundeKimSing = document.getElementById("wiskunde[3]").innerHTML;
-            let cijferWi3 = prompt("Voer het nieuwe cijfer in");
+           let cijferWiskundeKimSing = document.getElementById("wiskunde[3]").innerHTML;
+           let cijferWi3 = prompt("Voer het nieuwe cijfer in");
 
-            if (cijferWiskundeKimSing != null) {
-                cijferWi3;
-                document.getElementById("wiskunde[3]").innerHTML = cijferWi3;
+           if (cijferWiskundeKimSing != null) {
+               cijferWi3;
+               document.getElementById("wiskunde[3]").innerHTML = cijferWi3;
 
-            }
+           }
 
-        }
+          if (cijferWi3 < 5.5) {
+               document.getElementById("wiskunde[3]").style.backgroundColor = "red";
+           }
+
+           if (cijferWi3 >= 5.5) {
+               document.getElementById("wiskunde[3]").style.backgroundColor = "lightgreen";
+
+           }
+          if (cijferWi3 >= 7.5) {
+               document.getElementById("wiskunde[3]").style.backgroundColor = "green";
+
+           }
+
+       }
 
         cijfersKimSing();
 
@@ -731,17 +771,32 @@
 
         }
 
-        function cijferInvoerenSamantha() {
-            let cijferWiskundeSamantha = document.getElementById("wiskunde[4]").innerHTML;
-            let cijferWi4 = prompt("Voer het nieuwe cijfer in");
+        function cijferInvoerenSamanthaWi() {
+           
 
-            if (cijferWiskundeSamantha != null) {
-                cijferWi4;
-                document.getElementById("wiskunde[4]").innerHTML = cijferWi4;
+           let cijferWiskundeSamantha = document.getElementById("wiskunde[4]").innerHTML;
+           let cijferWi4 = prompt("Voer het nieuwe cijfer in");
 
-            }
+           if (cijferWiskundeSamantha != null) {
+               cijferWi4;
+               document.getElementById("wiskunde[4]").innerHTML = cijferWi4;
 
-        }
+           }
+
+          if (cijferWi4 < 5.5) {
+               document.getElementById("wiskunde[4]").style.backgroundColor = "red";
+           }
+
+           if (cijferWi4 >= 5.5) {
+               document.getElementById("wiskunde[4]").style.backgroundColor = "lightgreen";
+
+           }
+          if (cijferWi4 >= 7.5) {
+               document.getElementById("wiskunde[4]").style.backgroundColor = "green";
+
+           }
+
+       }
 
         cijfersSamantha();
 
@@ -847,18 +902,32 @@
             }
 
         }
+        function cijferInvoerenJoyceWi() {
+           
 
-        function cijferInvoerenJoyce() {
-            let cijferWiskundeJoyce = document.getElementById("wiskunde[5]").innerHTML;
-            let cijferWi5 = prompt("Voer het nieuwe cijfer in");
+           let cijferWiskundeJoyce = document.getElementById("wiskunde[5]").innerHTML;
+           let cijferWi5 = prompt("Voer het nieuwe cijfer in");
 
-            if (cijferWiskundeJoyce != null) {
-                cijferWi5;
-                document.getElementById("wiskunde[5]").innerHTML = cijferWi5;
+           if (cijferWiskundeJoyce != null) {
+               cijferWi5;
+               document.getElementById("wiskunde[5]").innerHTML = cijferWi5;
 
-            }
+           }
 
-        }
+          if (cijferWi5 < 5.5) {
+               document.getElementById("wiskunde[5]").style.backgroundColor = "red";
+           }
+
+           if (cijferWi5 >= 5.5) {
+               document.getElementById("wiskunde[5]").style.backgroundColor = "lightgreen";
+
+           }
+          if (cijferWi5 >= 7.5) {
+               document.getElementById("wiskunde[5]").style.backgroundColor = "green";
+
+           }
+
+       }
         cijfersJoyce();
 
 
@@ -967,31 +1036,34 @@
 
         }
 
-        function cijferInvoerenGareth() {
-            let cijferWiskundeGareth = document.getElementById("wiskunde[6]").innerHTML;
-            let cijferWi6 = prompt("Voer het nieuwe cijfer in");
+        function cijferInvoerenGarethWi() {
+           
 
-            if (cijferWiskundeGareth != null) {
-                cijferWi6;
-                document.getElementById("wiskunde[6]").innerHTML = cijferWi6;
+           let cijferWiskundeGareth = document.getElementById("wiskunde[6]").innerHTML;
+           let cijferWi6 = prompt("Voer het nieuwe cijfer in");
 
-            }
+           if (cijferWiskundeGareth != null) {
+               cijferWi6;
+               document.getElementById("wiskunde[6]").innerHTML = cijferWi6;
 
-        }
+           }
+
+          if (cijferWi6 < 5.5) {
+               document.getElementById("wiskunde[6]").style.backgroundColor = "red";
+           }
+
+           if (cijferWi6 >= 5.5) {
+               document.getElementById("wiskunde[6]").style.backgroundColor = "lightgreen";
+
+           }
+          if (cijferWi6 >= 7.5) {
+               document.getElementById("wiskunde[6]").style.backgroundColor = "green";
+
+           }
+
+       }
 
         cijfersGareth();
-
-        function cijferInvoerenWiskunde() {
-            let cijferWiskundeWillem = document.getElementById("wiskunde[1]").innerHTML;
-            let voerInWi = prompt("Voer het nieuwe cijfer in");
-            let tekst;
-
-            if (cijferInvoerenWiskunde !=null) {
-                document.getElementById("wiskunde[1]").innerHTML =voerInWi;
-            }
-            
-        }
-
 
 
 

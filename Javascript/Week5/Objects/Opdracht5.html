@@ -1,14 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
-    <h5>Opdracht 5: Maak nu een Person object door gebruik te maken van Object initializers. Wat zou eventueel de voor en nadelen t.o.v Object constructors?</h5>
+    <h5>Opdracht 5: Maak nu een Person object door gebruik te maken van Object initializers. Wat zou eventueel de voor
+        en nadelen t.o.v Object constructors?</h5>
+
+        
+
     <script>
+
+const person1 = { naam: 'Vanessa', leeftijd: '43', woonplaats: 'Rotterdam' };
+
+console.log(person1);
+
+const naam = 'Vanessa';
+const leeftijd = '43';
+const woonplaats = 'Rotterdam';
+
+const person2 = {naam: 'Damian', leeftijd: '11', woonplaats: 'Rotterdam'};
+
+console.log(person2.naam);
+
+const person3 = {naam, leeftijd, woonplaats};
+console.log(person3.naam);
 
     </script>
 </body>
+
 </html>

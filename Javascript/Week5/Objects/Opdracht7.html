@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Opdracht7.css">
+</head>
+
+<body>
+    <h5>Opdracht 7: Met al de voorgaande onderdelen ben je nu in staat om een simpele spel te maken, Bijvoorbeeld rock,
+        paper scissor. Durf je het aan om dit te bouwen?
+    </h5>
+
+    <h1>Rock Paper Scissors</h1>
+
+    <h2>Computer kiest:</h2>
+    <h3 id="compChoice">?</h3>
+    <h2>Jij kiest:</h2>
+    <h3 id="userChoice">?</h3>
+    <h2>Uitslag</h2>
+    <h3 id="uitslag">?</h3>
+
+
+    <button class="choices" id="rock">Rock</button>
+    <button class="choices" id="paper">Paper</button>
+    <button class="choices" id="scissors">Scissors</button>
+    <button onclick="reset()" id="reset">Reset</button>
+
+    
+
+        <script>
+
+            let userChoice;
+            let computerChoice;
+            let result;
+            let randomNum;
+
+            const theResult = document.getElementById("uitslag");
+            const computerKiest = document.getElementById("compChoice");
+            const userKiest = document.getElementById("userChoice");
+            const resetKnop = document.getElementById("reset");
+            const mogelijkeKeuzes = document.querySelectorAll(".choices");
+
+            mogelijkeKeuzes.forEach(mogelijkeKeus => mogelijkeKeus.addEventListener("click", e =>
+            {
+                userChoice = e.target.id;
+                randomNum = Math.floor(Math.random() *3) +1;
+                maakCompChoice();
+                compareChoices();
+                computerKiest.innerHTML = '<img src="' + computerChoice + '.png">';
+                userKiest.innerHTML = '<img src="' + userChoice + '.png">';
+                theResult.innerHTML = result;
+            }))
+
+
+            function maakCompChoice() {
+                if (randomNum == 1) {
+                    computerChoice = 'rock';
+                }
+                else if (randomNum == 2) {
+                    computerChoice = 'paper';
+                }
+                else if (randomNum == 3) {
+                    computerChoice = 'scissors'
+                }
+            }
+
+            function reset() {
+                computerChoice = '?'
+                computerKiest.innerHTML = computerChoice;
+                randomNum = 0;
+                userChoice = '?';
+                userKiest.innerHTML = userChoice;
+                theResult.innerHTML = '?';
+            }
+
+                function compareChoices() {
+
+                    // Gelijkspel
+
+                    if (userChoice == computerChoice) {
+                        result = "Gelijkspel";
+                    }
+                    // User wins
+
+                    else if (userChoice == 'scissors' && computerChoice == 'paper') {
+                        result = "Jij hebt GEWONNEN!!";
+                    }
+
+                    else if (userChoice == 'paper' && computerChoice == 'rock') {
+                        result = "Jij hebt GEWONNEN!!";
+                    }
+
+                    else if (userChoice == 'rock' && computerChoice == 'scissors') {
+                        result = "Jij hebt GEWONNEN!!";
+                    }
+
+                    // Computer wins
+
+                    else if (userChoice == 'rock' && computerhoice == 'paper') {
+                        result = "Computer heeft gewonnen";
+                    }
+                    else if (userChoice == 'paper' && computerChoice == 'scissors') {
+                        result = "Computer heeft gewonnen";
+                    }
+                    else if (userChoice == 'scissors' && computerChoice == 'rock') {
+                        result = "Computer heeft gewonnen";
+                    }
+
+                }
+
+
+        </script>
+</body>
+
+</html>

@@ -1,3 +1,14 @@
+
+body {
+
+    margin-left: 500px;
+    margin-top: 90px;
+    background-color: rgb(153, 205, 50);
+}
+
+h1 {
+    margin-left: 20px;
+}
 .Calculator {
     border-width: 0.5px;
     border-color: black;
@@ -57,11 +68,12 @@
 }
 
 .fr {
-    background-color: rgb(223, 223, 223);
+    background-color: rgb(231, 227, 227);
+    color: black;
 }
 
 .mr {
-    background-color: rgb(172, 172, 172);
+    background-color: rgb(155, 151, 151);
 }
 
 
@@ -105,7 +117,7 @@
    
 }
 
-.cero {
+.zero {
     display: flex;
     align-content: space-around;
 

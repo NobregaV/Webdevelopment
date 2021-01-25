@@ -13,20 +13,58 @@
     const cijfer9 = document.getElementById("but[9]").innerHTML;
 
 
-    const keersom = document.getElementById("decimal").innerHTML;
+    const keersom = document.getElementById("multiplyl").innerHTML;
     const optellen = document.getElementById("plus").innerHTML;
     const aftrekken = document.getElementById("minus").innerHTML;
-    const delen = document.getElementById("slash").innerHTML;
+    const delen = document.getElementById("divide").innerHTML;
 
     const display = document.getElementById("displayOutput").innerHTML;
 
 
     console.log(cijfer1);
+    console.log(display);
 
-   
     
    }
 numeriek();
+
+// const rekenmachine = document.querySelector('.calculator');
+// const knoppen = rekenmachine.querySelector('.numbers');
+
+// knoppen.addEventListener('click', e => {
+//    if(e.target.matches('button')) {
+
+//    }
+// })
+
+// const knoppen = e.target;
+// const action = knoppen.CDATA_SECTION_NODE.action;
+
+// if(!action) {
+//    console.log('numer knoppen');
+// }
+
+// if (
+//    action === 'add' ||
+//    action === 'substract' ||
+//    action === 'multiply' ||
+//    action === 'divide' ||
+// )
+//    {
+//    console.log()
+// }
+
+// const calculator = document.querySelector(‘.calculator’)
+// const keys = calculator.querySelector(‘.calculator__keys’)
+
+// keys.addEventListener(‘click’, e => {
+//  if (e.target.matches(‘button’)) {
+//    // Do something
+//  }
+// })
+
+
+
 
 
 

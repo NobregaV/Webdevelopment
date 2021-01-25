@@ -13,7 +13,7 @@
 
     <div class="Calculator">
         <!-- display komt hierin -->
-        <div class="display" id="displayOutput">0</div>
+        <div class="display" id="displayOutput" value="">0</div>
 
 
         <div class="numbers" id="numbers">
@@ -26,26 +26,26 @@
                 <button type="button" class="buttnum firstrow fr" onclick="">AC</button>
                 <button type="button" class="buttnum firstrow fr" onclick="">+/-</button>
                 <button type="button" class="buttnum firstrow fr" onclick="">%</button>
-                <button type="button" class="buttRight slash" id="slash" onclick="">/</button>
+                <button type="button" class="buttRight divide" id="divide" onclick="">/</button>
 
             </div>
             <div class="secondrow">
                 <button type="button" class="buttnum 7 secondrow mr" id="but[7]" value="7" onclick="nummerinvoeren()">7</button>
                 <button type="button" class="buttnum 8 secondrow mr" id="but[8]" value="8" onclick="nummerinvoeren()">8</button>
                 <button type="button" class="buttnum 9 secondrow mr" id="but[9]" value="9" onclick="nummerinvoeren()">9</button>
-                <button type="button" class="buttRight decimal" id="decimal" onclick="">x</button>
+                <button type="button" class="buttRight multiply" id="multiply" onclick="">x</button>
             </div>
             <div class="thirdrow">
                 <button type="button" class="buttnum 4 thirdrow mr" id="but[4]" value="4" onclick="">4</button>
                 <button type="button" class="buttnum 5 thirdrow mr" id="but[5]" value="5" onclick="">5</button>
                 <button type="button" class="buttnum 6 thirdrow mr" id="but[6]" value="6" onclick="">6</button>
-                <button type="button" class="buttRight minus" id="minus" onclick="">-</button>
+                <button type="button" class="buttRight minus" id="minus" onclick="" data-action="subtract">-</button>
             </div>
             <div class="fourthrow">
                 <button type="button" class="buttnum 1 fourthrow mr" id="but[1]" value="1" onclick="">1</button>
                 <button type="button" class="buttnum 2 fourthrow mr" id="but[2]" value="2" onclick="">2</button>
                 <button type="button" class="buttnum 3 fourthrow mr" id="but[3]" value="3" onclick="">3</button>
-                <button type="button" class="buttRight plus" id="plus" onclick="">+</button>
+                <button type="button" class="buttRight plus" id="plus" onclick="" data-action="add">+</button>
             </div>
 
             <div class="zero">
@@ -56,6 +56,8 @@
                 </div>
                 <button type="button" class="buttRight is" onclick="">=</button>
             </div>
+
+
 
 
 

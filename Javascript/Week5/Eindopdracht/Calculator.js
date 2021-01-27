@@ -1,5 +1,9 @@
 
+function display() {
 
+   return document.getElementById("displayOutput").innerHTML;
+
+}
 
 function nummerinvoeren0() {
    let cijfer0 = document.getElementById("zero").innerHTML;
@@ -11,14 +15,10 @@ function nummerinvoeren0() {
       document.getElementById("displayOutput").innerHTML += cijfer0;
 
 
-
    }
-   // console.log(cijfer1);
-   // console.log(display);
+
 
 }
-
-nummerinvoeren0();
 
 
 function nummerinvoeren1() {
@@ -31,12 +31,9 @@ function nummerinvoeren1() {
       document.getElementById("displayOutput").innerHTML += cijfer1;
 
    }
-   // console.log(cijfer1);
-   // console.log(display);
+
 
 }
-
-nummerinvoeren1();
 
 
 function nummerinvoeren2() {
@@ -47,9 +44,9 @@ function nummerinvoeren2() {
    if (cijfer2) {
       document.getElementById("displayOutput").innerHTML += cijfer2;
    }
-   // console.log(cijfer2);
+
 }
-nummerinvoeren2();
+
 
 
 function nummerinvoeren3() {
@@ -60,9 +57,9 @@ function nummerinvoeren3() {
    if (cijfer3) {
       document.getElementById("displayOutput").innerHTML += cijfer3;
    }
-   // console.log(cijfer2);
+
 }
-nummerinvoeren4();
+
 
 function nummerinvoeren4() {
 
@@ -72,9 +69,9 @@ function nummerinvoeren4() {
    if (cijfer4) {
       document.getElementById("displayOutput").innerHTML += cijfer4;
    }
-   // console.log(cijfer2);
+
 }
-nummerinvoeren5();
+
 
 function nummerinvoeren5() {
 
@@ -84,9 +81,9 @@ function nummerinvoeren5() {
    if (cijfer5) {
       document.getElementById("displayOutput").innerHTML += cijfer5;
    }
-   // console.log(cijfer2);
+
 }
-nummerinvoeren5();
+
 
 function nummerinvoeren6() {
 
@@ -96,9 +93,9 @@ function nummerinvoeren6() {
    if (cijfer6) {
       document.getElementById("displayOutput").innerHTML += cijfer6;
    }
-   // console.log(cijfer2);
+
 }
-nummerinvoeren6();
+
 
 function nummerinvoeren7() {
 
@@ -108,53 +105,119 @@ function nummerinvoeren7() {
    if (cijfer7) {
       document.getElementById("displayOutput").innerHTML += cijfer7;
    }
-   // console.log(cijfer2);
+
 }
-nummerinvoeren7();
+
 
 function nummerinvoeren8() {
 
    let cijfer8 = document.getElementById("but[8]").innerHTML;
-
+   console.log(cijfer8);
 
    if (cijfer8) {
       document.getElementById("displayOutput").innerHTML += cijfer8;
    }
-   // console.log(cijfer2);
+
 }
-nummerinvoeren8();
+
 
 function nummerinvoeren9() {
 
    let cijfer9 = document.getElementById("but[9]").innerHTML;
-
+   console.log(cijfer9);
 
    if (cijfer9) {
       document.getElementById("displayOutput").innerHTML += cijfer9;
    }
-   // console.log(cijfer2);
+
 }
-nummerinvoeren9();
+
 
 function nummerinvoerenpunt() {
 
    let punt = document.getElementById("punt").innerHTML;
 
+   document.getElementById("displayOutput").innerHTML = display() + punt;
 
-   if (punt) {
-      document.getElementById("displayOutput").innerHTML = punt;
-   }
-   // console.log(cijfer2);
-}
-nummerinvoerenpunt();
 
-function operatorinvoeren() {
-   const operator = document.getElementsByClassName("btn_operator");
-
-   console.log(operator);
 }
 
-operatorinvoeren();
+
+function operatorinvoerenplus() {
+   const operator = document.getElementById("+").innerHTML;
+   document.getElementById("displayOutput").innerHTML = display() + operator;
+
+
+}
+
+function operatorinvoerenminus() {
+
+   const minus = document.getElementById("minus").innerHTML;
+   document.getElementById("displayOutput").innerHTML = display() + minus;
+
+}
+
+function operatorinvoerenmultiply() {
+
+   const multiply = document.getElementById("multiply").innerHTML;
+   document.getElementById("displayOutput").innerHTML = display() + multiply;
+
+
+}
+
+function operatorinvoerendivide() {
+
+   const divide = document.getElementById("divide").innerHTML;
+   document.getElementById("displayOutput").innerHTML = display() + divide;
+
+
+
+}
+
+function operatorinvoerenresult() {
+
+   let resultaat = document.getElementById("displayOutput").innerText;
+   resultaat = eval(resultaat);
+   // console.log(resultaat);
+
+   document.getElementById("displayOutput").innerText = resultaat;
+
+
+}
+
+function invoerenplusminus() {
+
+   const minplus = document.getElementById("minplus").innerHTML;
+   document.getElementById("displayOutput").innerHTML = display() + minplus;
+  
+
+}
+
+function invoerenac() {
+
+   const clearbutton = document.getElementById("clear").innerHTML;
+   document.getElementById("displayOutput").innerHTML = display() - display();
+ 
+
+
+}
+
+function invoerenpercentage() {
+
+   const percentage = document.getElementById("percentage").innerHTML;
+   document.getElementById("displayOutput").innerHTML = display() + percentage;
+
+}
+
+
+
+
+
+
+
+
+
+
 
 
 

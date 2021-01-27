@@ -13,7 +13,7 @@
 
     <div class="Calculator">
         <!-- display komt hierin -->
-        <div class="display" id="displayOutput" value="">0</div>
+        <div class="display" id="displayOutput"></div>
 
 
         <div class="numbers" id="numbers">
@@ -23,38 +23,38 @@
 
             <div class="acButton firstrow" id="firstRow">
                 <!-- ac +- komt hierin -->
-                <button type="button" class="buttnum firstrow fr" onclick="">AC</button>
-                <button type="button" class="buttnum firstrow fr" onclick="">+/-</button>
-                <button type="button" class="buttnum firstrow fr" onclick="">%</button>
-                <button type="button" class="buttRight divide" id="divide" onclick="">/</button>
+                <button type="button" class="buttnum firstrow fr" id="clear" onclick="nummerinvoeren()">AC</button>
+                <button type="button" class="buttnum firstrow fr" onclick="nummerinvoeren()">+/-</button>
+                <button type="button" class="buttnum firstrow fr" onclick="nummerinvoeren()">%</button>
+                <button type="button" class="buttRight divide btn_operator" id="divide" onclick="nummerinvoeren(this)">/</button>
 
             </div>
             <div class="secondrow">
-                <button type="button" class="buttnum 7 secondrow mr" id="but[7]" value="7" onclick="nummerinvoeren()">7</button>
-                <button type="button" class="buttnum 8 secondrow mr" id="but[8]" value="8" onclick="nummerinvoeren()">8</button>
-                <button type="button" class="buttnum 9 secondrow mr" id="but[9]" value="9" onclick="nummerinvoeren()">9</button>
-                <button type="button" class="buttRight multiply" id="multiply" onclick="">x</button>
+                <button type="button" class="buttnum 7 secondrow mr" id="but[7]" value="7" onclick="nummerinvoeren7()">7</button>
+                <button type="button" class="buttnum 8 secondrow mr" id="but[8]" value="8" onclick="nummerinvoeren8()">8</button>
+                <button type="button" class="buttnum 9 secondrow mr" id="but[9]" value="9" onclick="nummerinvoeren9()">9</button>
+                <button type="button" class="buttRight multiply btn_operator" id="multiply" onclick="nummerinvoeren(this)">x</button>
             </div>
             <div class="thirdrow">
-                <button type="button" class="buttnum 4 thirdrow mr" id="but[4]" value="4" onclick="">4</button>
-                <button type="button" class="buttnum 5 thirdrow mr" id="but[5]" value="5" onclick="">5</button>
-                <button type="button" class="buttnum 6 thirdrow mr" id="but[6]" value="6" onclick="">6</button>
-                <button type="button" class="buttRight minus" id="minus" onclick="" data-action="subtract">-</button>
+                <button type="button" class="buttnum 4 thirdrow mr" id="but[4]" value="4" onclick="nummerinvoeren4()">4</button>
+                <button type="button" class="buttnum 5 thirdrow mr" id="but[5]" value="5" onclick="nummerinvoeren5()">5</button>
+                <button type="button" class="buttnum 6 thirdrow mr" id="but[6]" value="6" onclick="nummerinvoeren6()">6</button>
+                <button type="button" class="buttRight minus btn_operator" id="minus" onclick="nummerinvoeren(this)">-</button>
             </div>
             <div class="fourthrow">
-                <button type="button" class="buttnum 1 fourthrow mr" id="but[1]" value="1" onclick="">1</button>
-                <button type="button" class="buttnum 2 fourthrow mr" id="but[2]" value="2" onclick="">2</button>
-                <button type="button" class="buttnum 3 fourthrow mr" id="but[3]" value="3" onclick="">3</button>
-                <button type="button" class="buttRight plus" id="plus" onclick="" data-action="add">+</button>
+                <button type="button" class="buttnum 1 fourthrow mr" id="but[1]" value="1" onclick="nummerinvoeren1()">1</button>
+                <button type="button" class="buttnum 2 fourthrow mr" id="but[2]" value="2" onclick="nummerinvoeren2()">2</button>
+                <button type="button" class="buttnum 3 fourthrow mr" id="but[3]" value="3" onclick="nummerinvoeren3()">3</button>
+                <button type="button" class="buttRight plus btn_operator" id="plus" onclick="operatorinvoeren(this)">+</button>
             </div>
 
             <div class="zero">
-                <button type="button" class="buttnum0 lastrow mr" id="zero" value="0" onclick="">0</button>
+                <button type="button" class="buttnum0 lastrow mr" id="zero" value="0" onclick="nummerinvoeren0()">0</button>
 
                 <div class="punt">
-                    <button type="button" class="buttnumpunt lastrow mr" id="punt" onclick="">.</button>
+                    <button type="button" class="buttnumpunt lastrow mr" id="punt" onclick="nummerinvoerenpunt()">.</button>
                 </div>
-                <button type="button" class="buttRight is" onclick="">=</button>
+                <button type="button" class="buttRight is btn_operator" onclick="nummerinvoeren()">=</button>
             </div>
 
 

@@ -3,16 +3,19 @@ function display() {
 
    return document.getElementById("displayOutput").innerHTML;
 
+
 }
 
 function nummerinvoeren0() {
    let cijfer0 = document.getElementById("zero").innerHTML;
    let display = document.getElementById("displayOutput").innerHTML;
 
+
    if (cijfer0) {
 
 
       document.getElementById("displayOutput").innerHTML += cijfer0;
+      document.getElementById("clear").innerHTML = "C";
 
 
    }
@@ -29,6 +32,7 @@ function nummerinvoeren1() {
 
 
       document.getElementById("displayOutput").innerHTML += cijfer1;
+      document.getElementById("clear").innerHTML = "C";
 
    }
 
@@ -43,6 +47,7 @@ function nummerinvoeren2() {
 
    if (cijfer2) {
       document.getElementById("displayOutput").innerHTML += cijfer2;
+      document.getElementById("clear").innerHTML = "C";
    }
 
 }
@@ -56,6 +61,7 @@ function nummerinvoeren3() {
 
    if (cijfer3) {
       document.getElementById("displayOutput").innerHTML += cijfer3;
+      document.getElementById("clear").innerHTML = "C";
    }
 
 }
@@ -68,6 +74,7 @@ function nummerinvoeren4() {
 
    if (cijfer4) {
       document.getElementById("displayOutput").innerHTML += cijfer4;
+      document.getElementById("clear").innerHTML = "C";
    }
 
 }
@@ -80,6 +87,7 @@ function nummerinvoeren5() {
 
    if (cijfer5) {
       document.getElementById("displayOutput").innerHTML += cijfer5;
+      document.getElementById("clear").innerHTML = "C";
    }
 
 }
@@ -92,6 +100,7 @@ function nummerinvoeren6() {
 
    if (cijfer6) {
       document.getElementById("displayOutput").innerHTML += cijfer6;
+      document.getElementById("clear").innerHTML = "C";
    }
 
 }
@@ -104,6 +113,7 @@ function nummerinvoeren7() {
 
    if (cijfer7) {
       document.getElementById("displayOutput").innerHTML += cijfer7;
+      document.getElementById("clear").innerHTML = "C";
    }
 
 }
@@ -116,6 +126,7 @@ function nummerinvoeren8() {
 
    if (cijfer8) {
       document.getElementById("displayOutput").innerHTML += cijfer8;
+      document.getElementById("clear").innerHTML = "C";
    }
 
 }
@@ -128,7 +139,11 @@ function nummerinvoeren9() {
 
    if (cijfer9) {
       document.getElementById("displayOutput").innerHTML += cijfer9;
+      document.getElementById("clear").innerHTML = "C";
+
    }
+
+
 
 }
 
@@ -146,14 +161,22 @@ function nummerinvoerenpunt() {
 function operatorinvoerenplus() {
    const operator = document.getElementById("+").innerHTML;
    document.getElementById("displayOutput").innerHTML = display() + operator;
+   document.getElementById("+").style.background = "white";
+   document.getElementById("+").style.color = "orange";
 
 
 }
+   
+
+
+
 
 function operatorinvoerenminus() {
 
    const minus = document.getElementById("minus").innerHTML;
    document.getElementById("displayOutput").innerHTML = display() + minus;
+   document.getElementById("minus").style.background = "white";
+   document.getElementById("minus").style.color = "orange";
 
 }
 
@@ -161,6 +184,8 @@ function operatorinvoerenmultiply() {
 
    const multiply = document.getElementById("multiply").innerHTML;
    document.getElementById("displayOutput").innerHTML = display() + multiply;
+   document.getElementById("multiply").style.background = "white";
+   document.getElementById("multiply").style.color = "orange";
 
 
 }
@@ -169,6 +194,8 @@ function operatorinvoerendivide() {
 
    const divide = document.getElementById("divide").innerHTML;
    document.getElementById("displayOutput").innerHTML = display() + divide;
+   document.getElementById("divide").style.background = "white";
+   document.getElementById("divide").style.color = "orange";
 
 
 
@@ -176,11 +203,14 @@ function operatorinvoerendivide() {
 
 function operatorinvoerenresult() {
 
-   let resultaat = document.getElementById("displayOutput").innerText;
+   let resultaat = document.getElementById("displayOutput").innerHTML;
    resultaat = eval(resultaat);
    // console.log(resultaat);
 
-   document.getElementById("displayOutput").innerText = resultaat;
+   document.getElementById("displayOutput").innerHTML = resultaat;
+   document.getElementById("result").style.background = "white";
+   document.getElementById("result").style.color = "orange";
+   document.getElementById("clear").innerHTML = "AC";
 
 
 }
@@ -188,16 +218,17 @@ function operatorinvoerenresult() {
 function invoerenplusminus() {
 
    const minplus = document.getElementById("minplus").innerHTML;
-   document.getElementById("displayOutput").innerHTML = display() + minplus;
-  
+   // document.getElementById("displayOutput").innerHTML = display() + minplus;
+
 
 }
 
 function invoerenac() {
 
    const clearbutton = document.getElementById("clear").innerHTML;
-   document.getElementById("displayOutput").innerHTML = display() - display();
- 
+   document.getElementById("displayOutput").innerHTML = "";
+
+
 
 
 }
@@ -208,6 +239,9 @@ function invoerenpercentage() {
    document.getElementById("displayOutput").innerHTML = display() + percentage;
 
 }
+
+
+
 
 
 

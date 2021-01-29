@@ -127,6 +127,7 @@ function nummerinvoeren8() {
    if (cijfer8) {
       document.getElementById("displayOutput").innerHTML += cijfer8;
       document.getElementById("clear").innerHTML = "C";
+
    }
 
 }
@@ -144,14 +145,12 @@ function nummerinvoeren9() {
    }
 
 
-
 }
 
 
 function nummerinvoerenpunt() {
 
    let punt = document.getElementById("punt").innerHTML;
-
    document.getElementById("displayOutput").innerHTML = display() + punt;
 
 
@@ -166,7 +165,7 @@ function operatorinvoerenplus() {
 
 
 }
-   
+
 
 
 
@@ -196,15 +195,24 @@ function operatorinvoerendivide() {
    document.getElementById("displayOutput").innerHTML = display() + divide;
    document.getElementById("divide").style.background = "white";
    document.getElementById("divide").style.color = "orange";
-
-
+   
 
 }
 
 function operatorinvoerenresult() {
-
    let resultaat = document.getElementById("displayOutput").innerHTML;
+// Als hij de eerste string heeft en de laatste string leeg is (2)
+
+   let temp = resultaat.split(/([+,-,*,/])/);
+   if (temp.length === 3 && temp[2] === "") {
+      resultaat += temp[0];
+   }
+
    resultaat = eval(resultaat);
+   // wanneer nummer geen rond getal heeft (zie uitroeptekenNumber)
+   if (!Number.isInteger(resultaat)){
+      resultaat = resultaat.toFixed(2);
+   }
    // console.log(resultaat);
 
    document.getElementById("displayOutput").innerHTML = resultaat;
@@ -215,21 +223,12 @@ function operatorinvoerenresult() {
 
 }
 
-function invoerenplusminus() {
 
-   const minplus = document.getElementById("minplus").innerHTML;
-   // document.getElementById("displayOutput").innerHTML = display() + minplus;
-
-
-}
 
 function invoerenac() {
 
    const clearbutton = document.getElementById("clear").innerHTML;
    document.getElementById("displayOutput").innerHTML = "";
-
-
-
 
 }
 
@@ -239,6 +238,31 @@ function invoerenpercentage() {
    document.getElementById("displayOutput").innerHTML = display() + percentage;
 
 }
+
+
+function invoerenplusminus() {
+   minplus = document.getElementById("displayOutput").innerText;
+   const min = "-";
+   let minerbij = min.concat(minplus);
+   let mineraf = minplus.slice(1);
+   if (minplus.indexOf("-")) {
+      document.getElementById("displayOutput").innerText = minerbij;
+   }
+   else {
+      document.getElementById("displayOutput").innerText = mineraf;
+   }
+}
+
+
+
+
+
+
+
+
+// Regex zorgt ervoor dat je eerste invoer wordt meegenomen als tweede input in dezelfde opdracht.
+// Dus bijvoorbeeld je typt in 5 + dan 
+
 
 
 

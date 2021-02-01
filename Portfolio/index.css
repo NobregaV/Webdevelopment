@@ -1,0 +1,111 @@
+
+.naam {
+    position: absolute;
+    left: 200px;
+}
+
+h1 {
+    font-family: 'Abel', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
+    color:#444440;
+    position: relative;
+    bottom: -100px;
+    right: -500px;
+    
+}
+
+h2 {
+    font-family: 'Abel', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
+    color:#38b6ff;
+    position: relative;
+    bottom: -170px;
+    right: -700px;
+
+}
+
+.profoto {
+border-radius: 50%;
+width: 200px;
+height: 200px;
+position: absolute;
+top: 80px;
+z-index: 1;
+
+}
+
+.banner {
+    width: 100%;
+    height: 150px;
+    position: absolute;
+    z-index: 1;
+}
+
+
+
+.sideBanner {
+    height: 100%;
+    width: 350px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #242424;
+    overflow-x: hidden;
+    padding-top: 20px;
+  }
+
+  .topnav {
+    text-align: center;
+    background-color: #242424;
+    position: absolute;
+    z-index: 1;
+  
+    
+  }
+
+  .active {
+      color: white;
+      
+  }
+
+  .container {
+    width: 300px;
+    background-color: #ddd;
+    position: relative;
+    top: 200px;
+    z-index: 1;
+  }
+  
+  .skills {
+    text-align: right;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+    font-size: 10px;
+  }
+  
+  .html {width: 90%; height: 1px; background-color: #ff914d;}
+  .css {width: 80%; height: 1px; background-color: #ff914d;}
+  .js {width: 75%; height: 1px; background-color: #ff914d;}
+  .scrum {width: 95%; height: 1px; background-color: #ff914d;}
+
+  button {
+      width: 10px;
+      height: 10px;
+  }
+
+  .box-skills {
+    width: 300px;  
+    height: 500px;
+  background-color: violet;
+    position: relative;
+    top: 300px;
+    text-align: left;
+    z-index: 1;
+    color: white;
+  
+   
+  }
+
+  

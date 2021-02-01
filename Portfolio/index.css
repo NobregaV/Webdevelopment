@@ -1,15 +1,28 @@
 
-.naam {
-    position: absolute;
-    left: 200px;
+.topnav {
+width: 100%;
+display: flex;
+flex-direction: row;
+justify-content: space-around;
 }
 
+
+.naam {
+    position: absolute;
+    
+}
+.profiel {
+position: relative;
+top: -500px;
+
+}
 h1 {
     font-family: 'Abel', sans-serif;
     font-family: 'Source Sans Pro', sans-serif;
+    font-size: 80px;
     color:#444440;
     position: relative;
-    bottom: -100px;
+    bottom: -50px;
     right: -500px;
     
 }
@@ -17,17 +30,38 @@ h1 {
 h2 {
     font-family: 'Abel', sans-serif;
     font-family: 'Source Sans Pro', sans-serif;
+    font-size: 35px;
     color:#38b6ff;
     position: relative;
-    bottom: -170px;
+    bottom: -200px;
     right: -700px;
 
 }
 
+p {
+    font-family: 'Abel', sans-serif;
+font-family: 'Source Sans Pro', sans-serif;
+}
+
+li {
+    font-family: 'Abel', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.about {
+    font-family: 'Abel', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 30px;
+    color:#ff914d;
+    position: relative;
+    bottom: -20px;
+    right: -1px;
+}
+
 .profoto {
 border-radius: 50%;
-width: 200px;
-height: 200px;
+width: 210px;
+height: 210px;
 position: absolute;
 top: 80px;
 z-index: 1;
@@ -79,9 +113,9 @@ z-index: 1;
   
   .skills {
     text-align: right;
-    padding-top: 10px;
+    padding-top: 1px;
     padding-bottom: 10px;
-    color: white;
+    color: black;
     font-size: 10px;
   }
   
@@ -89,23 +123,39 @@ z-index: 1;
   .css {width: 80%; height: 1px; background-color: #ff914d;}
   .js {width: 75%; height: 1px; background-color: #ff914d;}
   .scrum {width: 95%; height: 1px; background-color: #ff914d;}
+  .java {width: 80%; height: 1px; background-color: #ff914d;}
 
-  button {
-      width: 10px;
-      height: 10px;
-  }
+ 
 
   .box-skills {
     width: 300px;  
     height: 500px;
-  background-color: violet;
     position: relative;
     top: 300px;
     text-align: left;
     z-index: 1;
     color: white;
   
-   
   }
+
+  .test {
+      
+      position: relative;
+      top: -300px;
+      left: 450px;
+      width: 800px;
+      height: 400px;
+
+    
+  }
+
+  .footer {
+      width: 100%;
+      height: 50px;
+      background-color: #242424;
+    
+  }
+
+ 
 
   

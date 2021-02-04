@@ -1,5 +1,9 @@
+li {
+  font-size: 15px;
+}
+
 .mb-0 {
-    font-size: 25px;
+    font-size: 15px;
 } 
 
 .skills {
@@ -10,20 +14,14 @@
     font-size: 10px;
   }
   
-  .html {width: 90%; height: 1px; margin-left: 10px; background-color: #ff914d;}
-  .css {width: 80%; height: 1px; margin-left: 10px; background-color: #ff914d;}
-  .js {width: 75%; height: 1px; margin-left: 10px; background-color: #ff914d;}
-  .scrum {width: 95%; height: 1px; margin-left: 10px; background-color: #ff914d;}
-  .java {width: 80%; height: 1px; margin-left: 10px; background-color: #ff914d;}
 
-
-  .icon-skill-html { display: flex; margin: 10px;}
-  .icon-skill-css { display: flex; margin: 10px;}
-  .icon-skill-js { display: flex; margin: 10px;}
-  .icon-skill-java { display: flex; margin: 10px;}
-  .icon-skill-scrum { display: flex; margin: 10px;}
-
-
+.progress-bar-warning {
+  margin-left: 10px;
+  width: 90%; height: 80px;
+  text-align: center;
+  font-size: 15px;
+ 
+}
   .foot {
     color: white;
     }

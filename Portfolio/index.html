@@ -4,150 +4,307 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Vanessa Braumüller</title>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Abel&family=Source+Sans+Pro:wght@700&display=swap"
-        rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Abel&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,200&display=swap"
-        rel="stylesheet">
-
-    <link rel="stylesheet" href="index.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="all.min.css">
+    <link rel="stylesheet" href="bootstrap.min.css">
     <script src="https://kit.fontawesome.com/0127b20a4f.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-
-    <div class="sideBanner">
-
-    </div>
-    <header class="header">
-
-        <!-- Banner boven -->
-        <div class="boxbannerboven">
-
-            <div>
-                <img src="banner-boven-profiel.png" alt="achtergrond-boven" class="banner"><br>
-
-                <img src="Vanessa.jpg" class="profoto" alt="vanessa">
-
+    <!-- Welcome Section -->
+    <section id="tmWelcome" class="parallax-window" data-parallax="scroll" data-image-src="mini-profile-bg-01.jpg">
+        <div class="container-fluid tm-brand-container-outer">
+            <div class="row">
+                <div class="col-12">
+                    <!-- Logo Area -->
+                    <!-- Black transparent bg -->
+                    <div class="ml-auto mr-0 tm-bg-black-transparent text-white tm-brand-container-inner">
+                        <div class="tm-brand-container text-center">
+                            <h1 class="tm-brand-name">Vanessa Braumüller</h1>
+                            <p class="tm-brand-description mb-0">Jr Backend Developer</p>
+                        </div>
+                    </div>
+                </div>
             </div>
+        </div>
 
-            <!-- Navigatiebalk -->
-            <div class="topnav">
-                <a class="active" href="#home">HOME</a>
-                <a class="active" href="#contact">CONTACT</a>
-                <a class="active" href="#about">ABOUT ME</a>
+        <div class="tm-bg-white-transparent tm-welcome-container">
+            <div class="container-fluid">
+                <div class="row h-100">
+                    <!-- Welcome Text -->
+                    <!-- White transparent bg -->
+                    <div class="col-md-7 tm-welcome-left-col">
+                        <div class="tm-welcome-left">
+                            <h2 class="tm-welcome-title">Hello World, Welcome to my portfolio</h2>
+                            <p class="pb-0">~And suddenly you know it's time to start something new~<br><br>At the age
+                                of 43, I decided to make a career switch that I do not regret. At the moment I am busy
+                                developing my coding skills. I enjoy
+                                programming. I enjoy working independently, but don't hesitate to ask for help. Taking a
+                                deep dive
+                                into a process and coming up with solutions makes me happy. I enjoy using my knowledge
+                                and
+                                experience to create great solutions for customers.</p>
+                        </div>
+                    </div>
+                    <!-- Brown bg -->
+
+                    <div class="col-md-5">
+                        <div class="tm-welcome-right">
+                            <a class="foot" href="https://www.linkedin.com/in/vanessabraumuller/">
+                                <i class="fab fa-linkedin fa-2x"></i></a>
+                            <a class="foot" href="https://github.com/NobregaV/Webdevelopment"><i
+                                    class="fab fa-github-square fa-2x"></i></a>
+                            <a class="foot" href="">icon</a>
+                            <a class="foot" href="">icon</a>
+                            <p class="mb-0"> <br><br>
+                                ~Trust the magic of
+                                beginnings~
+                            </p>
+                        </div>
+                    </div>
+                </div>
             </div>
-    </header>
-    <!-- Banner links -->
-    <div class="bannerLinks" </div>
+        </div>
+    </section>
+    <!-- End Welcome section -->
 
-        <img src="" alt="" class="img_profiel">
-        <!-- Skills overzicht -->
-        <div class="box-skills">
-            <p>MY SKILLS</p><br>
+    <!-- Portfolio section -->
+    <section id="tmPortfolio">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12">
 
-            <!-- HTML skills -->
-            <div class="html-class">
-                <p>Html</p>
-                <div class="icon-sklill-html">
-                    <i class="fab fa-html5"></i>
-                    <div class="skills html">85%</div>
+                    <div class="tm-portfolio-item">
+                        <div class="tm-portfolio-name text-white tm-bg-orange">
+                            Skills
+                        </div>
+                        <div class="tm-portfolio-description">
+                            <!-- <h3 class="tm-text-orange">
+                            ?
+                            <span class="tm-title-small">?</span>
+                          </h3> -->
+                            <!-- <p class="mb-0">
+                          statusbar toevoegen
+                          </p> -->
+
+                            <div class="container">
+                                <p>HTML
+                                <p>
+                                <div class="progress">
+                                    <i class="fab fa-html5 fa-2x"></i>
+                                    <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0"
+                                        aria-valuemax="100" style="width:85%">
+                                        85%
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <!-- <div class="html-class">
+                                <p>HTML</p>
+                                <div class="icon-skill-html">
+                                    <i class="fab fa-html5 fa-2x"></i>
+                                    <div class="skills html">85%</div>
+                                </div>
+                            </div> -->
+
+                            <!-- CSS Skills -->
+                            <p>CSS
+                            <p>
+                            <div class="progress">
+                                <i class="fab fa-html5 fa-2x"></i>
+                                <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0"
+                                    aria-valuemax="100" style="width:80%">
+                                    80%
+                                </div>
+                            </div>
+
+                            <!-- Javascript skills -->
+                            <p>JAVASCRIPT</p>
+                            <div class="progress">
+                                <i class="fab fa-html5 fa-2x"></i>
+                                <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0"
+                                    aria-valuemax="100" style="width:85%">
+                                    85%
+                                </div>
+                            </div>
+
+                            <!-- Java skills -->
+                            <p>JAVA</p>
+                            <div class="progress">
+                                <i class="fab fa-html5 fa-2x"></i>
+                                <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0"
+                                    aria-valuemax="100" style="width:80%">
+                                    80%
+                                </div>
+                            </div>
+
+                            <!-- Scrum Skills -->
+                            <p>AGILE</p>
+                            <div class="progress">
+                                <i class="fab fa-html5 fa-2x"></i>
+                                <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0"
+                                    aria-valuemax="100" style="width:95%">
+                                    95%
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                    <div class="tm-portfolio-item">
+
+                        <div class="tm-portfolio-name text-white tm-bg-green">
+                            Expert Proces en Systeem
+                        </div>
+                        <div class="tm-portfolio-description">
+                            <h3 class="tm-text-green">
+                                Eneco
+                                <span class="tm-title-small">(2019 January to Present)</span>
+                            </h3>
+
+                            <!-- LET OP!! UL!!! -->
+                            <ul class="mb-0">
+
+                                <li>Working according to Agile / Scrum method.</li>
+                                <li>Responsible for substantive contribution to process changes.</li>
+                                <li>Solving and signaling issues.</li>
+                                <li>Contributing to simplifying systems.</li>
+                                <li>Participate in refinements and testing of the final product.</li>
+                                <li>Responsible for securing knowledge and processes.</li>
+                                <li>Intermediate between IT, front office and back office.</li>
+                                <li>Submitting improvement proposals for process and system.</li>
+                            </ul>
+
+                        </div>
+                    </div>
+
+                    <div class="tm-portfolio-item">
+                        <div class="tm-portfolio-name text-white tm-bg-orange">
+                            Web Development
+                        </div>
+                        <div class="tm-portfolio-description">
+                            <h3 class="tm-text-orange">
+                                TechGrounds
+                                <span class="tm-title-small">(2020 November to 2021 June)</span>
+                            </h3>
+                            <p class="mb-0">
+                                Learning HTML, CSS, Booststrap, Sass, Javascript, Java. etc etc etc etc etc etc
+                            </p>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End portfolio section -->
+
+    <!-- Contact section -->
+    <div id="tmContact" class="parallax-window" data-parallax="scroll" data-image-src="mini-profile-bg-02.jpg">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12">
+                    <div class="tm-contact-items-container">
+                        <div class="tm-contact-item">
+                            <i class="fas fa-5x fa-briefcase tm-contact-item-icon"></i>
+                            <p class="mb-0">
+                                Test
+                            </p>
+                        </div>
+                        <div class="tm-contact-item">
+                            <i class="fas fa-5x fa-building tm-contact-item-icon"></i>
+                            <p class="mb-0">
+                                Test2
+                            </p>
+                        </div>
+
+                        <div class="tm-contact-item">
+                            <i class="fas fa-5x fa-balance-scale tm-contact-item-icon"></i>
+                            <p class="mb-0">
+                                Test3
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
 
-            <!-- CSS Skills -->
-            <p>Css</p>
-            <div class="icon-sklill-css">
-                <i class="fab fa-css3-alt"></i>
-                <div class="skills css">80%</div>
-            </div>
+            <!-- <div class="row">
+                <div class="col-12">
+                    <form action="index.html" method="POST" id="tmContactForm" class="tm-bg-white-transparent">
+                        <div class="form-group">
+                            <input type="text" id="contact_name" name="contact_name"
+                                class="form-control rounded-0 border-top-0 border-right-0 border-left-0"
+                                placeholder="Name" required />
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="contact_email" name="contact_email"
+                                class="form-control rounded-0 border-top-0 border-right-0 border-left-0"
+                                placeholder="Email" required />
+                        </div>
+                        <div class="form-group">
+                            <textarea rows="4" id="contact_message" name="contact_message"
+                                class="form-control rounded-0 border-top-0 border-right-0 border-left-0"
+                                placeholder="Message" required></textarea>
+                        </div>
+                        <div class="text-center">
+                            <button type="submit" class="btn tm-btn-submit rounded-0 text-white">
+                                Submit
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div> -->
+            <!-- row -->
+            <div class="row">
+                <footer class="col-12">
+                    <p class="text-center tm-copyright-text">
+                        Footer
 
-            <!-- Javascript skills -->
-            <p>JavaScript</p>
-            <div class="icon-sklill-js">
-                <i class="fab fa-js-square"></i>
-                <div class="skills js">75%</div>
+                    </p>
+                </footer>
             </div>
-
-            <!-- Java skills -->
-            <p>Java</p>
-            <div class="icon-sklill-java">
-                <i class="fab fa-java"></i>
-                <div class="skills java">80%</div>
-            </div>
-
-            <!-- Scrum Skills -->
-            <p>Agile</p>
-            <div class="icon-sklill-scrum">
-                <i class="fas fa-users-cog"></i>
-                <div class="skills scrum">95%</div>
-            </div>
-
         </div>
-        <!-- Einde skills overzicht -->
-
-        <!-- Naam en huidige functie midden op de website-->
-
-        <div class="profiel">
-            <div class="naam">
-                <h1>VANESSA BRAUMÜLLER</h1>
-            </div>
-            <div class="functie">
-                <h2>Jr. Backend Developer</h2>
-            </div>
-
-        </div>
+        <!-- container -->
     </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/parallax.min.js"></script>
+    <script>
+        function detectMsBrowser() {
+            using_ms_browser =
+                navigator.appName == "Microsoft Internet Explorer" ||
+                (navigator.appName == "Netscape" &&
+                    navigator.appVersion.indexOf("Edge") > -1) ||
+                (navigator.appName == "Netscape" &&
+                    navigator.appVersion.indexOf("Trident") > -1);
 
-    <!-- About me persoonlijke info -->
-    <div class="test">
+            if (using_ms_browser == true) {
+                alert(
+                    "Please use Chrome or Firefox for the best browsing experience!"
+                );
+            }
+        }
+        function setBrandMarginTop() {
+            var bottomContainerHeight = $(".tm-welcome-container").height();
 
-        <h1 class="about">ABOUT ME</h1><br>
-        <P>|Quick learner | Agile mindset | Motivated to Learn | Perseverance | Research skills | Efficient |
-        </P><br>
-        <p><b>~And suddenly you know it's time to start something new and trust the magic of beginnings~</b></p>
-        <p>"That was the start of my career switch to IT, which I do not regret for a moment. I enjoy
-            programming. I enjoy working independently, but don't hesitate to ask for help. Taking a deep dive
-            into a process and coming up with solutions makes me happy. I enjoy using my knowledge and
-            experience to create great solutions for customers."</p>
+            $(".tm-brand-container-outer").css({
+                "margin-top": -bottomContainerHeight + "px"
+            });
+        }
 
-        <!-- Einde about me -->
+        $(function () {
+            setBrandMarginTop();
+            detectMsBrowser();
 
-        <!-- Begin Work experience -->
-        <h1 class="about">PREVIOUS WORKEXPERIENCE</h1><br>
-        <P>|Expert knowledge, process and system |</P>
-        <ul>
-            <li>Working according to Agile / Scrum method.</li>
-            <li>Responsible for substantive contribution to process changes.</li>
-            <li>Solving and signaling issues.</li>
-            <li>Contributing to simplifying systems.</li>
-            <li>Participate in refinements and testing of the final product.</li>
-            <li>Responsible for securing knowledge and processes.</li>
-            <li>Intermediate between IT, front office and back office.</li>
-            <li>Submitting improvement proposals for process and system.</li>
-        </ul>
-        <!-- Einde work experience -->
+            // Handle window resize event
+            $(window).resize(function () {
+                setBrandMarginTop();
+            });
+        });
+    </script>
 
-    </div>
-
-    
-
-    <!-- <footer class="footer">
-        <a class="active" href="#home">test</a>
-        <a class="active" href="#contact">test</a>
-        <a class="active" href="#about">test</a>
-    </footer> -->
-
-    <div class="footer">
-        <a class="foot" href="www.linkedin.nl">
-            <i class="fab fa-linkedin"></i></a>
-        <a class="foot" href="#contact"><i class="fab fa-github-square"></i></a>
-        <a class="foot" href="#about">test</a>
-    </div>
 
 </body>
 

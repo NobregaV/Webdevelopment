@@ -22,6 +22,10 @@ li {
   font-size: 15px;
  
 }
+
+.fab {
+  margin: 10px;
+}
   .foot {
     color: white;
     }
@@ -37,6 +41,7 @@ html {
     font-weight: 400;
     color: #6b6b6b;
     overflow-x: hidden;
+  
    
   }
   
@@ -47,6 +52,10 @@ html {
   
   a:hover {
     text-decoration: none;
+  }
+
+  .fab:hover {
+    color: goldenrod;
   }
   
   .container-fluid {
@@ -85,6 +94,7 @@ html {
     display: flex;
     align-items: center;
   }
+  
   
   .tm-brand-container-outer {
     margin-top: -400px;

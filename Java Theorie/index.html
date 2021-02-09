@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java opdrachten</title>
+</head>
+
+<body>
+
+    <h1>Opdracht 1 - Basic Syntax</h1>
+
+    <h4>Voordat je Java kan gebruiken moet je de syntax kunnen begrijpen. Doe onderzoek naar de volgende termen en leg
+        uit wat ze (voor Java) betekenen:</h4>
+
+    <p><b>Object</b></p>
+    <p>Een object bevat eigenschappen van het object (variabelen) en wat er moet gebeuren (gedrag). Methods noem je ze.
+        (denk aan functies)</p>
+
+    <p><b>Class</b></p>
+    <p>Een class is een blauwdruk van een object. Bijv potlood hoort tot de klasse schrijfwaren. Brood hoort tot de
+        klasse etenswaren.</p>
+
+    <p><b>Package</b></p>
+    <p>Package is een groep van vergelijkbare soorten klassen, interfaces en sub-packages. Package worden in Java
+        gebruikt om naamconflicten te voorkomen, toegang te controleren, zoeken / lokaliseren en gebruik te maken van
+        classes, interfaces, opsommingen, annotaties enz. Hoewel interfaces en classes met dezelfde naam niet in
+        hetzelfde packages kunnen voorkomen, kunnen ze verschijnen in verschillende packages. Dit is mogelijk door aan
+        elk package een aparte naam toe te wijzen.
+    </p>
+
+    <p><b>Constructor</b></p>
+    <p>Constructor kijkt naar de class. je roept een Constructor aan met een naam. Een Constructor geeft aan hoe een
+        class opgebouwd moet worden. Er onstaat dan een nieuw object. </p>
+
+    <p><b>Instance</b></p>
+    <p>Instance is variabelen declareren. De eigenschappen van een object. Na de class volgt de instance variable.</p>
+
+    <p><b>Method</b></p>
+    <p>Method is het gedrag. </p>
+
+    <h1>Opdracht 2 - Variabeles</h1>
+    <h4>Ook variables werken in Java net iets anders dan je hiervoor misschien gewend bent. Java maakt onderscheid
+        tussen 3 soorten variables:
+    </h4>
+
+    <p><b>Local variables</b></p>
+    <p>Local stopt na de code block. Het kan niet opgeroepen worden.</p>
+
+    <p><b>Instance variables</b></p>
+    <p>Na de class volgt de instance variable. Dit kan aangeroepen worden. Instance is als let. </p>
+
+    <p><b>Class or static variables</b></p>
+    <p>static is net als const. Het staat vast.</p>
+
+    <p><b>a. Waar wordt een local variable gedeclareerd?</b></p>
+    <p>Een local variable in Java is een variabele die wordt gedeclareerd in de body van een method. De variabele kan
+        dan alleen binnen die method gebruikt worden.
+    </p>
+
+    <p>Class/Static variables en Instance variables worden op dezelfde plek gedeclareerd, en houden ook allebei de
+        gegevens van een Object bij.
+    </p>
+
+    <p><b>b. Wat voor soort informatie sla je op in een instance variable?</b></p>
+    <p>Eigenschappen van het object</p>
+
+    <p><b>c. Wat voor soort informatie sla je op in een class variable?</b></p>
+    <p>De waarde van een class variable kan je in principe ook opslaan in een instance variable.</p>
+
+    <p><b>d. Wat is het voordeel van het gebruiken van een class variable?</b></p>
+    <p></p>
+
+    <h1>Opdracht 3 - Access Control Modifiers</h1>
+
+    <h4>
+        Java gebruikt zogenaamde modifiers om bepaalde eigenschappen van stukjes code te veranderen. Deze zijn te
+        verdelen in Access Control Modifiers en Non-Access Modifiers
+
+        De Access Control Modifiers zijn heel belangrijk om te begrijpen - die geven namelijk aan welke onderdelen van
+        je applicatie van het betreffende stukje code gebruik mogen maken.
+
+        Noem de vier verschillende Access Control Modifiers en geef bij elke een korte beschrijving.
+    </h4>
+
+    <p><b>ACM</b></p>
+    <p>ACM is de toeganglijkheid van een object</p>
+    <ul>
+        <li>Private</li>
+        <p>Je kan het niet aanroepen en veranderen vanbuiten de class.</p>
+        <li>Default</li>
+        <p>Dit is standaard. Het kan niet buiten de package (model)</p>
+        <li>Protected</li>
+        <p>Via een child class heb je toegang via de package of buiten de paackage.</p>
+        <li>Public</li>
+        <p>Je hebt overal, vanuit binnen, maar ook vanuit buiten toegang. </p>
+    </ul>
+
+    <h1>Opdracht 4 - Non-Access Modifiers</h1>
+    <h4>Zoals bij de vorige opdracht vermeld stond, zijn er ook enkele Non-Access Modifiers. Het grootste deel hiervan
+        hoef je nog niet te kennen, maar de volgende twee wel:
+
+
+        • Static
+        • Final
+
+        Static ben je eerder al tegengekomen. Kan je ook uitleggen waar je Final voor zou gebruiken?
+    </h4>
+
+    <p>Static en Final zijn const. Ze zijn niet aanpasbaar.</p>
+
+    <h1>Opdracht 5 - Strictly Typed</h1>
+    <h4>Er wordt in IT onderscheid gemaakt tussen programmeertalen die Strictly/Strongly Typed zijn, en talen die
+        Loosely/Weakly Typed zijn. Java is Strictly Typed - dit betekent dat je bij elke variabele in Java een datatype
+        moet declareren. Bij Loosely Typed programmeertalen zoals JavaScript hoeft dit niet.
+
+    </h4>
+
+    <p><b>a. Wat is een voordeel van Strict Typing?</b></p>
+    <p>Je kan niet snel fouten maken en anders heb je het snel gevonden.</p>
+
+    <p><b>b. Wat is een voordeel van Weak Typing?</b></p>
+    <p>Je bent flexibel.</p>
+
+    <h1>Opdracht 6 - main & Arrays</h1>
+    <h4>De main method van een Java class is de functie die wordt uitgevoerd als je een programma draait. Dit zal er
+        altijd zo uit zien:</h4>
+
+    <img src="Afbeelding1.png" alt="">
+
+    <h4>Public & static heb je hiervoor gehad; die geven aan dat je main method toegankelijk is voor iedereen, en dat
+        deze voor elke Object van je class precies hetzelfde is.
+
+        void geeft aan dat er geen return value wordt verwacht. Bij de main method is dit verplicht!
+    </h4>
+    <img src="Afbeelding2.png" alt="">
+
+    <h4>Tenslotte nog Dit slaat op de naam en parameters.
+
+        Met String[] args geef je dus aan dat de parameters van de main method in een array zitten. Dit array heet args
+        (kort voor arguments) en bestaat enkel uit strings.
+
+    </h4>
+
+    <p><b>a. Kan je een reden bedenken waarom deze parameter verplicht is?</b></p>
+
+    <p>Anders runt je programma niet.</p>
+
+    <p>System.out.println() wordt gebruikt om tekst weer te geven in de console. Voor debugging doeleinden kan je dit
+        net zo gebruiken als de console.log() command van JavaScript.
+
+        Arrays declareer je zo:
+    </p>
+
+    <img src="Afbeelding3.png" alt="">
+
+    <p><b>b. Kan je elementen van een Java Array veranderen? </b></p>
+    <p>Ja dit kan je veranderen. </p>
+
+    <p><b>c. Kan je elementen aan een Java Array toevoegen? </b></p>
+    <p>Ja je kan ook elementen toevoegen aan een java array.</p>
+
+    <p>Net als bij JavaScript worden Arrays vaak gebruikt in combinatie met Loops. In de volgende opdracht gaan we hier
+        verder op in.</p>
+
+    <h1>Opdracht 7 - Arrays in Arrays & ArrayLists</h1>
+    <p>Met Java kan je gebruik maken van arrays in arrays. Java noemt deze 2-Dimensional Arrays. Dit ziet er als volgt
+        uit:</p>
+
+    <img src="Afbeelding4.png" alt="">
+
+    <p>Bij de vorige opdracht heb je geleerd dat je de grootte van een Java Array niet aan kan passen. Als je dit wel
+        wil doen, moet je gebruik maken van een ArrayList.
+
+        Belangrijk! Voordat je een ArrayList kan gebruiken, moet je dat eerst in je eigen code aangeven. Dit doe je door
+        de ArrayList code te importeren.
+
+        Voorbeeld van een ArrayList:
+    </p>
+
+    <img src="Afbeelding5.png" alt="">
+
+    <p>Je importeert de code van een ArrayList dus uit de java.util package.</p>
+
+    <h1>Opdracht 8 - Loops & Conditions</h1>
+
+    <p>Loops werken in Java net zoals je dat in JavaScript gewend bent. Ook conditions zijn heel erg vergelijkbaar. Er
+        zijn hier en daar enkele kleine verschillen in de syntax, maar in gebruik zijn ze vrijwel identiek.
+
+        Gegeven de volgende code:
+    </p>
+
+    <img src="Afbeelding6.png" alt="">
+
+    <p><b>
+            a. Maak gebruik van een for loop om de eerste drie items uit het cars Array te printen.
+        </b></p>
+
+        <p>Antwoord: Zo ziet de code in java eruit:</p>
+        <em>
+            package com.javak; <br>
+import java.util.ArrayList; <br>
+public class Main { <br><br>
+
+    public static void main(String[] args) { <br>
+	// write your code here <br>
+        String[] eastcars = {"Kia", "Honda"}; <br>
+        String[] cars = {"Kia", "Volkswagen", "Renault", "Honda", "BMW"}; <br>
+    ArrayList<String> westcars = new ArrayList<>(); <br><br>
+
+for (int i = 0; i < 3; i++) { <br>
+    System.out.println(cars[i]);<br>
+} <br>
+
+    } <br>
+} <br>
+
+        </em>
+
+    <p><b>b. Maak gebruik van een for-each loop om alle items uit het cars Array te printen.</b></p>
+
+    <p>Antwoord: Code in java is:</p>
+
+    <!-- package com.javak;
+import java.util.ArrayList;
+public class Main {
+
+    public static void main(String[] args) {
+        // write your code here
+        String[] eastcars = {"Kia", "Honda"};
+        String[] car = {"Kia", "Volkswagen", "Renault", "Honda", "BMW"};
+        ArrayList<String> westcars = new ArrayList<>();
+
+        for (String strTemp : car) {
+
+            System.out.println(strTemp);
+
+        }
+    }
+
+    } -->
+
+    <em>package com.javak; <br>
+        import java.util.ArrayList; <br>
+        public class Main { <br><br>
+        
+            public static void main(String[] args) { <br>
+              
+                String[] eastcars = {"Kia", "Honda"}; <br>
+                String[] car = {"Kia", "Volkswagen", "Renault", "Honda", "BMW"}; <br>
+                ArrayList<String> westcars = new ArrayList<>(); <br><br>
+        
+                for (String strTemp : car) { <br>
+        
+                    System.out.println(strTemp); <br>
+        
+                } <br>
+            } <br>
+        
+            }
+        </em>
+
+    <p>Zoals je ziet is de ArrayList westcars nog leeg - nu gaan we die vullen.</p>
+
+    <p><b>c. Loop door het cars array en vergelijk deze met de items in het eastcars array. Als je item niet in het
+            eastcars array voor komt, voeg je hem toe aan het westcars array.</b></p>
+
+
+    <p>Vervolgens willen we onze Arrays en ArrayList mooi alfabetisch sorteren. Net als ArrayLists is hier een class
+        voor die je moet importeren uit de java.util package.
+
+
+    <ul>
+        <li> Als je een Array wil sorteren, moet je de Arrays class importeren</li>
+        <li>Als je een ArrayList wil sorteren, moet je de Collections class importeren.</li>
+
+    </ul>
+    </p>
+
+    <p><b>d.	Pas dit nu toe op de Arrays en ArrayLists die je hebt gemaakt</b></p>
+
+
+
+
+
+</body>
+
+
+</html>

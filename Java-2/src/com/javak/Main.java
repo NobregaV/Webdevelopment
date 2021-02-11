@@ -1,5 +1,8 @@
 package com.javak;
+import java.lang.reflect.Array;
 import java.util.ArrayList;
+import java.util.Arrays;
+
 public class Main {
 
     public static void main(String[] args) {
@@ -10,9 +13,23 @@ public class Main {
 
 
         for (String strTemp : cars) {
-            System.out.println(strTemp);
+//            System.out.println(strTemp);
 
-            if (strTemp == eastcars)
+
+            if (strTemp == eastcars[0] && strTemp == eastcars[1])
+            {
+//                System.out.println("oke");
+            }
+            else {
+                westcars.add(strTemp);
+            }
+
+            Arrays.sort(cars);
+
+           for (int i=0; i< cars.length; i++)
+           {
+               System.out.println(cars[i]);
+           }
 
         }
 

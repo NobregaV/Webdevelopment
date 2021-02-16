@@ -1,7 +1,14 @@
 package com.javak;
 
 public class Animal {
+//    protected static Object type;
+    //    Variabelen
+    protected String naam;
+    protected int leeftijd;
+   public static String type = "Animal";
 
+
+    //    Methods
     public void Feed() {
         System.out.println("Test");
 
@@ -10,11 +17,9 @@ public class Animal {
         System.out.println("Tweede test");
     }
 
-    String naam;
-    int leeftijd;
-    static String type = "Animal";
+// Constructor
 
-    void Animal(String naam, int leeftijd, String type) {
+   public Animal(String naam, int leeftijd, String type) {
         this.naam = naam;
         this.leeftijd = leeftijd;
         this.type = type;

@@ -1,7 +1,7 @@
 package com.javak;
 
 public class Main {
-
+//Dit is de main method (methode)
     public static void main(String[] args) {
         // write your code here
         Animal AnimalObject = new Animal();

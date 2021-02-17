@@ -2,42 +2,57 @@ package com.javak;
 
 public class Animal {
 //    protected static Object type;
-    //    Variabelen
-    protected String naam;
-    protected int leeftijd;
-   public static String type = "Animal";
+    //    Variable
+    public String naam;
+    public int leeftijd;
+    public static String type = "Animal";
+
+    public Animal(String naam, int leeftijd) {
+    this.naam = naam;
+    this.leeftijd = leeftijd;
+    }
 
 
-    //    Methods
+    public String showType() {
+        return type;
+//        System.out.println(type);
+//        System.out.println(Animal.type);
+
+
+    }
+
+
+    //    Method
     public void Feed() {
-        System.out.println("Test");
+        System.out.println("Dit is Feed");
 
     }
+//    Method
     public void VisitVet() {
-        System.out.println("Tweede test");
+        System.out.println("Dit is VisitVet");
     }
+
+
+
+//    public String showName () {
+//        return naam;
+//    }
 
 // Constructor
 
-   public Animal(String naam, int leeftijd, String type) {
-        this.naam = naam;
-        this.leeftijd = leeftijd;
-        this.type = type;
+//   public Animal() {
+//        this.naam = naam;
+//        this.leeftijd = leeftijd;
+//        this.type = type;
+//
+//    }
 
-    }
+//    public void showType() {
+//        boolean animal1 = false;
+//        System.out.println(animal1);
+//    }
 
-    public void Bear1() {
-        String naam = "Browny";
-        String type = "Brown Bear";
-        System.out.println("Dit is " + naam +" van het type " + type);
-    }
 
-    public void Bear2() {
-        String naam = "Beertje";
-        String type = "Polar Bear";
-        System.out.println("Dit is " + naam +" van het type " + type);
-
-    }
 }
 
 

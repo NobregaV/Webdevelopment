@@ -15,6 +15,12 @@ public class Bear extends Animal {
         super(naam, leeftijd);
 
         this.type = type;
+
+    }
+    
+
+    public void Feed() {
+        System.out.println("Bear heeft de dierenarts opgegeten");
     }
 //Tweede constructor
 //public Bear(String grootte, int geslacht, Boolean nederlands) {
@@ -30,6 +36,7 @@ public class Bear extends Animal {
 //
         Bear bear1 = new Bear("Hans", 12, "Brown Bear");
         Bear bear2 = new Bear("Piet", 12, "Polar Bear");
+
         Bear bears [] = {bear1, bear2};
 
 //      Bear bear3 = new Bear("man", 15, true);
@@ -45,6 +52,7 @@ public class Bear extends Animal {
 
 //        System.out.println(Animal.type);
 
+//        For loop op object-niveau (zie animals).
         for (int i =0; i< animals.length; i++) {
 //            animals[i].showType();
 //            System.out.println(animals[i].showName());
@@ -53,6 +61,8 @@ public class Bear extends Animal {
             System.out.println(animals[i].showType());
             animals[i].Feed();
             animals[i].VisitVet();
+
+
 
         }
 

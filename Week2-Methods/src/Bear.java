@@ -17,7 +17,7 @@ public class Bear extends Animal {
         this.type = type;
 
     }
-    
+
 
     public void Feed() {
         System.out.println("Bear heeft de dierenarts opgegeten");

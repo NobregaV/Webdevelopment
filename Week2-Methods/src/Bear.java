@@ -8,6 +8,7 @@ public class Bear extends Animal {
     //    String naam;
 //    int leeftijd;
     String type;
+    int weight;
 
 
 //Contructor
@@ -16,6 +17,11 @@ public class Bear extends Animal {
 
         this.type = type;
 
+    }
+
+    public Bear(String naam, int leeftijd, int weight) {
+        super(naam, leeftijd);
+        this.weight = weight;
     }
 
 

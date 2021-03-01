@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="dd63fddd-8823-41be-a6bf-47dd88009f7a" name="Default Changelist" comment="" />
+    <list default="true" id="dd63fddd-8823-41be-a6bf-47dd88009f7a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../Eindopdracht/src/School.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Eindopdracht/src/Students.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BankingApplicationUdemy/src/com/javak/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../BankingApplicationUdemy/src/com/javak/Main.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -109,5 +113,6 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>

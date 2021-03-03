@@ -1,6 +1,6 @@
 import java.util.ArrayList;
 
-public class School {
+public abstract class School {
 private ArrayList<Teacher> listOfTeachers;
 private ArrayList<Student> listOfStudent;
 private String schoolType;

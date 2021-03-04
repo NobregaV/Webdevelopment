@@ -34,8 +34,9 @@ public class Teacher extends User {
         this.mentor = mentor;
     }
 
-    public static void main(String[] args) {
-        Teacher teach1 = new Teacher("Urvin", new Date (07-06-1984), "Java");
-        System.out.println(teach1);
-    }
+//    public static void main(String[] args) {
+//
+//        Teacher teach1 = new Teacher("Urvin", 07-06-2006, "Java");
+//        System.out.println(teach1);
+//    }
 }

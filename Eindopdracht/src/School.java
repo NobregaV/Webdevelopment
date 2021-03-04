@@ -47,11 +47,13 @@ private ArrayList<Classroom> listOfClasses;
         this.listOfClasses = listOfClasses;
     }
 
-    public void addStudent(){
+    public void addStudent(Student student){
+
 
     }
 
     public void addTeacher(){
+        
 
     }
 }

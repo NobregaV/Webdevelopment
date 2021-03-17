@@ -1,0 +1,26 @@
+2021-03-17 14:57:27 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "PRODUCTEN" not found; SQL statement:
+INSERT INTO Producten (productName, productDesription) VALUES
+  ('Boek', 'Master your mindset'),
+    ('Boek2', '2Master your mindset'),
+   ('Boek3', '3Master your mindset') [42102-200]
+2021-03-17 14:57:49 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE PRODUCTEN (ID INT AUTO_INCREMENT  PRIMARY KEY,
+ PRODUCTNAME VARCHAR(250) NOT NULL,
+  PRODUCTDESRIPTION VARCHAR(250) NOT NULL,
+
+)[*]"; expected "identifier"; SQL statement:
+CREATE TABLE Producten (id INT AUTO_INCREMENT  PRIMARY KEY,
+ productName VARCHAR(250) NOT NULL,
+  productDesription VARCHAR(250) NOT NULL,
+
+) [42001-200]
+2021-03-17 14:57:49 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "PRODUCTEN" not found; SQL statement:
+INSERT INTO Producten (productName, productDesription) VALUES
+  ('Boek', 'Master your mindset'),
+    ('Boek2', '2Master your mindset'),
+   ('Boek3', '3Master your mindset') [42102-200]
+2021-03-17 14:59:08 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "TEST" not found; SQL statement:
+SELECT * FROM TEST ORDER BY ID [42102-200]

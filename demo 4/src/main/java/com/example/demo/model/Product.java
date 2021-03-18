@@ -1,26 +1,33 @@
 package com.example.demo.model;
 
-public class Producten {
+import javax.persistence.*;
 
-    private int id;
+@Entity
+@Table(name="boeken")
+
+public class Product {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Integer id;
     private String productName;
     private Double productPrice;
     private String productDesription;
-    private int stockUpdate;
+    private Integer stockUpdate;
+    private String foto;
 
-    public Producten(int id, String productName, Double productPrice, String productDesription, int stockUpdate) {
-        this.id = id;
-        this.productName = productName;
-        this.productPrice = productPrice;
-        this.productDesription = productDesription;
-        this.stockUpdate = stockUpdate;
-    }
+//    public Product(String productName, Double productPrice, String productDesription, Integer stockUpdate) {
+//
+//        this.productName = productName;
+//        this.productPrice = productPrice;
+//        this.productDesription = productDesription;
+//        this.stockUpdate = stockUpdate;
+//    }
 
-    public int getId() {
+    public Integer getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(Integer id) {
         this.id = id;
     }
 
@@ -48,11 +55,21 @@ public class Producten {
         this.productDesription = productDesription;
     }
 
-    public int getStockUpdate() {
+    public Integer getStockUpdate() {
         return stockUpdate;
     }
 
-    public void setStockUpdate(int stockUpdate) {
+    public void setStockUpdate(Integer stockUpdate) {
         this.stockUpdate = stockUpdate;
     }
+
+    public String getFoto() {
+        return foto;
+    }
+
+    public void setFoto(String foto) {
+        this.foto = foto;
+    }
 }
+
+

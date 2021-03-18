@@ -25,10 +25,10 @@ public class ProductRepositoryTest {
         Product product = new Product();
 
         product.setProductPrice(4.99);
-        product.setProductName("Master your Mindset");
-        product.setFoto("https://media.s-bol.com/mYvGgDgQX8nR/550x774.jpg");
-        product.setProductDesription("Master Your Mindset herziene uitgave november 2020) gaat over persoonlijke en spirituele groei, maar ook over zakelijk succes. Die combina...");
-        product.setStockUpdate(2);
+        product.setProductName("Burn after writing");
+        product.setFoto("https://media.s-bol.com/Y59R00ppq1G0/550x800.jpg");
+        product.setProductDesription("Hoe eerlijk ben jij als niemand kijkt? Het lijkt wel alsof de wereld alleen maar draait om wat je deelt en wie je bent op Instagram, TikTok, Snapchat of YouTube.");
+        product.setStockUpdate(33);
 
         Product savedProduct = repo.save(product);
         Product existProduct = testEntityManager.find(Product.class, savedProduct.getId());

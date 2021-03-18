@@ -9,6 +9,8 @@ public class Product {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
+
+  @Column(nullable = false, length = 50)
     private String productName;
     private Double productPrice;
     private String productDesription;

@@ -24,3 +24,15 @@ INSERT INTO Producten (productName, productDesription) VALUES
 2021-03-17 14:59:08 jdbc[14]: exception
 org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "TEST" not found; SQL statement:
 SELECT * FROM TEST ORDER BY ID [42102-200]
+2021-03-17 15:56:20 jdbc[35]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "SELECT * FROM PRODUCTEN ID NAME[*]"; SQL statement:
+SELECT * FROM PRODUCTEN ID NAME [42000-200]
+2021-03-17 15:56:22 jdbc[35]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "SELECT * FROM PRODUCTEN ID NAME[*]"; SQL statement:
+SELECT * FROM PRODUCTEN ID NAME [42000-200]
+2021-03-17 15:56:26 jdbc[35]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "SELECT * FROM PRODUCTEN ID NAME[*]"; SQL statement:
+SELECT * FROM PRODUCTEN ID NAME [42000-200]
+2021-03-17 20:19:17 jdbc[24]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "SELECT * FROM PRODUCTEN NAME PRODUCTEN[*]"; SQL statement:
+SELECT * FROM PRODUCTEN NAME PRODUCTEN [42000-200]

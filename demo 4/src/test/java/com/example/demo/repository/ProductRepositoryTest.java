@@ -24,11 +24,11 @@ public class ProductRepositoryTest {
     public void testCreateProduct() {
         Product product = new Product();
 
-        product.setProductPrice(4.99);
-        product.setProductName("Burn after writing");
-        product.setFoto("https://media.s-bol.com/Y59R00ppq1G0/550x800.jpg");
-        product.setProductDesription("Hoe eerlijk ben jij als niemand kijkt? Het lijkt wel alsof de wereld alleen maar draait om wat je deelt en wie je bent op Instagram, TikTok, Snapchat of YouTube.");
-        product.setStockUpdate(33);
+        product.setProductPrice(21.99);
+        product.setProductName("De edele kunst van not giving a fuck");
+        product.setFoto("https://media.s-bol.com/mZQ42MA3QBPn/544x840.jpg");
+        product.setProductDesription("Van populair weblog naar New York Times-bestseller is dit hét boek voor zelfhulphaters!");
+        product.setStockUpdate(8);
 
         Product savedProduct = repo.save(product);
         Product existProduct = testEntityManager.find(Product.class, savedProduct.getId());

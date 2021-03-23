@@ -20,30 +20,43 @@ import java.util.Properties;
 @Controller
 public class Webshop {
 
-@Autowired
+    @Autowired
     ProductService service;
 
-@GetMapping("")
+    @GetMapping("")
     public String viewHomePage() {
-    return "homepage";
-}
-@GetMapping("/book1")
-    public String ProductDescreption() {
-    return "book1";
-
-}
-
-@GetMapping("/api/boeken")
-    public ResponseEntity allBooks(HttpServletRequest request) {
-    try {
-        List<Product> productData = service.findAll();
-        return new ResponseEntity<>(productData, HttpStatus.OK);
+        return "homepage";
     }
-catch (Exception e) {
-        return new ResponseEntity<>("Het is niet gelukt", HttpStatus.INTERNAL_SERVER_ERROR);
 
-}
-}
+    @GetMapping("/book1")
+    public String ProductDescreption() {
+        return "book1";
+
+    }
+
+    @GetMapping("/api/boeken")
+    public ResponseEntity allBooks(HttpServletRequest request) {
+        try {
+            List<Product> productData = service.findAll();
+            return new ResponseEntity<>(productData, HttpStatus.OK);
+        } catch (Exception e) {
+            return new ResponseEntity<>("Het is niet gelukt", HttpStatus.INTERNAL_SERVER_ERROR);
+
+        }
+    }
+
+//    @GetMapping("/api/id")
+//    public ResponseEntity boek(HttpServletRequest request) {
+//        try {
+//            List<Product> productData = service.findById(2);
+//            return new ResponseEntity<>(productData, HttpStatus.OK);
+//
+//            catch (Exception) {
+//            return new ResponseEntity<>("Het is niet gelukt", HttpStatus.INTERNAL_SERVER_ERROR);
+//            }
+//
+//        }
+//    }
 
 ////@RequestMapping("")
 //@PostMapping(value = "")

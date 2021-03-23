@@ -18,6 +18,12 @@ public class ProductService {
         return repo.findAll();
     }
 
+//    /**
+//     * @return
+//     */
+//    public List<Product> findById() {
+//        return repo.findById(2);
+//    }
 
 
 }

@@ -10,20 +10,14 @@ public class Product {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
-  @Column(nullable = false, length = 50)
+  @Column(nullable = false, length = 50, unique = true)
     private String productName;
     private Double productPrice;
     private String productDesription;
     private Integer stockUpdate;
     private String foto;
 
-//    public Product(String productName, Double productPrice, String productDesription, Integer stockUpdate) {
-//
-//        this.productName = productName;
-//        this.productPrice = productPrice;
-//        this.productDesription = productDesription;
-//        this.stockUpdate = stockUpdate;
-//    }
+
 
     public Integer getId() {
         return id;

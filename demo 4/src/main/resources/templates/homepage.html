@@ -1,53 +1,96 @@
-<!DOCTYPE HTML>
-<html xmlns:th="http://www.thymelef.org">
-<head>
-    <meta charset="ISO-8859-1">
-    <title>Boekenshop</title>
-    <link rel="stylesheet" type="text/css" href="/webjars/bootstrap/css/bootstrap.min.css"/>
+<!DOCTYPE html>
+<!--<html xmlns:th="http://thymeleaf.org" lang="en">-->
+<html xmlns:th=”http://www.thymeleaf.org”>
+<!--<html xmlns:th="http://www.thymelef.org" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"-->
+<!--      xsi:schemaLocation="http://www.thymelef.org ">-->
 
+<head>
+    <meta charset="UTF-8">
+    <title>Webshop</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" th:href="@{/styles/index.css}">
+    <style>
+
+<!--        .imgProduct {-->
+<!--            height: 200px;-->
+<!--            width: 300px-->
+<!--        }-->
+
+<!--        .specs {-->
+<!--            height: 100%;-->
+<!--            width: 300px;-->
+<!--        }-->
+
+<!--        .description {-->
+<!--            position: relative;-->
+<!--            right: 200px;-->
+<!--            height: 500px;-->
+<!--        }-->
+
+<!--        .quantityHandler {-->
+<!--            width: 120px-->
+<!--        }-->
+
+    </style>
 </head>
 <body>
 <div class="container text-center">
-<h1>Welcome to Boekenshop VB</h1>
+    <h1>Welcome to Boekenshop VB</h1>
 </div>
 <br>
 
-<!--<div class="boek1">-->
-<!--    <a th:href="@{/api/boeken}"><img src="https://media.s-bol.com/Y59R00ppq1G0/550x800.jpg" alt="Burn" width="200" height="300"></a>-->
-<!--</div>-->
 
-<table class="table table-borderless">
-    <thead>
-    <tr>
-        <th scope="col">Burn after writing</th>
-        <th scope="col">Master your mindset</th>
-        <th scope="col">Denk als een monnik</th>
-        <th scope="col">De edele kunst van not giving a F.</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr>
+<!--Products -->
+<section>
+    <div class="container">
+        <div class="container d-flex align-content-between">
+            <div th:each="Product: ${productData}" class="container mt-2 row justify-content-between">
+                <div class="container d-flex flex-column mx-3 col-4">
+                    <a th:href="'/Product/'+${Product.id}">
+                        <img class="imgProduct" th:src="${Product.imgUrl}" alt="laptop">
+                    </a>
+                    <h5 class="productName" th:text="${Product.productName}">Text for product</h5>
+                    <h5 class="productPrice" th:text="&#8364+ ' ' +${product.price}">Price</h5>
+                </div>
+            </div>
+        </div>
+    </div>
 
-        <td>foto</td>
-        <td>Foto</td>
-        <td>Foto</td>
-        <td>Foto</td>
-    </tr>
-    <tr>
-        <td>Details</td>
-        <td>Details</td>
-        <td>Details</td>
-        <td>Details</td>
-    </tr>
-    <tr>
-        <td>Prijs</td>
-        <td>Prijs</td>
-        <td>Prijs</td>
-        <td>Prijs</td>
-    </tr>
-    </tbody>
-</table>
+</section>
 
+
+<!--<table class="table table-borderless">-->
+<!--    <thead>-->
+<!--    <tr>-->
+<!--        <th scope="col">Burn after writing</th>-->
+<!--        <th scope="col">Master your mindset</th>-->
+<!--        <th scope="col">Denk als een monnik</th>-->
+<!--        <th scope="col">De edele kunst van not giving a F.</th>-->
+<!--    </tr>-->
+<!--    </thead>-->
+<!--    <tbody>-->
+<!--    <tr>-->
+
+<!--        <td>foto</td>-->
+<!--        <td>Foto</td>-->
+<!--        <td>Foto</td>-->
+<!--        <td>Foto</td>-->
+<!--    </tr>-->
+<!--    <tr>-->
+<!--        <td>Details</td>-->
+<!--        <td>Details</td>-->
+<!--        <td>Details</td>-->
+<!--        <td>Details</td>-->
+<!--    </tr>-->
+<!--    <tr>-->
+<!--        <td>Prijs</td>-->
+<!--        <td>Prijs</td>-->
+<!--        <td>Prijs</td>-->
+<!--        <td>Prijs</td>-->
+<!--    </tr>-->
+<!--    </tbody>-->
+<!--</table>-->
 
 
 </body>

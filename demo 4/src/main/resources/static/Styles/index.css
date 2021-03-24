@@ -1,0 +1,19 @@
+ .imgProduct {
+            height: 200px;
+            width: 300px
+        }
+
+        .specs {
+            height: 100%;
+            width: 300px;
+        }
+
+        .description {
+            position: relative;
+            right: 200px;
+            height: 500px;
+        }
+
+        .quantityHandler {
+            width: 120px
+        }

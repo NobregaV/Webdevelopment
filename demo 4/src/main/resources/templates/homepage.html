@@ -1,8 +1,7 @@
 <!DOCTYPE html>
-<!--<html xmlns:th="http://thymeleaf.org" lang="en">-->
+
 <html xmlns:th=”http://www.thymeleaf.org”>
-<!--<html xmlns:th="http://www.thymelef.org" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"-->
-<!--      xsi:schemaLocation="http://www.thymelef.org ">-->
+
 
 <head>
     <meta charset="UTF-8">
@@ -12,25 +11,10 @@
     <link rel="stylesheet" th:href="@{/styles/index.css}">
     <style>
 
-<!--        .imgProduct {-->
-<!--            height: 200px;-->
-<!--            width: 300px-->
-<!--        }-->
-
-<!--        .specs {-->
-<!--            height: 100%;-->
-<!--            width: 300px;-->
-<!--        }-->
-
-<!--        .description {-->
-<!--            position: relative;-->
-<!--            right: 200px;-->
-<!--            height: 500px;-->
-<!--        }-->
-
-<!--        .quantityHandler {-->
-<!--            width: 120px-->
-<!--        }-->
+        .imgProduct {
+            height: 200px;
+            width: 300px
+        }
 
     </style>
 </head>
@@ -48,10 +32,10 @@
             <div th:each="Product: ${productData}" class="container mt-2 row justify-content-between">
                 <div class="container d-flex flex-column mx-3 col-4">
                     <a th:href="'/Product/'+${Product.id}">
-                        <img class="imgProduct" th:src="${Product.imgUrl}" alt="laptop">
+                        <img class="imgProduct" th:src="${Product.imgUrl}" alt="boek">
                     </a>
-                    <h5 class="productName" th:text="${Product.productName}">Text for product</h5>
-                    <h5 class="productPrice" th:text="&#8364+ ' ' +${product.price}">Price</h5>
+                    <h5 class="productName" th:text="${Product.productName}">Master your mindset</h5>
+                    <h5 class="productPrice" th:text="&#8364+ ' ' +${product.price}">Prijs</h5>
                 </div>
             </div>
         </div>

@@ -31,7 +31,7 @@ public class Webshop {
         int rightLimit = 122;
         int targetStringLength = 20;
         Random random = new Random();
-        StringBuffer buffer = new StringBuffer(targetStringLength);
+        StringBuilder buffer = new StringBuilder(targetStringLength);
 
         for (int i = 0; i < targetStringLength; i++) {
             int randomLimitedInt = leftLimit + (int)

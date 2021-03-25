@@ -8,16 +8,22 @@ import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.Optional;
+//service is tussenlaag tussen mij een de controler
 
 @Service
 @Primary
 public class ProductService {
+// autowired
     @Autowired
     private ProductRepository repo;
+
 @Query("SELECT p FROM Product p WHERE p.productName = ?1")
 public Product findByName(String productName) {
     return repo.findByName(productName);
 }
+
+//geen void, want heeft een return type.
     public List<Product> findAll() {
         return repo.findAll();
     }
@@ -25,6 +31,14 @@ public Product findByName(String productName) {
 
     public List<Product> findAllById(Iterable<Integer> iterable) {
         return repo.findAllById(iterable);
+    }
+
+    public Optional<Product> findProduct(Integer id) {
+    return repo.findById(id);
+    }
+
+    public Optional<Product> putProduct() {
+    return repo.findById();
     }
 
 //    @Query("SELECT p FROM Product p WHERE p.")

@@ -29,13 +29,13 @@
 <section>
     <div class="container">
         <div class="container d-flex align-content-between">
-            <div th:each="Product: ${productData}" class="container mt-2 row justify-content-between">
+            <div class="container mt-2 row justify-content-between">
                 <div class="container d-flex flex-column mx-3 col-4">
-                    <a th:href="'/Product/'+${Product.id}">
-                        <img class="imgProduct" th:src="${Product.imgUrl}" alt="boek">
+                    <a href= img class="imgProduct"
+
                     </a>
-                    <h5 class="productName" th:text="${Product.productName}">Master your mindset</h5>
-                    <h5 class="productPrice" th:text="&#8364+ ' ' +${product.price}">Prijs</h5>
+                    <h5 class="productName" >Titel boek</h5>
+                    <h5 class="productPrice" >Prijs</h5>
                 </div>
             </div>
         </div>

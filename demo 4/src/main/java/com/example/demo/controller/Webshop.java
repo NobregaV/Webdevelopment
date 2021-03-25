@@ -9,46 +9,62 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PutMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
 
+import javax.persistence.criteria.CriteriaBuilder;
 import javax.servlet.http.HttpServletRequest;
 import java.util.List;
 import java.util.Optional;
 import java.util.Random;
 
+@RequestMapping
 @Controller
 public class Webshop {
 
     @Autowired
     ProductService service;
 
+//    @GetMapping("")
+//    public String boeken (Model model) {
+////        List<Product> productList = service.findAll();
+//        List<Product> productData = service.findAll();
+////        model.addAttribute("productList", productList);
+//        model.addAttribute("productData", productData);
+//        int leftLimit = 97;
+//        int rightLimit = 122;
+//        int targetStringLength = 20;
+//        Random random = new Random();
+//        StringBuilder buffer = new StringBuilder(targetStringLength);
+//
+//        for (int i = 0; i < targetStringLength; i++) {
+//            int randomLimitedInt = leftLimit + (int)
+//                    (random.nextFloat() * (rightLimit - leftLimit + 1));
+//            buffer.append((char) randomLimitedInt);
+//
+//        }
+//
+//        String generatedString = buffer.toString();
+//        model.addAttribute(generatedString);
+//
+//        return "homepage";
+//    }
+
     @GetMapping("")
-    public String viewHomePage(Model model) {
-//        List<Product> productList = service.findAll();
-        List<Product> productData = service.findAll();
-//        model.addAttribute("productList", productList);
-        model.addAttribute("productData", productData);
-        int leftLimit = 97;
-        int rightLimit = 122;
-        int targetStringLength = 20;
-        Random random = new Random();
-        StringBuilder buffer = new StringBuilder(targetStringLength);
-
-        for (int i = 0; i < targetStringLength; i++) {
-            int randomLimitedInt = leftLimit + (int)
-                    (random.nextFloat() * (rightLimit - leftLimit + 1));
-            buffer.append((char) randomLimitedInt);
-
-        }
-
-        String generatedString = buffer.toString();
-        model.addAttribute(generatedString);
-
+    public String homePage () {
         return "homepage";
     }
+    @GetMapping("/api/boeken/{id}")
+    public ResponseEntity ProductDescreption(@PathVariable Integer id, HttpServletRequest request) {
+        try {
+            Optional<Product> bookDetail = service.findProduct (id);
+            return new ResponseEntity<>(bookDetail, HttpStatus.OK);
 
-    @GetMapping("/book1")
-    public String ProductDescreption() {
-        return "book1";
+        }
+        catch (Exception e) {
+            return new ResponseEntity<>("Het is niet gelukt", HttpStatus.INTERNAL_SERVER_ERROR);
+        }
+
 
     }
 
@@ -62,6 +78,26 @@ public class Webshop {
 
         }
     }
+
+    @PutMapping("/api/boeken/{id}")
+    public ResponseEntity updateBoeken() {
+        Optional<Product> bookDetail = service.putProduct ();
+
+        return (ResponseEntity) ResponseEntity.ok();
+    }
+
+//    @PutMapping("/employees/{id}")
+//    public ResponseEntity<Employee> updateEmployee(@PathVariable(value = "id") Long employeeId,
+//                                                   @Valid @RequestBody Employee employeeDetails) throws ResourceNotFoundException {
+//        Employee employee = employeeRepository.findById(employeeId)
+//                .orElseThrow(() -> new ResourceNotFoundException("Employee not found for this id :: " + employeeId));
+//
+//        employee.setEmailId(employeeDetails.getEmailId());
+//        employee.setLastName(employeeDetails.getLastName());
+//        employee.setFirstName(employeeDetails.getFirstName());
+//        final Employee updatedEmployee = employeeRepository.save(employee);
+//        return ResponseEntity.ok(updatedEmployee);
+//    }
 }
 
 //        @GetMapping("{/id}")

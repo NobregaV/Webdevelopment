@@ -37,9 +37,20 @@ public Product findByName(String productName) {
     return repo.findById(id);
     }
 
-    public Optional<Product> putProduct() {
-    return repo.findById();
+//    public Optional<Product> putProduct() {
+//    return repo.findById();
+//    }
+
+    public Product createNewBoek(Product newProductData) {
+    return repo.save(newProductData);
     }
+
+    public void deleteById(Integer id) {
+
+        repo.deleteById(id);
+    }
+
+
 
 //    @Query("SELECT p FROM Product p WHERE p.")
 

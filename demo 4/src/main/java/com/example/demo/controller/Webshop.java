@@ -1,22 +1,22 @@
 package com.example.demo.controller;
 
 import com.example.demo.model.Product;
+import com.example.demo.repository.ProductRepository;
 import com.example.demo.service.ProductService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.PutMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.*;
 
 import javax.persistence.criteria.CriteriaBuilder;
 import javax.servlet.http.HttpServletRequest;
 import java.util.List;
 import java.util.Optional;
 import java.util.Random;
+
+import static com.example.demo.repository.ProductRepository.*;
 
 @RequestMapping
 @Controller
@@ -51,17 +51,18 @@ public class Webshop {
 //    }
 
     @GetMapping("")
-    public String homePage () {
+    public String homePage() {
         return "homepage";
     }
+
+
     @GetMapping("/api/boeken/{id}")
     public ResponseEntity ProductDescreption(@PathVariable Integer id, HttpServletRequest request) {
         try {
-            Optional<Product> bookDetail = service.findProduct (id);
+            Optional<Product> bookDetail = service.findProduct(id);
             return new ResponseEntity<>(bookDetail, HttpStatus.OK);
 
-        }
-        catch (Exception e) {
+        } catch (Exception e) {
             return new ResponseEntity<>("Het is niet gelukt", HttpStatus.INTERNAL_SERVER_ERROR);
         }
 
@@ -78,34 +79,52 @@ public class Webshop {
 
         }
     }
+//putmapping voor create id
+    @PutMapping("/api/boeken")
+    public ResponseEntity updateBoeken(@RequestBody Product newProductData) {
 
-    @PutMapping("/api/boeken/{id}")
-    public ResponseEntity updateBoeken() {
-        Optional<Product> bookDetail = service.putProduct ();
+        try {
+            service.createNewBoek(newProductData);
 
-        return (ResponseEntity) ResponseEntity.ok();
+            return new ResponseEntity(HttpStatus.CREATED);
+        } catch (Exception e) {
+            return new ResponseEntity("Niet gelukt", HttpStatus.INTERNAL_SERVER_ERROR);
+        }
+//
     }
 
-//    @PutMapping("/employees/{id}")
-//    public ResponseEntity<Employee> updateEmployee(@PathVariable(value = "id") Long employeeId,
-//                                                   @Valid @RequestBody Employee employeeDetails) throws ResourceNotFoundException {
-//        Employee employee = employeeRepository.findById(employeeId)
-//                .orElseThrow(() -> new ResourceNotFoundException("Employee not found for this id :: " + employeeId));
 //
-//        employee.setEmailId(employeeDetails.getEmailId());
-//        employee.setLastName(employeeDetails.getLastName());
-//        employee.setFirstName(employeeDetails.getFirstName());
-//        final Employee updatedEmployee = employeeRepository.save(employee);
-//        return ResponseEntity.ok(updatedEmployee);
-//    }
+//putmapping om te updaten
+@PutMapping("/api/boeken/{id}")
+//in mijn parameters staat de info die ik terug moet zien in de codeblock.
+public ResponseEntity boekAanpassen(@RequestBody Product updateBoek, @PathVariable Integer id) {
+
+        try {
+            service.findProduct(id);
+            return new ResponseEntity(updateBoek, HttpStatus.OK);
+        }
+        catch (Exception e) {
+            return new ResponseEntity("ERROR!!", HttpStatus.INTERNAL_SERVER_ERROR);
+        }
 }
 
-//        @GetMapping("{/id}")
-//                public String viewProductDetailsPage(@PathVariable("id")Integer id, Model model) {
-//            List<Product> productOne = service.findById();
-//            String specs = product.get().getProductDesription();
-//            model.addAttricute("product", product.get()));
-//model.addAttribute("specs", specs);
+
+
+    @DeleteMapping("/api/boeken/{id}")
+    public ResponseEntity UpdateData(@PathVariable Integer id, HttpServletRequest request) {
+        try {
+            service.deleteById(id);
+            return new ResponseEntity<>(HttpStatus.OK);
+
+        } catch (Exception e) {
+            return new ResponseEntity<>("Het is niet gelukt", HttpStatus.INTERNAL_SERVER_ERROR);
+        }
+    }
+}
+
+
+
+//
 
 
 
@@ -115,25 +134,6 @@ public class Webshop {
 
 //
 
-
-//    @GetMapping("/api/id")
-//    public ResponseEntity boek(HttpServletRequest request) {
-//        try {
-//            List<Product> productData = service.findById(2);
-//            return new ResponseEntity<>(productData, HttpStatus.OK);
-//
-//            catch (Exception) {
-//            return new ResponseEntity<>("Het is niet gelukt", HttpStatus.INTERNAL_SERVER_ERROR);
-//            }
-//
-//        }
-//    }
-
-////@RequestMapping("")
-//@PostMapping(value = "")
-//public String addBook (){
-//
-//{
 
 
 

@@ -10,11 +10,11 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 
-import javax.persistence.criteria.CriteriaBuilder;
+
 import javax.servlet.http.HttpServletRequest;
 import java.util.List;
 import java.util.Optional;
-import java.util.Random;
+
 
 import static com.example.demo.repository.ProductRepository.*;
 
@@ -25,31 +25,7 @@ public class Webshop {
     @Autowired
     ProductService service;
 
-//    @GetMapping("")
-//    public String boeken (Model model) {
-////        List<Product> productList = service.findAll();
-//        List<Product> productData = service.findAll();
-////        model.addAttribute("productList", productList);
-//        model.addAttribute("productData", productData);
-//        int leftLimit = 97;
-//        int rightLimit = 122;
-//        int targetStringLength = 20;
-//        Random random = new Random();
-//        StringBuilder buffer = new StringBuilder(targetStringLength);
 //
-//        for (int i = 0; i < targetStringLength; i++) {
-//            int randomLimitedInt = leftLimit + (int)
-//                    (random.nextFloat() * (rightLimit - leftLimit + 1));
-//            buffer.append((char) randomLimitedInt);
-//
-//        }
-//
-//        String generatedString = buffer.toString();
-//        model.addAttribute(generatedString);
-//
-//        return "homepage";
-//    }
-
     @GetMapping("")
     public String homePage() {
         return "homepage";
@@ -100,7 +76,8 @@ public class Webshop {
 public ResponseEntity boekAanpassen(@RequestBody Product updateBoek, @PathVariable Integer id) {
 
         try {
-            service.findProduct(id);
+//            service.findProduct(id);
+            service.createNewBoek(updateBoek);
             return new ResponseEntity(updateBoek, HttpStatus.OK);
         }
         catch (Exception e) {
@@ -120,11 +97,12 @@ public ResponseEntity boekAanpassen(@RequestBody Product updateBoek, @PathVariab
             return new ResponseEntity<>("Het is niet gelukt", HttpStatus.INTERNAL_SERVER_ERROR);
         }
     }
+
+    
 }
 
 
 
-//
 
 
 
@@ -132,7 +110,8 @@ public ResponseEntity boekAanpassen(@RequestBody Product updateBoek, @PathVariab
 
 
 
-//
+
+
 
 
 

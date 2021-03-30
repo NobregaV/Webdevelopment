@@ -37,10 +37,6 @@ public Product findByName(String productName) {
     return repo.findById(id);
     }
 
-//    public Optional<Product> putProduct() {
-//    return repo.findById();
-//    }
-
     public Product createNewBoek(Product newProductData) {
     return repo.save(newProductData);
     }

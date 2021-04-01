@@ -114,7 +114,7 @@ public ResponseEntity updateVoorraad(@RequestBody Integer stockUpdate, @PathVari
 
 //  Dit is de nieuwe voorraad nadat er besteld is
   productdetail.get().setStockUpdate(naBestelling);
-  
+
 //Hiermee sla je het op.
 service.createNewBoek(productdetail.get());
 
